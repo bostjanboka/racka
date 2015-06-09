@@ -5,30 +5,39 @@ public class RackaSkripta : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed;
-	Vector3 smer;
+	float smer;
+	Vector3 rotacija;
+	Vector3 premik;
 	void Start () {
-		smer = Vector3.zero;
+
+		rotacija = Vector3.zero;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		smer = 0;
+
+		rotacija = Vector3.zero;
+		premik = Vector3.zero;
+
 		if (InputKey.w) {
-			smer.z = 1;
+			smer =  -speed;
 		}
 		if (InputKey.a) {
-			smer.x = -1;
+			rotacija.y-=20*Time.deltaTime;
 		}
 		if (InputKey.s) {
-			smer.z = -1;
+			smer = speed;
 		}
 		if (InputKey.d) {
-			smer.x = 1;
+			rotacija.y+=20*Time.deltaTime;
 		}
 
-		smer.Normalize ();
-		smer *= speed;
+		premik.z = rotacija.y+1;
+		premik.Normalize ();
+		gameObject.transform.Translate(premik * smer*Time.deltaTime);
+		gameObject.transform.Rotate(rotacija);
 
-		gameObject.GetComponent<Rigidbody> ().velocity = smer;
-		smer = Vector3.zero;
 	}
 }
