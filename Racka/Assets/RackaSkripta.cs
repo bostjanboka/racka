@@ -8,6 +8,7 @@ public class RackaSkripta : MonoBehaviour {
 	float smer;
 	Vector3 rotacija;
 	Vector3 premik;
+	public GameObject kamera;
 	void Start () {
 
 		rotacija = Vector3.zero;
@@ -38,6 +39,8 @@ public class RackaSkripta : MonoBehaviour {
 		premik.Normalize ();
 		gameObject.transform.Translate(premik * smer*Time.deltaTime);
 		gameObject.transform.Rotate(rotacija);
+		kamera.transform.Translate (premik * smer*Time.deltaTime);
+
 
 	}
 }
