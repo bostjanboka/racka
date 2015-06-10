@@ -16,10 +16,14 @@ public class OtrokSkripta : MonoBehaviour {
 		if (zasleduj) {
 
 			smer = zasleduj.transform.position - transform.position;
-			if(smer.magnitude > 2.5f){
-				smer.Normalize();
-				smer = smer*speed;;
-				gameObject.GetComponent<Rigidbody>().velocity = smer;
+			float step = speed*Time.deltaTime;
+
+			Vector3 newDir = Vector3.RotateTowards(transform.forward,smer,step,0.0f);
+			transform.rotation = Quaternion.LookRotation(newDir);
+			if(Vector3.Distance(transform.position,zasleduj.transform.position) > 3f){
+				transform.position = Vector3.MoveTowards(transform.position, zasleduj.transform.position, step);
+			}else{
+				transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
 			}
 		}
 	}
