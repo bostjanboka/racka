@@ -10,6 +10,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	float cas;
 	void Start () {
 		cas = casRespawna;
+
 	}
 	
 	// Update is called once per frame
@@ -18,7 +19,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		if (cas <= 0) {
 			Instantiate(objekt, transform.position, transform.rotation);
 
-			cas=casRespawna;
+			cas=Random.Range(casRespawna-3, casRespawna+3);
 		}
 	}
 }
