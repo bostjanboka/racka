@@ -8,46 +8,35 @@ public class RackaSkripta : MonoBehaviour {
 	Vector3 smer;
 	Vector3 rotacija;
 	float premik;
-	//public GameObject kamera;
 	GameObject valovi;
+
+	bool tockaPotovanja=false;
+	Vector3 staraTocka;
 	void Start () {
 
 		rotacija = Vector3.zero;
 		valovi = transform.FindChild ("valovi").gameObject;
+		staraTocka=InputKey.tocka;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		/*premik = 0;
-		float rot = 0;
-
-		if (InputKey.w) {
-
-			premik=1;
+		if (!staraTocka.Equals (InputKey.tocka)) {
+			tockaPotovanja=true;
+			staraTocka=InputKey.tocka;
 		}
-		if (InputKey.a) {
-			rot -= 40*Time.deltaTime;
-		}
-		if (InputKey.s) {
-			premik = -1;
-		}
-		if (InputKey.d) {
-			rot += 40*Time.deltaTime;
-		}
-
-
-
-		gameObject.transform.Rotate (0,rot,0);
-		transform.position += transform.forward * speed * premik * Time.deltaTime;*/
-		InputKey.tocka.y = transform.position.y;
-		smer = InputKey.tocka - transform.position;
-		float step = speed*Time.deltaTime;
+		if (tockaPotovanja) {
+			InputKey.tocka.y = transform.position.y;
+			smer = InputKey.tocka - transform.position;
+			float step = speed * Time.deltaTime;
 		
-		Vector3 newDir = Vector3.RotateTowards(transform.forward,smer,step,0.0f);
-		transform.rotation = Quaternion.LookRotation(newDir);
-		if(Vector3.Distance(transform.position,InputKey.tocka) > 0.1f){
-			transform.position = Vector3.MoveTowards(transform.position, InputKey.tocka, step);
+			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step, 0.0f);
+			transform.rotation = Quaternion.LookRotation (newDir);
+			if (Vector3.Distance (transform.position, InputKey.tocka) > 0.1f) {
+				transform.position = Vector3.MoveTowards (transform.position, InputKey.tocka, step);
+			}else{
+				tockaPotovanja=false;
+			}
 		}
 
 	}
