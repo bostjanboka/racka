@@ -9,10 +9,10 @@ public class InputKey : MonoBehaviour {
 	static public bool s;
 	static public bool d;
 
-	Vector2 staraPozicija;
-	Vector2 zdajPozicija;
+	public static Vector3 tocka;
+
 	void Start () {
-	
+		tocka = GameObject.Find ("raca").transform.position;
 	}
 	
 	// Update is called once per frame
@@ -27,21 +27,29 @@ public class InputKey : MonoBehaviour {
 
 		foreach (Touch touch in Input.touches) {
 			if(touch.phase.Equals(TouchPhase.Began)){
-				staraPozicija = touch.position;
-			}else if(touch.phase.Equals(TouchPhase.Moved) || touch.phase.Equals(TouchPhase.Stationary)){
-				zdajPozicija = touch.position;
-				if(zdajPozicija.y - staraPozicija.y > 50){
-					w=true;
-				}else if(zdajPozicija.y - staraPozicija.y < -50){
-					s = true;
+				Ray ray = SlediRaciSkripta.kamera.ScreenPointToRay(Input.mousePosition);
+				RaycastHit[] hit;
+				hit = Physics.RaycastAll(ray);
+				for(int i=0; i < hit.Length; i++){
+					if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
+						tocka = hit[i].point;
+					}
 				}
 
-				if(zdajPozicija.x - staraPozicija.x > 50){
-					d=true;
-				}else if(zdajPozicija.x - staraPozicija.x < -50){
-					a = true;
+			}
+		}
+
+		if (Input.GetMouseButtonDown (0)) {
+			Ray ray = SlediRaciSkripta.kamera.ScreenPointToRay(Input.mousePosition);
+			RaycastHit[] hit;
+			hit = Physics.RaycastAll(ray);
+			for(int i=0; i < hit.Length; i++){
+				if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
+					tocka = hit[i].point;
 				}
 			}
+
+
 		}
 	}
 }
