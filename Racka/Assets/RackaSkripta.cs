@@ -10,32 +10,31 @@ public class RackaSkripta : MonoBehaviour {
 	float premik;
 	GameObject valovi;
 
-	bool tockaPotovanja=false;
-	Vector3 staraTocka;
+
 	void Start () {
 
 		rotacija = Vector3.zero;
 		valovi = transform.FindChild ("valovi").gameObject;
-		staraTocka=InputKey.tocka;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!staraTocka.Equals (InputKey.tocka)) {
-			tockaPotovanja=true;
-			staraTocka=InputKey.tocka;
-		}
-		if (tockaPotovanja) {
-			InputKey.tocka.y = transform.position.y;
-			smer = InputKey.tocka - transform.position;
+
+		if (InputKey.tocka) {
+			Vector3 zac = InputKey.tocka.transform.position;
+			zac.y = transform.position.y;
+			//InputKey.tocka.transform.position = zac;
+
+			smer = zac - transform.position;
 			float step = speed * Time.deltaTime;
 		
 			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step, 0.0f);
 			transform.rotation = Quaternion.LookRotation (newDir);
-			if (Vector3.Distance (transform.position, InputKey.tocka) > 0.1f) {
-				transform.position = Vector3.MoveTowards (transform.position, InputKey.tocka, step);
+			if (Vector3.Distance (transform.position, zac) > 0.1f) {
+				transform.position = Vector3.MoveTowards (transform.position, zac, step);
 			}else{
-				tockaPotovanja=false;
+				Destroy(InputKey.tocka);
 			}
 		}
 

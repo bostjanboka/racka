@@ -9,14 +9,16 @@ public class InputKey : MonoBehaviour {
 	static public bool s;
 	static public bool d;
 
-	public static Vector3 tocka;
+	public GameObject instTocka;
+	public static GameObject tocka;
 
 	void Start () {
-		tocka = GameObject.Find ("raca").transform.position;
+		tocka = null;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		w = Input.GetKey("w");
 
 		a = Input.GetKey("a");
@@ -32,7 +34,9 @@ public class InputKey : MonoBehaviour {
 				hit = Physics.RaycastAll(ray);
 				for(int i=0; i < hit.Length; i++){
 					if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
-						tocka = hit[i].point;
+						//tocka = hit[i].point;
+						Destroy(tocka);
+						tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(0,0,0)) as GameObject;
 					}
 				}
 
@@ -45,7 +49,8 @@ public class InputKey : MonoBehaviour {
 			hit = Physics.RaycastAll(ray);
 			for(int i=0; i < hit.Length; i++){
 				if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
-					tocka = hit[i].point;
+					Destroy(tocka);
+					tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(0,0,0)) as GameObject;
 				}
 			}
 
