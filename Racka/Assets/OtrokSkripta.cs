@@ -5,6 +5,7 @@ public class OtrokSkripta : MonoBehaviour {
 
 	// Use this for initialization
 	public GameObject zasleduj;
+	public GameObject povozenaRaca;
 	Vector3 smer;
 	public float speed;
 	void Start () {
@@ -25,6 +26,14 @@ public class OtrokSkripta : MonoBehaviour {
 			}else{
 				transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
 			}
+		}
+	}
+
+
+	void OnTriggerEnter(Collider other) {
+		if (other.tag.Equals ("kolo")) {
+			Instantiate(povozenaRaca,transform.position,transform.rotation);
+			Destroy(gameObject);
 		}
 	}
 }
