@@ -32,7 +32,8 @@ public class RackaSkripta : MonoBehaviour {
 			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step, 0.0f);
 			transform.rotation = Quaternion.LookRotation (newDir);
 			if (Vector3.Distance (transform.position, zac) > 0.1f) {
-				transform.position = Vector3.MoveTowards (transform.position, zac, step);
+				transform.position+= transform.forward * step;
+				//Debug.Log("cudno"+transform.position);
 			}else{
 				Destroy(InputKey.tocka);
 			}

@@ -22,7 +22,7 @@ public class OtrokSkripta : MonoBehaviour {
 			Vector3 newDir = Vector3.RotateTowards(transform.forward,smer,step,0.0f);
 			transform.rotation = Quaternion.LookRotation(newDir);
 			if(Vector3.Distance(transform.position,zasleduj.transform.position) > 3f){
-				transform.position = Vector3.MoveTowards(transform.position, zasleduj.transform.position, step);
+				transform.position += transform.forward * step;
 			}else{
 				transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
 			}
