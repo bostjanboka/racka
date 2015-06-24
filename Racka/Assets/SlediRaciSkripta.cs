@@ -17,6 +17,8 @@ public class SlediRaciSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = raca.transform.position - stalni;
+		if (raca) {
+			transform.position = raca.transform.position - stalni;
+		}
 	}
 }

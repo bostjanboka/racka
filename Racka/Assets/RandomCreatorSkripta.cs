@@ -41,7 +41,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (list[list.Count-2].transform.position.z < raca.transform.position.z) {
+		if (raca && list[list.Count-2].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,2)];
 			Mesh mesh = spawn.GetComponent<MeshFilter>().sharedMesh;
 			Bounds bounds = mesh.bounds;
