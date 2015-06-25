@@ -18,13 +18,13 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
-		vec = Vector3.zero;
+		vec = transform.position;
 		tabela = new GameObject[2];
 		tabela [0] = cesta;
 		tabela [1] = voda;
 
 
-		for (int i=0; i < 3; i++) {
+		for (int i=0; i < 10; i++) {
 			GameObject spawn = tabela[Random.Range(0,2)];
 			Mesh mesh = spawn.GetComponent<MeshFilter>().sharedMesh;
 			Bounds bounds = mesh.bounds;
