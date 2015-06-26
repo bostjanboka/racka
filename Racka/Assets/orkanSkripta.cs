@@ -38,6 +38,7 @@ public class orkanSkripta : MonoBehaviour {
 
 	GameObject sestavi(GameObject obj, GameObject stars){
 		GameObject game = Instantiate(vOrkanu,Vector3.zero,Quaternion.Euler(0,0,0)) as GameObject;
+
 		if (obj.GetComponent<MeshFilter> ()) {
 			game.GetComponent<MeshFilter> ().mesh = obj.GetComponent<MeshFilter> ().mesh;
 		}
@@ -47,6 +48,7 @@ public class orkanSkripta : MonoBehaviour {
 		if (stars != null) {
 			game.transform.parent = stars.transform;
 		}
+		game.transform.localScale = obj.transform.localScale;
 		for (int i=0; i < obj.transform.childCount; i++) {
 			GameObject otrok = sestavi(obj.transform.GetChild(i).gameObject,game);
 			otrok.GetComponent<vOrkanuSkripta>().enable=false;

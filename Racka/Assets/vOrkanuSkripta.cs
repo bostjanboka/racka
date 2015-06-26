@@ -9,10 +9,12 @@ public class vOrkanuSkripta : MonoBehaviour {
 	public float trajanje = 7;
 	public bool enable=true;
 
+	Vector3 smer = Vector3.up;
 	Transform orkan=null;
 	void Start () {
 		if (enable) {
-			transform.Rotate (kot, 0, 0);
+			//transform.Rotate (kot, 0, 0);
+			smer = Quaternion.Euler(kot,0,0)*smer;
 		}
 		orkan = transform.parent;
 		while (orkan.parent != null) {
@@ -26,11 +28,11 @@ public class vOrkanuSkripta : MonoBehaviour {
 		if (trajanje < 6 && !enable) {
 			sirota();
 		}
-		if (transform.position.y > 15) {
+		if (transform.position.y > 25) {
 			Destroy (gameObject);
 		}
 		if (enable) {
-			transform.position += transform.up * speed * Time.deltaTime;
+			transform.position += smer * speed * Time.deltaTime;
 		}
 	}
 
@@ -38,7 +40,7 @@ public class vOrkanuSkripta : MonoBehaviour {
 		Debug.Log ("sirota");
 		transform.parent = orkan;
 		enable = true;
-		speed = Random.Range (2.0f, 3.1f);
+		speed = Random.Range (1.0f, 3.1f);
 	}
 
 
