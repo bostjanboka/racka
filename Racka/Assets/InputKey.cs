@@ -33,10 +33,10 @@ public class InputKey : MonoBehaviour {
 				RaycastHit[] hit;
 				hit = Physics.RaycastAll(ray);
 				for(int i=0; i < hit.Length; i++){
-					if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
+					if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla") || hit[i].collider.gameObject.tag.Equals("voda")){
 						//tocka = hit[i].point;
 						Destroy(tocka);
-						tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(0,0,0)) as GameObject;
+						tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(90,0,0)) as GameObject;
 					}
 				}
 
@@ -48,9 +48,9 @@ public class InputKey : MonoBehaviour {
 			RaycastHit[] hit;
 			hit = Physics.RaycastAll(ray);
 			for(int i=0; i < hit.Length; i++){
-				if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla")){
+				if(hit[i].point != null && hit[i].collider.gameObject.tag.Equals("teren") || hit[i].collider.gameObject.tag.Equals("tla") || hit[i].collider.gameObject.tag.Equals("voda")){
 					Destroy(tocka);
-					tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(0,0,0)) as GameObject;
+					tocka = Instantiate(instTocka,hit[i].point, Quaternion.Euler(90,0,0)) as GameObject;
 				}
 			}
 
