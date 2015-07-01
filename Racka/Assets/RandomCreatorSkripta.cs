@@ -11,6 +11,10 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	public GameObject voda;
 	public GameObject crte;
 	public GameObject zeleznica;
+	public GameObject travaSiroka;
+	public GameObject trava;
+	public GameObject leviBreg;
+	public GameObject desniBreg;
 
 	GameObject prejsni;
 	GameObject[] tabela;
@@ -22,16 +26,22 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
 		vec = transform.position;
-		tabela = new GameObject[3];
+		tabela = new GameObject[5];
 		tabela [0] = cesta;
 		tabela [1] = voda;
 		tabela [2] = zeleznica;
+		tabela [3] = trava;
+		tabela [4] = travaSiroka;
 
 
 		for (int i=0; i < 10; i++) {
-			GameObject spawn = tabela[Random.Range(0,3)];
+			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
+			}else if(spawn == voda && prejsni != voda){
+				dodajElement(desniBreg);
+			}else if(spawn!= voda && prejsni == voda){
+				dodajElement(leviBreg);
 			}
 			dodajElement(spawn);
 			prejsni = spawn;
@@ -42,9 +52,13 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (raca && list[list.Count-5].transform.position.z < raca.transform.position.z) {
-			GameObject spawn = tabela[Random.Range(0,3)];
+			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
+			}else if(spawn == voda && prejsni != voda){
+				dodajElement(desniBreg);
+			}else if(spawn!= voda && prejsni == voda){
+				dodajElement(leviBreg);
 			}
 			dodajElement(spawn);
 			prejsni = spawn;
