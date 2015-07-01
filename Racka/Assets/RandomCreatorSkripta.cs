@@ -41,8 +41,8 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (raca && list[list.Count-2].transform.position.z < raca.transform.position.z) {
-			GameObject spawn = tabela[Random.Range(0,2)];
+		if (raca && list[list.Count-5].transform.position.z < raca.transform.position.z) {
+			GameObject spawn = tabela[Random.Range(0,3)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
 			}
