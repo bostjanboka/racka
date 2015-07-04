@@ -5,7 +5,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed=4;
-	public float zbrisiPoCasu = 40;
+	float zbrisiPoCasu = 60;
 
 	float casNastanka;
 	void Start () {
