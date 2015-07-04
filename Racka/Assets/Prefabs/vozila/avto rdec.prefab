@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 458152}
   - 33: {fileID: 3372834}
   - 23: {fileID: 2366304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: okna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 446790}
   - 33: {fileID: 3398528}
   - 23: {fileID: 2332554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 494610}
   - 33: {fileID: 3300274}
   - 23: {fileID: 2398418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: streha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 465692}
   - 33: {fileID: 3391208}
   - 23: {fileID: 2358494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 460852}
   - 33: {fileID: 3317164}
   - 23: {fileID: 2308250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zracnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405038}
   - 114: {fileID: 11494196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: avto rdec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - 4: {fileID: 426314}
   - 33: {fileID: 3358938}
   - 23: {fileID: 2307334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - 4: {fileID: 415940}
   - 33: {fileID: 3313508}
   - 23: {fileID: 2313204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - 4: {fileID: 476098}
   - 33: {fileID: 3381166}
   - 23: {fileID: 2321180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - 23: {fileID: 2370234}
   - 65: {fileID: 6578168}
   - 65: {fileID: 6530054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (3)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - 4: {fileID: 410880}
   - 33: {fileID: 3379708}
   - 23: {fileID: 2378620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: telo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - 4: {fileID: 409754}
   - 33: {fileID: 3315726}
   - 23: {fileID: 2329418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - 23: {fileID: 2351124}
   - 65: {fileID: 6516918}
   - 65: {fileID: 6598862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (2)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - 23: {fileID: 2349734}
   - 65: {fileID: 6543456}
   - 65: {fileID: 6571912}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (1)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - 4: {fileID: 455774}
   - 33: {fileID: 3343300}
   - 23: {fileID: 2315226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - 23: {fileID: 2381056}
   - 65: {fileID: 6592472}
   - 65: {fileID: 6597424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - 4: {fileID: 480916}
   - 33: {fileID: 3392834}
   - 23: {fileID: 2300428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1135,6 +1135,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: kolo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -30,8 +30,9 @@ public class PostaviElementeSkripta : MonoBehaviour {
 		for (int i=0; i < 100; i++) {
 			float x = Random.Range(0,velikostX)*jabkaSize.size.x * jablana.transform.localScale.x;
 			float z = Random.Range(0,velikostZ)*jabkaSize.size.z * jablana.transform.localScale.z;
-
-			Instantiate(tabela[Random.Range(0,tabela.Length)],new Vector3(x+zamikX,0,z+zamikZ), Quaternion.Euler(0,0,0));
+			GameObject otrok = Instantiate(tabela[Random.Range(0,tabela.Length)],new Vector3(x+zamikX,0,z+zamikZ), Quaternion.Euler(0,0,0)) as GameObject;
+			otrok.transform.SetParent(transform);
+			
 		}
 	
 	}

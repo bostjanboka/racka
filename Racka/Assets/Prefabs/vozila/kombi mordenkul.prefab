@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 418040}
   - 33: {fileID: 3384230}
   - 23: {fileID: 2399838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: okna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 492940}
   - 212: {fileID: 21299054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: logo bel-02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - 4: {fileID: 453300}
   - 33: {fileID: 3395234}
   - 23: {fileID: 2350162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: streha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - 4: {fileID: 454552}
   - 33: {fileID: 3399438}
   - 23: {fileID: 2372922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - 23: {fileID: 2357724}
   - 65: {fileID: 6555336}
   - 65: {fileID: 6503010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (2)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - 23: {fileID: 2339230}
   - 65: {fileID: 6528918}
   - 65: {fileID: 6541492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (3)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - 4: {fileID: 410084}
   - 33: {fileID: 3377176}
   - 23: {fileID: 2369340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: telo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - 4: {fileID: 413832}
   - 33: {fileID: 3345168}
   - 23: {fileID: 2379788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - 4: {fileID: 402334}
   - 33: {fileID: 3300718}
   - 23: {fileID: 2358366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - 4: {fileID: 411334}
   - 33: {fileID: 3330316}
   - 23: {fileID: 2358206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zracnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - 23: {fileID: 2303872}
   - 65: {fileID: 6556094}
   - 65: {fileID: 6555798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - 4: {fileID: 435248}
   - 33: {fileID: 3341978}
   - 23: {fileID: 2327240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - 4: {fileID: 405590}
   - 33: {fileID: 3304168}
   - 23: {fileID: 2391198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - 4: {fileID: 478276}
   - 33: {fileID: 3307826}
   - 23: {fileID: 2367758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zadek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - 4: {fileID: 466438}
   - 33: {fileID: 3314370}
   - 23: {fileID: 2319542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411438}
   - 114: {fileID: 11422890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kombi mordenkul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - 4: {fileID: 447148}
   - 33: {fileID: 3393456}
   - 23: {fileID: 2340810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - 23: {fileID: 2307588}
   - 65: {fileID: 6549358}
   - 65: {fileID: 6530658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (1)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - 4: {fileID: 436664}
   - 33: {fileID: 3379528}
   - 23: {fileID: 2398008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,6 +1271,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_ReflectionProbeUsage
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

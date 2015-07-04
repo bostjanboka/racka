@@ -9,7 +9,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 	float casNastanka;
 	void Start () {
-		speed = Random.Range (5,15);
+
 	}
 	
 	// Update is called once per frame
@@ -18,7 +18,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 		zbrisiPoCasu -= Time.deltaTime;
 		if (zbrisiPoCasu <= 0) {
-			Destroy(gameObject);
+			//Destroy(gameObject);
 		}
 	}
 }

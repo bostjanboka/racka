@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3325454}
   - 65: {fileID: 6579970}
   - 23: {fileID: 2377402}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3317100}
   - 65: {fileID: 6555852}
   - 23: {fileID: 2371900}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: New Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 33: {fileID: 3382080}
   - 65: {fileID: 6556520}
   - 23: {fileID: 2392832}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - 33: {fileID: 3358674}
   - 65: {fileID: 6554148}
   - 23: {fileID: 2319628}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - 33: {fileID: 3355386}
   - 65: {fileID: 6510212}
   - 23: {fileID: 2315544}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 3325768}
   - 65: {fileID: 6597000}
   - 23: {fileID: 2391836}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - 33: {fileID: 3382602}
   - 65: {fileID: 6583108}
   - 23: {fileID: 2334296}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - 33: {fileID: 3368290}
   - 65: {fileID: 6567460}
   - 23: {fileID: 2378302}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 33: {fileID: 3360150}
   - 65: {fileID: 6516648}
   - 23: {fileID: 2323682}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - 33: {fileID: 3340740}
   - 65: {fileID: 6529126}
   - 23: {fileID: 2328862}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - 33: {fileID: 3367724}
   - 65: {fileID: 6510830}
   - 23: {fileID: 2377878}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: borovnice (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -819,7 +819,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117692}

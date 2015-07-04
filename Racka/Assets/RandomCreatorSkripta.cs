@@ -21,7 +21,11 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	Vector3 vec;
 	List<GameObject> list;
 	int brisi=0;
+
+	RandomVoziloSkripta randomVozilo;
 	void Start () {
+
+		randomVozilo = transform.FindChild ("randomVozilo").GetComponent<RandomVoziloSkripta>();
 
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
@@ -72,6 +76,12 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		vec.z+= bounds.size.z*spawn.transform.localScale.z;
 		Vector3 pozicija = spawn.transform.position;
 		pozicija.z = vec.z - bounds.size.z/2f*spawn.transform.localScale.z;
-		list.Add(Instantiate(spawn,pozicija,Quaternion.Euler(0,0,0)) as GameObject);
+		GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
+		zac.transform.SetParent (transform);
+		list.Add(zac);
+	}
+
+	public GameObject vrniRandomVozilo(){
+		return randomVozilo.vrniVozilo ();
 	}
 }
