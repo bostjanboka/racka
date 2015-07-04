@@ -29,9 +29,9 @@ public class RackaSkripta : MonoBehaviour {
 			smer = zac - transform.position;
 			float step = speed * Time.deltaTime;
 		
-			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step, 0.0f);
+			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step*3, 0.0f);
 			transform.rotation = Quaternion.LookRotation (newDir);
-			if (Vector3.Distance (transform.position, zac) > 0.1f) {
+			if (Vector3.Distance (transform.position, zac) > 0.6f) {
 				transform.position+= transform.forward * step;
 				//Debug.Log("cudno"+transform.position);
 			}else{

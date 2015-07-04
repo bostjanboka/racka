@@ -7,6 +7,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	// Use this for initialization
 	GameObject raca;
 
+	public GameObject kmetija;
 	public GameObject cesta;
 	public GameObject voda;
 	public GameObject crte;
@@ -37,7 +38,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		tabela [3] = trava;
 		tabela [4] = travaSiroka;
 
-
+		list.Add (Instantiate (kmetija));
 		for (int i=0; i < 3; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){

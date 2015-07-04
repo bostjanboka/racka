@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &150234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 490668}
+  - 114: {fileID: 11458658}
+  m_Layer: 0
+  m_Name: randomVozilo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &156246
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,6 +32,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &490668
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.2705841, y: -10.1861954, z: 8.42514801}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496942}
+  m_RootOrder: 0
 --- !u!4 &496942
 Transform:
   m_ObjectHideFlags: 1
@@ -23,9 +51,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.4734726, y: -69.1976547, z: 57.9600372}
+  m_LocalPosition: {x: 0, y: 0, z: 38.0410004}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 490668}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &11435764
@@ -39,10 +68,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80442960c7cf8f4e9bf5a8f178646d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cesta: {fileID: 150396, guid: 43a947e07d2122a4a93d668f5bcc61a2, type: 2}
+  kmetija: {fileID: 118312, guid: e0306abf42da6504780176100e60556c, type: 2}
+  cesta: {fileID: 196202, guid: a214d6910d8d9c844a71e8718949dbb1, type: 2}
   voda: {fileID: 150688, guid: 94a7b9340d096e345bf0f29ab9eae124, type: 2}
-  crte: {fileID: 0}
-  zeleznica: {fileID: 0}
+  crte: {fileID: 145544, guid: 0d4d2ca6cbd57c84789e7493eacf2b1b, type: 2}
+  zeleznica: {fileID: 160704, guid: 061136e91b9d07748a490624001345d5, type: 2}
+  travaSiroka: {fileID: 184810, guid: 972acebce3cff0d4fb7f6d295feb039b, type: 2}
+  trava: {fileID: 159434, guid: a501bd3fdd1f85a45bf11e120d54582a, type: 2}
+  leviBreg: {fileID: 147236, guid: 7195a327b9e5be840b278c7fd944eac4, type: 2}
+  desniBreg: {fileID: 110322, guid: 377d961c27a45534c93489765c991bc1, type: 2}
+--- !u!114 &11458658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226dd24cc9b180c4b8ae18dda31053ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avto1: {fileID: 100662, guid: 453963574e2efee4f83c1b5995167067, type: 2}
+  avto2: {fileID: 125842, guid: fe12c70f4e6945442b55663d06ef02b5, type: 2}
+  avto3: {fileID: 105890, guid: d5c44927a0aac2246822753e6049193a, type: 2}
+  avto4: {fileID: 110770, guid: 39417c88da566ac45912652c455e7ec8, type: 2}
+  avto5: {fileID: 187724, guid: 1e584c58e836a77478ecb394cbf1c5b0, type: 2}
+  avto6: {fileID: 154580, guid: 03acea432ef4d02439f2a901a45bdfcc, type: 2}
+  avto7: {fileID: 186450, guid: 2b1f33464c1199e4c908f80f0096cb96, type: 2}
+  avto8: {fileID: 132562, guid: 2c3ed8250d8e33d45aa21b94e00dab12, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
