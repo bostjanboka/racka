@@ -39,7 +39,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		tabela [4] = travaSiroka;
 
 		list.Add (Instantiate (kmetija));
-		for (int i=0; i < 3; i++) {
+		for (int i=0; i < 4; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
@@ -56,7 +56,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (raca && list[list.Count-3].transform.position.z < raca.transform.position.z) {
+		if (raca && list[list.Count-4].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);

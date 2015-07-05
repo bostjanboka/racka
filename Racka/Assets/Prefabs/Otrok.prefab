@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.1499996, y: .910000026, z: 19.2861118}
+  m_LocalPosition: {x: -15.1499996, y: .289999992, z: 19.2861118}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 417446}
@@ -472,7 +472,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7588edd9c3a998248866298b5e9ef7be, type: 2}
   m_CullingMode: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zasleduj: {fileID: 0}
   povozenaRaca: {fileID: 125830, guid: b436b9b7ec0eda042a2e63a5d1abd73d, type: 2}
-  speed: 3
+  speed: 5
 --- !u!198 &19862404
 ParticleSystem:
   m_ObjectHideFlags: 1
