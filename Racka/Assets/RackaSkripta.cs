@@ -40,6 +40,10 @@ public class RackaSkripta : MonoBehaviour {
 			}
 		}
 
+		if (!zasledujeMe) {
+			Application.LoadLevel(Application.loadedLevel);
+		}
+
 	}
 
 	void OnTriggerStay(Collider other) {

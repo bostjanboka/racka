@@ -739,6 +739,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11424336, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: zasledujeMe
+      value: 
+      objectReference: {fileID: 909277287}
+    - target: {fileID: 2367108, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367108, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_UseLightProbes
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
   m_IsPrefabParent: 0
