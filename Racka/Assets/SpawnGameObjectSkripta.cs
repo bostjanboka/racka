@@ -38,7 +38,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	public void postaviVozila(){
 		float vsota = 0;
-		for (int i=0; i < 7; i++) {
+		for (int i=0; i < 4; i++) {
 			vsota = i * zamik;
 			GameObject zac = Instantiate(mapCreator.vrniRandomVozilo(),transform.position + transform.forward*vsota,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);

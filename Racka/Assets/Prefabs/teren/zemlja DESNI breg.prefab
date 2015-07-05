@@ -84,7 +84,7 @@ Transform:
   m_GameObject: {fileID: 110322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 72}
-  m_LocalScale: {x: 400, y: .400000006, z: 4}
+  m_LocalScale: {x: 200, y: .400000006, z: 4}
   m_Children:
   - {fileID: 420724}
   - {fileID: 406576}
@@ -209,6 +209,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_UseLightProbes
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

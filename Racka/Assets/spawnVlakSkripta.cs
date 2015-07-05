@@ -31,7 +31,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 	
 	public void postaviVozila(){
 		float vsota = 0;
-		for (int i=0; i < 3; i++) {
+		for (int i=0; i < 1; i++) {
 			vsota = i * zamik;
 			GameObject zac = Instantiate(objekt,transform.position + transform.forward*vsota,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);

@@ -126,6 +126,38 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto1
+      value: 
+      objectReference: {fileID: 109622, guid: ca40a367e7b72d640b319e8a43e09ff6, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto2
+      value: 
+      objectReference: {fileID: 146310, guid: 73385dcee188a45438e6dbaa3fae9f16, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto3
+      value: 
+      objectReference: {fileID: 103012, guid: 4bd7fe8974dbcc94da11723fa91bc713, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto4
+      value: 
+      objectReference: {fileID: 177366, guid: eca9acffab8a56844949653845565f34, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto5
+      value: 
+      objectReference: {fileID: 148278, guid: 99e7fd805f908a942aa18a7e57baaabc, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto6
+      value: 
+      objectReference: {fileID: 132022, guid: 649298feb0befb34985b3e8b808520e8, type: 2}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto8
+      value: 
+      objectReference: {fileID: 161332, guid: 74de92990f640d442adb8b027db44be1, type: 2}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: zeleznica
+      value: 
+      objectReference: {fileID: 118648, guid: 061136e91b9d07748a490624001345d5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
   m_IsPrefabParent: 0
@@ -176,6 +208,10 @@ Prefab:
       propertyPath: m_Name
       value: Otrok (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11480880, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
+      propertyPath: zasledujeMe
+      value: 
+      objectReference: {fileID: 1740435355}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
   m_IsPrefabParent: 0
@@ -354,6 +390,10 @@ Prefab:
       propertyPath: zasleduj
       value: 
       objectReference: {fileID: 874004495}
+    - target: {fileID: 11480880, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
+      propertyPath: zasledujeMe
+      value: 
+      objectReference: {fileID: 947126870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
   m_IsPrefabParent: 0
@@ -649,6 +689,10 @@ Prefab:
       propertyPath: m_Name
       value: Otrok (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11480880, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
+      propertyPath: zasledujeMe
+      value: 
+      objectReference: {fileID: 2099262009}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
   m_IsPrefabParent: 0
@@ -932,6 +976,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1740435355 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165942, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
+  m_PrefabInternal: {fileID: 1477067544}
 --- !u!1001 &1840153541
 Prefab:
   m_ObjectHideFlags: 0

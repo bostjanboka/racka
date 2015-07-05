@@ -5,6 +5,7 @@ public class RackaSkripta : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed;
+	public GameObject zasledujeMe;
 	Vector3 smer;
 	Vector3 rotacija;
 	float premik;

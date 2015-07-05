@@ -5,7 +5,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed=4;
-	float zbrisiPoCasu = 60;
+	float zbrisiPoCasu = 45;
 
 	float casNastanka;
 	void Start () {
@@ -18,7 +18,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 		zbrisiPoCasu -= Time.deltaTime;
 		if (zbrisiPoCasu <= 0) {
-			//Destroy(gameObject);
+			Destroy(gameObject);
 		}
 	}
 }

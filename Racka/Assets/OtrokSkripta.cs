@@ -5,6 +5,7 @@ public class OtrokSkripta : MonoBehaviour {
 
 	// Use this for initialization
 	public GameObject zasleduj;
+	public GameObject zasledujeMe;
 	public GameObject povozenaRaca;
 	Vector3 smer;
 	public float speed;
@@ -24,7 +25,7 @@ public class OtrokSkripta : MonoBehaviour {
 			if(Vector3.Distance(transform.position,zasleduj.transform.position) > 3f){
 				transform.position += transform.forward * step;
 			}else{
-				transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
+				//transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
 			}
 		}
 	}
@@ -33,6 +34,9 @@ public class OtrokSkripta : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("kolo")) {
 			Instantiate(povozenaRaca,transform.position,transform.rotation);
+			if(zasledujeMe){
+				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
+			}
 			Destroy(gameObject);
 		}
 	}
