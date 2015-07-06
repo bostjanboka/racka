@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400572}
   - 33: {fileID: 3323054}
   - 23: {fileID: 2394186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: telo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 447638}
   - 33: {fileID: 3319852}
   - 23: {fileID: 2305750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 433312}
   - 33: {fileID: 3352722}
   - 23: {fileID: 2363854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: streha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 456468}
   - 33: {fileID: 3359696}
   - 23: {fileID: 2364282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 470172}
   - 33: {fileID: 3396412}
   - 23: {fileID: 2302048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: maska
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 456884}
   - 33: {fileID: 3301156}
   - 23: {fileID: 2327054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - 23: {fileID: 2338686}
   - 65: {fileID: 6572806}
   - 65: {fileID: 6540680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   - 23: {fileID: 2351534}
   - 65: {fileID: 6515790}
   - 65: {fileID: 6550628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (2)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - 23: {fileID: 2371498}
   - 65: {fileID: 6562536}
   - 65: {fileID: 6517886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (1)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - 4: {fileID: 490694}
   - 33: {fileID: 3343562}
   - 23: {fileID: 2339550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: steklo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - 4: {fileID: 445140}
   - 33: {fileID: 3376970}
   - 23: {fileID: 2312036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - 33: {fileID: 3388272}
   - 65: {fileID: 6569884}
   - 23: {fileID: 2325002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: izpuh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - 4: {fileID: 476184}
   - 33: {fileID: 3309022}
   - 23: {fileID: 2367646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 466658}
   - 114: {fileID: 11472244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traktor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - 4: {fileID: 410254}
   - 33: {fileID: 3317618}
   - 23: {fileID: 2352948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - 4: {fileID: 405256}
   - 33: {fileID: 3326572}
   - 23: {fileID: 2362570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: luc (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   - 23: {fileID: 2338188}
   - 65: {fileID: 6549832}
   - 65: {fileID: 6544368}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kolo (3)
   m_TagString: kolo
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - 4: {fileID: 454516}
   - 33: {fileID: 3370448}
   - 23: {fileID: 2306362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kabina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - 4: {fileID: 408354}
   - 33: {fileID: 3377458}
   - 23: {fileID: 2338874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,7 +1262,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 186450}

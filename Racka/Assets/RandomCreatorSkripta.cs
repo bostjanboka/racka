@@ -7,6 +7,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	// Use this for initialization
 	GameObject raca;
 
+	public GameObject kmetija;
 	public GameObject cesta;
 	public GameObject voda;
 	public GameObject crte;
@@ -21,7 +22,11 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	Vector3 vec;
 	List<GameObject> list;
 	int brisi=0;
+
+	RandomVoziloSkripta randomVozilo;
 	void Start () {
+
+		randomVozilo = transform.FindChild ("randomVozilo").GetComponent<RandomVoziloSkripta>();
 
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
@@ -33,8 +38,8 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		tabela [3] = trava;
 		tabela [4] = travaSiroka;
 
-
-		for (int i=0; i < 10; i++) {
+		list.Add (Instantiate (kmetija));
+		for (int i=0; i < 7; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
@@ -51,7 +56,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (raca && list[list.Count-5].transform.position.z < raca.transform.position.z) {
+		if (raca && list[list.Count-6].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
@@ -72,6 +77,12 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		vec.z+= bounds.size.z*spawn.transform.localScale.z;
 		Vector3 pozicija = spawn.transform.position;
 		pozicija.z = vec.z - bounds.size.z/2f*spawn.transform.localScale.z;
-		list.Add(Instantiate(spawn,pozicija,Quaternion.Euler(0,0,0)) as GameObject);
+		GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
+		zac.transform.SetParent (transform);
+		list.Add(zac);
+	}
+
+	public GameObject vrniRandomVozilo(){
+		return randomVozilo.vrniVozilo ();
 	}
 }
