@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3333134}
   - 65: {fileID: 6597848}
   - 23: {fileID: 2398492}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: rep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3383988}
   - 65: {fileID: 6517502}
   - 23: {fileID: 2362208}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: peruti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - 54: {fileID: 5434514}
   - 114: {fileID: 11480880}
   - 95: {fileID: 9534988}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Otrok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - 4: {fileID: 442088}
   - 33: {fileID: 3356268}
   - 23: {fileID: 2374368}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: desno oko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 442740}
   - 33: {fileID: 3364938}
   - 23: {fileID: 2359224}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: levo oko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - 33: {fileID: 3350968}
   - 65: {fileID: 6522184}
   - 23: {fileID: 2315176}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: kljun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - 4: {fileID: 481812}
   - 198: {fileID: 19862404}
   - 199: {fileID: 19941636}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: valovi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.1499996, y: .289999992, z: 19.2861118}
+  m_LocalPosition: {x: -15.1499996, y: .910000026, z: 19.2861118}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 417446}
@@ -472,7 +472,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7588edd9c3a998248866298b5e9ef7be, type: 2}
   m_CullingMode: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zasleduj: {fileID: 0}
   povozenaRaca: {fileID: 125830, guid: b436b9b7ec0eda042a2e63a5d1abd73d, type: 2}
-  speed: 5
+  speed: 3
 --- !u!198 &19862404
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1594,10 +1594,6 @@ Prefab:
       propertyPath: povozenaRaca
       value: 
       objectReference: {fileID: 125830, guid: b436b9b7ec0eda042a2e63a5d1abd73d, type: 2}
-    - target: {fileID: 0}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165942}

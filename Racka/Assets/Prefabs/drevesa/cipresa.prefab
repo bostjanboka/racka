@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452208}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: cipresa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 33: {fileID: 3369220}
   - 65: {fileID: 6548782}
   - 23: {fileID: 2328684}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 33: {fileID: 3345096}
   - 65: {fileID: 6571090}
   - 23: {fileID: 2393322}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: krosnja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,11 +181,7 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132546}

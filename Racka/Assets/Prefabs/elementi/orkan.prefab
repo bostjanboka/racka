@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 497108}
   - 198: {fileID: 19800916}
   - 199: {fileID: 19981808}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 443690}
   - 198: {fileID: 19813848}
   - 199: {fileID: 19995978}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 414554}
   - 114: {fileID: 11418402}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: orkan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2166,11 +2166,7 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190598}
