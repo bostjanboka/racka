@@ -7,14 +7,14 @@ public class spawnColnSkripta : MonoBehaviour {
 	public GameObject objekt;
 	
 	public float zamik=70;
-	
+	public float speed=5;
 	
 	float cas;
 	
 	void Start () {
 		transform.position += transform.forward * Random.Range (0, zamik);
 		postaviVozila ();
-		cas = 70f / 4f;
+		cas = zamik / speed;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,9 @@ public class spawnColnSkripta : MonoBehaviour {
 		if (cas <= 0) {
 			GameObject zac = Instantiate(objekt,transform.position,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);
-			cas = 70f / 4f;
+			cas = zamik / speed;
+			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
 		}
 		
 		
@@ -31,11 +33,12 @@ public class spawnColnSkripta : MonoBehaviour {
 	
 	public void postaviVozila(){
 		float vsota = 0;
-		for (int i=0; i < 6; i++) {
+		for (int i=0; i < 3; i++) {
 			vsota = i * zamik;
 			GameObject zac = Instantiate(objekt,transform.position + transform.forward*vsota,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);
-			
+			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
 		}
 	}
 }

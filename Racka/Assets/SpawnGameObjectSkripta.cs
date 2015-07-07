@@ -4,9 +4,10 @@ using System.Collections;
 public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	// Use this for initialization
-	public GameObject objekt;
+
 
 	public float zamik=45;
+	public float speed=5;
 
 
 	float cas;
@@ -20,7 +21,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
 
 		postaviVozila ();
-		cas = 45f / 4f;
+		cas = zamik / speed;
 
 	}
 	
@@ -30,7 +31,9 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		if (cas <= 0) {
 			GameObject zac = Instantiate(mapCreator.vrniRandomVozilo(),transform.position,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);
-			cas = 45f / 4f;
+			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
+			cas = zamik / speed;
 		}
 
 
@@ -42,6 +45,8 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 			vsota = i * zamik;
 			GameObject zac = Instantiate(mapCreator.vrniRandomVozilo(),transform.position + transform.forward*vsota,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);
+			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
 
 		}
 	}
