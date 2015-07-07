@@ -41,7 +41,7 @@ public class RackaSkripta : MonoBehaviour {
 		}
 
 		if (!zasledujeMe) {
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
 		}
 
 	}

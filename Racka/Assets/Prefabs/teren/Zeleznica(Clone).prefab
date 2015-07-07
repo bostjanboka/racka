@@ -27810,7 +27810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
-  zamik: 150
+  zamik: 350
   speed: 60
 --- !u!1001 &100100000
 Prefab:
@@ -27826,6 +27826,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: zamik
+      value: 350
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

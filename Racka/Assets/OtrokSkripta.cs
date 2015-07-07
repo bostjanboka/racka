@@ -20,9 +20,9 @@ public class OtrokSkripta : MonoBehaviour {
 			smer = zasleduj.transform.position - transform.position;
 			float step = speed*Time.deltaTime;
 
-			Vector3 newDir = Vector3.RotateTowards(transform.forward,smer,step,0.0f);
+			Vector3 newDir = Vector3.RotateTowards(transform.forward,smer,60,0.0f);
 			transform.rotation = Quaternion.LookRotation(newDir);
-			if(Vector3.Distance(transform.position,zasleduj.transform.position) > 3f){
+			if(Vector3.Distance(transform.position,zasleduj.transform.position) > 0.1f){
 				transform.position += transform.forward * step;
 			}else{
 				//transform.RotateAround (zasleduj.transform.position, Vector3.up, 60 * Time.deltaTime);
@@ -34,14 +34,14 @@ public class OtrokSkripta : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("kolo")) {
 			Instantiate(povozenaRaca,transform.position,transform.rotation);
-			if(zasledujeMe){
+			/*if(zasledujeMe){
 				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
 				if(zasleduj.tag.Equals("raca")){
 					zasleduj.GetComponent<RackaSkripta>().zasledujeMe = zasledujeMe;
 				}else{
 					zasleduj.GetComponent<OtrokSkripta>().zasledujeMe = zasledujeMe;
 				}
-			}
+			}*/
 			Destroy(gameObject);
 		}
 	}
