@@ -6,7 +6,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 	// Use this for initialization
 	public GameObject objekt;
 
-	public float zamik=150;
+	public float zamik=250;
 	public float speed=5;
 	
 	float cas;
@@ -25,7 +25,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 			zac.transform.SetParent(transform.parent);
 			cas = zamik / speed;
 			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
-			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 280f/speed;
 		}
 		
 		
@@ -38,7 +38,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 			GameObject zac = Instantiate(objekt,transform.position + transform.forward*vsota,transform.rotation) as GameObject;
 			zac.transform.SetParent(transform.parent);
 			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
-			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 180f/speed;
+			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 280f/speed;
 		}
 	}
 }

@@ -36,6 +36,11 @@ public class OtrokSkripta : MonoBehaviour {
 			Instantiate(povozenaRaca,transform.position,transform.rotation);
 			if(zasledujeMe){
 				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
+				if(zasleduj.tag.Equals("raca")){
+					zasleduj.GetComponent<RackaSkripta>().zasledujeMe = zasledujeMe;
+				}else{
+					zasleduj.GetComponent<OtrokSkripta>().zasledujeMe = zasledujeMe;
+				}
 			}
 			Destroy(gameObject);
 		}
