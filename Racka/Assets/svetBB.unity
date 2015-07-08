@@ -158,6 +158,10 @@ Prefab:
       propertyPath: zeleznica
       value: 
       objectReference: {fileID: 118648, guid: 061136e91b9d07748a490624001345d5, type: 2}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: crte
+      value: 
+      objectReference: {fileID: 188768, guid: b6f123400cb815b43a1bb72c79f13fb1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
   m_IsPrefabParent: 0
