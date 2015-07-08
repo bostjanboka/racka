@@ -157,11 +157,31 @@ Prefab:
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: zeleznica
       value: 
-      objectReference: {fileID: 118648, guid: 061136e91b9d07748a490624001345d5, type: 2}
+      objectReference: {fileID: 169828, guid: 061136e91b9d07748a490624001345d5, type: 2}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: crte
       value: 
-      objectReference: {fileID: 188768, guid: b6f123400cb815b43a1bb72c79f13fb1, type: 2}
+      objectReference: {fileID: 194146, guid: 0d4d2ca6cbd57c84789e7493eacf2b1b, type: 2}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: verCesta
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: verVoda
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: verZeleznica
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: vertrava
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
+      propertyPath: avto7
+      value: 
+      objectReference: {fileID: 140872, guid: aa52ea4dfb27cf4479fb296b25875d33, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
   m_IsPrefabParent: 0
@@ -1357,7 +1377,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11446156, guid: 2adee76b434930d4689a4ed238386c7a, type: 2}
       propertyPath: gorDol
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2adee76b434930d4689a4ed238386c7a, type: 2}

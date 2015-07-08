@@ -814,9 +814,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 488756}
   - 114: {fileID: 11438438}
+  - 65: {fileID: 6534482}
   m_Layer: 8
   m_Name: "\u0161portni avto oranzen (1)"
-  m_TagString: Untagged
+  m_TagString: vozilo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2967,6 +2968,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0, y: 1, z: 1}
   m_Center: {x: -.5, y: 5.96046448e-08, z: -9.53674316e-07}
+--- !u!65 &6534482
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .889999986, y: 3.33999991, z: -1.49000001}
+  m_Center: {x: 0, y: 3.55999994, z: .340000004}
 --- !u!65 &6546846
 BoxCollider:
   m_ObjectHideFlags: 1

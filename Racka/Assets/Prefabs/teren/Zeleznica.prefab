@@ -53,7 +53,7 @@ Transform:
   m_GameObject: {fileID: 156210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -76, y: .5, z: 35.4000015}
-  m_LocalScale: {x: 1, y: 1, z: 9}
+  m_LocalScale: {x: 1, y: 1, z: 13}
   m_Children:
   - {fileID: 472008}
   m_Father: {fileID: 0}
@@ -73,11 +73,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 166626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 230a6f3e6758abd46a7fcc716fdafcc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0649a9133a774d04e9362f903b479bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
-  zamik: 45
+  zamik: 250
+  speed: 60
 --- !u!114 &11496800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,7 +109,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.z
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: casRespawna
@@ -125,6 +126,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: -.707106948
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: objekt
+      value: 
+      objectReference: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: zamik
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

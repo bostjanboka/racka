@@ -8,11 +8,17 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	GameObject raca;
 
 	public GameObject kmetija;
-	public GameObject cesta;
-	public GameObject voda;
+
 	public GameObject crte;
+	public int verCesta=0;
+	public GameObject cesta;
+	public int verVoda=0;
+	public GameObject voda;
+	public int verZeleznica=0;
 	public GameObject zeleznica;
+	public int vertrava=0;
 	public GameObject travaSiroka;
+
 	public GameObject trava;
 	public GameObject leviBreg;
 	public GameObject desniBreg;
@@ -25,20 +31,39 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 	RandomVoziloSkripta randomVozilo;
 	void Start () {
-
+		int skupaj = verCesta + verVoda + vertrava + verZeleznica;
+		int sestevek = 0;
 		randomVozilo = transform.FindChild ("randomVozilo").GetComponent<RandomVoziloSkripta>();
 
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
 		vec = transform.position;
-		tabela = new GameObject[5];
-		tabela [0] = cesta;
-		tabela [1] = voda;
-		tabela [2] = zeleznica;
-		tabela [3] = trava;
-		tabela [4] = travaSiroka;
+		tabela = new GameObject[skupaj];
+		for (int i=0; i < verCesta; i++) {
+			tabela[i] = cesta;
+
+		}
+		sestevek += verCesta;
+		for (int i=sestevek; i < sestevek+verVoda; i++) {
+			tabela[i] = voda;
+			
+		}
+		sestevek += verVoda;
+		for (int i=sestevek; i < sestevek+verZeleznica; i++) {
+			tabela[i] = zeleznica;
+			
+		}
+		sestevek += verZeleznica;
+		for (int i=sestevek; i < sestevek+vertrava; i++) {
+			tabela[i] = travaSiroka;
+			
+		}
+		sestevek += vertrava;
+
 
 		list.Add (Instantiate (kmetija));
+		dodajElement(cesta);
+		prejsni = cesta;
 		for (int i=0; i < 7; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
@@ -47,6 +72,11 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				dodajElement(desniBreg);
 			}else if(spawn!= voda && prejsni == voda){
 				dodajElement(leviBreg);
+			}else if(prejsni == spawn && spawn == zeleznica){
+				dodajElement(trava);
+			
+			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
+				dodajElement(trava);
 			}
 			dodajElement(spawn);
 			prejsni = spawn;

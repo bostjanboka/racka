@@ -229,9 +229,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400400}
   - 114: {fileID: 11411380}
+  - 65: {fileID: 6518540}
   m_Layer: 8
   m_Name: kombi siv
-  m_TagString: Untagged
+  m_TagString: vozilo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1964,6 +1965,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0}
   m_Center: {x: 1.12656653e-06, y: 7.49640492e-08, z: .5}
+--- !u!65 &6518540
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .889999986, y: 3.33999991, z: -1.49000001}
+  m_Center: {x: 0, y: 3.55999994, z: .340000004}
 --- !u!65 &6529772
 BoxCollider:
   m_ObjectHideFlags: 1

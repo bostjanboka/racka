@@ -13,6 +13,7 @@ TagManager:
   - coln
   - otrok
   - drevo
+  - vozilo
   layers:
   - Default
   - TransparentFX
