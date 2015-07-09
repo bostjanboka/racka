@@ -8,11 +8,12 @@ public class spawnVlakSkripta : MonoBehaviour {
 
 	public float zamik=250;
 	public float speed=5;
-	
+	Collider terminator;
 	float cas;
 
 	void Start () {
-		transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
+		//transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
+		terminator = transform.FindChild ("terminator").GetComponent<Collider> ();
 		postaviVozila ();
 		cas = zamik / speed;
 	}
@@ -22,6 +23,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		cas -= Time.deltaTime;
 		if (cas <= 0) {
 			GameObject zac = Instantiate(objekt,transform.position,transform.rotation) as GameObject;
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.transform.SetParent(transform.parent);
 			cas = zamik / speed;
 			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
@@ -36,6 +38,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		for (int i=0; i < 1; i++) {
 			vsota = i * zamik;
 			GameObject zac = Instantiate(objekt,transform.position + transform.forward*vsota,transform.rotation) as GameObject;
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.transform.SetParent(transform.parent);
 			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
 			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 280f/speed;

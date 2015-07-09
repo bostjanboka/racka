@@ -128,9 +128,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 478830}
   - 114: {fileID: 11409876}
+  - 65: {fileID: 6577898}
   m_Layer: 8
   m_Name: ladja
-  m_TagString: Untagged
+  m_TagString: vozilo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2557,6 +2558,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191110}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6577898
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.53999996, y: 1, z: 3.79999995}
+  m_Center: {x: 0, y: .540000021, z: -.0399999991}
 --- !u!114 &11409876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2576,7 +2589,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: vozilo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117248}
