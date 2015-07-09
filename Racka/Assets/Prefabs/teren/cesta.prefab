@@ -95,6 +95,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472318}
   - 33: {fileID: 3302196}
+  - 114: {fileID: 11465340}
   m_Layer: 0
   m_Name: cesta
   m_TagString: Untagged
@@ -285,6 +286,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zamik: 45
   speed: 10
+--- !u!114 &11465340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68408eee192ee14caf717d7dec4eff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479472
 MonoBehaviour:
   m_ObjectHideFlags: 1

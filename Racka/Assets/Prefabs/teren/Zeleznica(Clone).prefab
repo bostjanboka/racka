@@ -1612,6 +1612,7 @@ GameObject:
   - 4: {fileID: 417794}
   - 114: {fileID: 11450586}
   - 33: {fileID: 3368806}
+  - 114: {fileID: 11460070}
   m_Layer: 0
   m_Name: Zeleznica(Clone)
   m_TagString: Untagged
@@ -27969,6 +27970,17 @@ MonoBehaviour:
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
   zamik: 250
   speed: 60
+--- !u!114 &11460070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68408eee192ee14caf717d7dec4eff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13526440
 SphereCollider:
   m_ObjectHideFlags: 1
