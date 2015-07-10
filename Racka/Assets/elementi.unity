@@ -8288,30 +8288,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 19849742, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 196942, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19849742, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: EmissionModule.rate.scalar
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 19849742, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: InitialModule.startSize.minCurve.m_Curve.Array.data[0].value
-      value: .333333343
-      objectReference: {fileID: 0}
-    - target: {fileID: 19849742, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: InitialModule.startSize.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19951966, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ea6bb466113a05347a45b0efaf86992c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1f93462b879e8846a94b4cf22f4d1ed, type: 2}
   m_IsPrefabParent: 0
