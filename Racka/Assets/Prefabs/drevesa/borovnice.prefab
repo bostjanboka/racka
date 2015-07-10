@@ -30,7 +30,7 @@ GameObject:
   - 65: {fileID: 6555852}
   - 23: {fileID: 2371900}
   m_Layer: 12
-  m_Name: New Prefab
+  m_Name: borovnice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
