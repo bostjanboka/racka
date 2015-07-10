@@ -157,7 +157,7 @@ Prefab:
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: zeleznica
       value: 
-      objectReference: {fileID: 116672, guid: 061136e91b9d07748a490624001345d5, type: 2}
+      objectReference: {fileID: 163742, guid: 2521e3df5646b1a46a9bec6692d414b9, type: 2}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: crte
       value: 

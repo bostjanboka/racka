@@ -64,7 +64,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		list.Add (Instantiate (kmetija));
 		dodajElement(cesta);
 		prejsni = cesta;
-		for (int i=0; i < 7; i++) {
+		for (int i=0; i < 4; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
@@ -86,7 +86,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (raca && list[list.Count-6].transform.position.z < raca.transform.position.z) {
+		if (raca && list[3+brisi].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(crte);
