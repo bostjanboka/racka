@@ -17,9 +17,18 @@ public class OsamljenaRacaSkripta : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("raca")) {
-			GameObject game = Instantiate(NavadnaRacka,transform.position,transform.rotation) as GameObject;
-			game.GetComponent<OtrokSkripta>().zasleduj = other.gameObject;
-			Destroy(gameObject);
+			GameObject[] tocke = other.gameObject.GetComponent<RackaSkripta>().tocke;
+			for(int i=0; i < tocke.Length; i++){
+				if(!tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe){
+					GameObject game = Instantiate(NavadnaRacka,transform.position,transform.rotation) as GameObject;
+					game.GetComponent<OtrokSkripta>().zasleduj = tocke[i];
+					tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe = game;
+					Debug.Log("zasleduje raca");
+					Destroy(gameObject);
+					break;
+				}
+			}
+
 		}
 	}
 }

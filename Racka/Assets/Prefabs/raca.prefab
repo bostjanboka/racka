@@ -285,6 +285,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460352}
+  - 114: {fileID: 11427610}
   m_Layer: 11
   m_Name: t0
   m_TagString: Untagged
@@ -996,6 +997,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   zasledujeMe: {fileID: 173032}
+  tocke: []
+--- !u!114 &11427610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a81d40f3f0a9d64cb33731dadb5b950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZasledujeMe: {fileID: 0}
 --- !u!135 &13510582
 SphereCollider:
   m_ObjectHideFlags: 1

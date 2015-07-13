@@ -8,6 +8,8 @@ public class SlediRaciSkripta : MonoBehaviour {
 	public GameObject raca;
 	public float gorDol;
 
+	float maxZ;
+
 	Vector3 stalni;
 	Vector3 poX;
 	Vector3 kameraPoz;
@@ -18,6 +20,7 @@ public class SlediRaciSkripta : MonoBehaviour {
 		stalni = raca.transform.position - transform.position;
 		poX = transform.position;
 		kameraPoz = transform.position;
+		maxZ = transform.position.z;
 	}
 	
 	// Update is called once per frame
@@ -27,8 +30,9 @@ public class SlediRaciSkripta : MonoBehaviour {
 			if(pozicija.x > poX.x-gorDol && pozicija.x < poX.x + gorDol){
 				kameraPoz.x = pozicija.x;
 			}
-			if(pozicija.z > poX.z-gorDol){
+			if(pozicija.z > maxZ){
 				kameraPoz.z = pozicija.z;
+				maxZ = pozicija.z;
 			}
 			transform.position=kameraPoz;
 

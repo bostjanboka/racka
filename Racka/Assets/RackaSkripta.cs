@@ -10,7 +10,23 @@ public class RackaSkripta : MonoBehaviour {
 	Vector3 rotacija;
 	float premik;
 	GameObject valovi;
+	public GameObject[] tocke;
 
+	void Awake(){
+		tocke = new GameObject[10];
+		Transform tocket = transform.FindChild("tocke");
+
+		tocke[0] = tocket.FindChild ("t0").gameObject;
+		tocke[1] = tocket.FindChild ("t1").gameObject;
+		tocke[2] = tocket.FindChild ("t2").gameObject;
+		tocke[3] = tocket.FindChild ("t3").gameObject;
+		tocke[4] = tocket.FindChild ("t4").gameObject;
+		tocke[5] = tocket.FindChild ("t5").gameObject;
+		tocke[6] = tocket.FindChild ("t6").gameObject;
+		tocke[7] = tocket.FindChild ("t7").gameObject;
+		tocke[8] = tocket.FindChild ("t8").gameObject;
+		tocke[9] = tocket.FindChild ("t9").gameObject;
+	}
 
 	void Start () {
 

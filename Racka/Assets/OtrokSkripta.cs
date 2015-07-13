@@ -11,6 +11,8 @@ public class OtrokSkripta : MonoBehaviour {
 	public float speed;
 	void Start () {
 		smer = Vector3.zero;
+		if(zasleduj)
+			zasleduj.GetComponent<ZasledujeMeSkripta> ().ZasledujeMe = gameObject;
 	}
 	
 	// Update is called once per frame
