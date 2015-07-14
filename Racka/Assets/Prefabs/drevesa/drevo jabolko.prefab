@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484184}
-  - 65: {fileID: 6563676}
   - 33: {fileID: 3332652}
   m_Layer: 12
   m_Name: drevo jabolko
@@ -209,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.7000008, y: .273929924, z: 16}
+  m_LocalPosition: {x: 37.3899765, y: .273929715, z: 6.44999218}
   m_LocalScale: {x: 4.5, y: 1.5, z: 4.5}
   m_Children:
   - {fileID: 494622}
@@ -537,18 +536,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6563676
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113280}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 5.32000017, z: 3}
-  m_Center: {x: 0, y: 3.41000009, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
