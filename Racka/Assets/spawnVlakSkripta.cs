@@ -11,9 +11,36 @@ public class spawnVlakSkripta : MonoBehaviour {
 	Collider terminator;
 	float cas;
 
-	void Start () {
-		//transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
+
+	RandomCreatorSkripta mapCreator;
+	GameObject prvi;
+	public GameObject zadnji;
+	
+	void Awake(){
+		Transform mc = transform.parent;
+		while (mc.parent != null) {
+			mc = mc.parent;
+		}
+
+
 		terminator = transform.FindChild ("terminator").GetComponent<Collider> ();
+		GameObject zacasna;
+		prvi = Instantiate(objekt) as GameObject;
+		zacasna = prvi;
+		for (int i=0; i < 2; i++) {
+			GameObject vozilo = Instantiate(objekt) as GameObject;
+			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);
+			vozilo.transform.SetParent(transform.parent);
+			vozilo.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			zacasna.GetComponent<SkriptaPotujNaprej>().nazaj = vozilo;
+			zacasna = vozilo;
+			zacasna.SetActive(false);
+		}
+		zadnji = zacasna;
+	}
+
+	void Start () {
+
 		postaviVozila ();
 		cas = zamik / speed;
 	}
@@ -22,26 +49,28 @@ public class spawnVlakSkripta : MonoBehaviour {
 	void Update () {
 		cas -= Time.deltaTime;
 		if (cas <= 0) {
-			GameObject zac = Instantiate(objekt,transform.position,transform.rotation) as GameObject;
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
-			zac.transform.SetParent(transform.parent);
+			GameObject zac = prvi;
+			zac.transform.position = transform.position;
+			zac.transform.rotation = transform.rotation;
+			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
+			zac.SetActive(false);
+			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			cas = zamik / speed;
-			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
-			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 280f/speed;
 		}
-		
-		
 	}
 	
 	public void postaviVozila(){
 		float vsota = 0;
 		for (int i=0; i < 1; i++) {
 			vsota = i * zamik;
-			GameObject zac = Instantiate(objekt,transform.position + transform.forward*vsota,transform.rotation) as GameObject;
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
-			zac.transform.SetParent(transform.parent);
-			zac.GetComponent<SkriptaPotujNaprej>().speed = speed;
-			zac.GetComponent<SkriptaPotujNaprej>().zbrisiPoCasu = 280f/speed;
+			GameObject zac = prvi;
+			zac.transform.position = transform.position + transform.forward*vsota;
+			zac.transform.rotation = transform.rotation;
+			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
+			zac.SetActive(true);
+			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
+			
+			
 		}
 	}
 }

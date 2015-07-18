@@ -30,18 +30,19 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	int brisi=0;
 
 	RandomVoziloSkripta randomVozilo;
-	void Start () {
+
+	void Awake(){
 		int skupaj = verCesta + verVoda + vertrava + verZeleznica;
 		int sestevek = 0;
 		randomVozilo = transform.FindChild ("randomVozilo").GetComponent<RandomVoziloSkripta>();
-
+		
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
 		vec = transform.position;
 		tabela = new GameObject[skupaj];
 		for (int i=0; i < verCesta; i++) {
 			tabela[i] = cesta;
-
+			
 		}
 		sestevek += verCesta;
 		for (int i=sestevek; i < sestevek+verVoda; i++) {
@@ -59,8 +60,8 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			
 		}
 		sestevek += vertrava;
-
-
+		
+		
 		list.Add (Instantiate (kmetija));
 		dodajElement(cesta);
 		prejsni = cesta;
@@ -74,13 +75,18 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				dodajElement(leviBreg);
 			}else if(prejsni == spawn && spawn == zeleznica){
 				dodajElement(trava);
-			
+				
 			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
 				dodajElement(trava);
 			}
 			dodajElement(spawn);
 			prejsni = spawn;
 		}
+
+
+	}
+
+	void Start () {
 
 	}
 	

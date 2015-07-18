@@ -5,7 +5,8 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed=4;
-	public float zbrisiPoCasu = 45;
+	public GameObject nazaj;
+	public Vector3 pozicija;
 
 	float casNastanka;
 	void Start () {
@@ -16,9 +17,6 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 	void Update () {
 		transform.position+= (transform.forward * speed * Time.deltaTime);
 
-		zbrisiPoCasu -= Time.deltaTime;
-		if (zbrisiPoCasu <= 0) {
-			Destroy(gameObject);
-		}
+
 	}
 }

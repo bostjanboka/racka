@@ -322,7 +322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 121576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30d9846a79f33dd40a832d23ddbc2671, type: 3}
+  m_Script: {fileID: 11500000, guid: ad95043b0c879cd47b54712ef21e18ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11440492
@@ -339,6 +339,7 @@ MonoBehaviour:
   objekt: {fileID: 117248, guid: 4c4cea3c52b1c3941911fc9b627f7ab5, type: 2}
   zamik: 70
   speed: 20
+  zadnji: {fileID: 0}
 --- !u!114 &11462346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -353,6 +354,7 @@ MonoBehaviour:
   objekt: {fileID: 117248, guid: 4c4cea3c52b1c3941911fc9b627f7ab5, type: 2}
   zamik: 70
   speed: 20
+  zadnji: {fileID: 0}
 --- !u!114 &11476672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -361,7 +363,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 166692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30d9846a79f33dd40a832d23ddbc2671, type: 3}
+  m_Script: {fileID: 11500000, guid: ad95043b0c879cd47b54712ef21e18ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &13503720

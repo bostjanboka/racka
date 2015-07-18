@@ -4,7 +4,8 @@ using System.Collections;
 public class izberiSpawnSkripta : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Awake(){
+
 		SpawnGameObjectSkripta[] spawn1 = GetComponentsInChildren<SpawnGameObjectSkripta> ();
 		if (spawn1.Length > 0) {
 			spawn1 [Random.Range (0, 2)].enabled = false;
@@ -17,6 +18,11 @@ public class izberiSpawnSkripta : MonoBehaviour {
 				spawn3 [Random.Range (0, 2)].enabled = false;
 			}
 		}
+
+	}
+
+	void Start () {
+
 	}
 	
 	// Update is called once per frame

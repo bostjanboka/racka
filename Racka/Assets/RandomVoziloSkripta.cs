@@ -14,7 +14,7 @@ public class RandomVoziloSkripta : MonoBehaviour {
 	public GameObject avto8;
 
 	GameObject[] tabela;
-	void Start () {
+	void Awake(){
 		tabela = new GameObject[8];
 		tabela [0] = avto1;
 		tabela [1] = avto2;
@@ -24,6 +24,9 @@ public class RandomVoziloSkripta : MonoBehaviour {
 		tabela [5] = avto6;
 		tabela [6] = avto7;
 		tabela [7] = avto8;
+	}
+	void Start () {
+
 
 
 	}
