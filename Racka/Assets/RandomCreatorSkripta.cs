@@ -54,6 +54,8 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	List<GameObject> list;
 	int brisi=0;
 
+	bool vDelovanju=false;
+
 	RandomVoziloSkripta randomVozilo;
 
 	void Awake(){
@@ -63,7 +65,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		
 		raca = GameObject.Find ("raca");
 		list = new List<GameObject>();
-		vec = transform.position;
+		vec = Vector3.zero;//transform.position;
 		tabela = new GameObject[skupaj];
 		for (int i=0; i < verCesta; i++) {
 			tabela[i] = cesta;
@@ -93,6 +95,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(cesta) as GameObject;
 			zacasna.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "cesta";
 			inst.transform.SetParent(transform);
 			zacasna = inst;
 
@@ -106,6 +109,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(voda) as GameObject;
 			zacasna1.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "voda";
 			inst.transform.SetParent(transform);
 			zacasna1 = inst;
 
@@ -119,6 +123,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(zeleznica) as GameObject;
 			zacasna2.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "zeleznica";
 			inst.transform.SetParent(transform);
 			zacasna2 = inst;
 
@@ -132,6 +137,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(travaSiroka) as GameObject;
 			zacasna3.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "siroka";
 			inst.transform.SetParent(transform);
 			zacasna3 = inst;
 
@@ -141,136 +147,186 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		prviCrte = Instantiate (crte) as GameObject;
 		prviCrte.transform.SetParent (transform);
 		GameObject zacasna4 = prviCrte;
-
+		zacasna4.SetActive (false);
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(crte) as GameObject;
 			zacasna4.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "crte";
 			inst.transform.SetParent(transform);
 			zacasna4 = inst;
-
+			zacasna4.SetActive (false);
 		}
 		zadnjiCrte = zacasna4;
 
 		prviTrava = Instantiate (trava) as GameObject;
 		prviTrava.transform.SetParent (transform);
 		GameObject zacasna5 = prviTrava;
-
+		zacasna5.SetActive (false);
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(trava) as GameObject;
 			zacasna5.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "trava";
 			inst.transform.SetParent(transform);
 			zacasna5 = inst;
-
+			zacasna5.SetActive (false);
 		}
 		zadnjiTrava = zacasna5;
 
 		prviLevi = Instantiate (leviBreg) as GameObject;
 		prviLevi.transform.SetParent (transform);
 		GameObject zacasna6 = prviLevi;
-
+		zacasna6.SetActive (false);
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(leviBreg) as GameObject;
 			zacasna6.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "levi";
 			inst.transform.SetParent(transform);
 			zacasna6 = inst;
-
+			zacasna6.SetActive (false);
 		}
 		zadnjiLevi = zacasna6;
 
 		prviDesni = Instantiate (desniBreg) as GameObject;
 		prviDesni.transform.SetParent (transform);
 		GameObject zacasna7 = prviDesni;
-
+		zacasna7.SetActive (false);
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(desniBreg) as GameObject;
 			zacasna7.GetComponent<nazajSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().id = "desni";
 			inst.transform.SetParent(transform);
 			zacasna7 = inst;
-
+			zacasna7.SetActive (false);
 		}
 		zadnjiDesni = zacasna7;
 
-		list.Add (Instantiate (kmetija));
+		//list.Add (Instantiate (kmetija));
 
 
 
 	}
 
-	void Start () {
-		dodajElement(prviCesta);
+	public void StartPostavitev () {
+		dodajElement(prviCesta,cesta);
 		prejsni = cesta;
 		for (int i=0; i < 4; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
-				dodajElement(prviCrte);
+				dodajElement(prviCrte,crte);
 			}else if(spawn == voda && prejsni != voda){
-				dodajElement(prviDesni);
+				dodajElement(prviDesni,desniBreg);
 			}else if(spawn!= voda && prejsni == voda){
-				dodajElement(prviLevi);
+				dodajElement(prviLevi,leviBreg);
 			}else if(prejsni == spawn && spawn == zeleznica){
-				dodajElement(prviTrava);
+				dodajElement(prviTrava,trava);
 				
 			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
-				dodajElement(prviTrava);
+				dodajElement(prviTrava,trava);
 			}
 
 			if(spawn == cesta){
-				dodajElement(prviCesta);
+				dodajElement(prviCesta,spawn);
 			}
 			else if(spawn == zeleznica){
-				dodajElement(prviZeleznica);
+				dodajElement(prviZeleznica,spawn);
 			}else if(spawn == voda){
-				dodajElement(prviVoda);
-			}else if(spawn == travaSiroka){
-				dodajElement(prviSiroka);
+				dodajElement(prviVoda,spawn);
+			}else{ //if(spawn == travaSiroka){
+				dodajElement(prviSiroka,spawn);
 			}
 
 			prejsni = spawn;
 		}
+		vDelovanju = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (raca && list[3+brisi].transform.position.z < raca.transform.position.z) {
+		if (vDelovanju && list[3+brisi].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
-				dodajElement(crte);
+				dodajElement(prviCrte,crte);
 			}else if(spawn == voda && prejsni != voda){
-				dodajElement(desniBreg);
+				dodajElement(prviDesni,desniBreg);
 			}else if(spawn!= voda && prejsni == voda){
-				dodajElement(leviBreg);
+				dodajElement(prviLevi,leviBreg);
+			}else if(prejsni == spawn && spawn == zeleznica){
+				dodajElement(prviTrava,trava);
+				
+			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
+				dodajElement(prviTrava,trava);
 			}
-			dodajElement(spawn);
+
+			if(spawn == cesta){
+				dodajElement(prviCesta,spawn);
+			}
+			else if(spawn == zeleznica){
+				dodajElement(prviZeleznica,spawn);
+			}else if(spawn == voda){
+				dodajElement(prviVoda,spawn);
+			}else{ //if(spawn == travaSiroka){
+				dodajElement(prviSiroka,spawn);
+			}
 			prejsni = spawn;
-			Destroy(list[brisi++]);
-		}*/
+			//Destroy(list[brisi++]);
+			GameObject brisem = list[0];
+
+			string id = brisem.GetComponent<nazajSkripta>().id;
+			brisem.SetActive(false);
+			if(id.Equals("cesta")){
+				zadnjiCesta.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiCesta = brisem;
+			}else if(id.Equals("voda")){
+				zadnjiVoda.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiVoda = brisem;
+			}else if(id.Equals("zeleznica")){
+				zadnjiZeleznica.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiZeleznica = brisem;
+			}else if(id.Equals("siroka")){
+				zadnjiSiroka.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiSiroka = brisem;
+			}else if(id.Equals("levi")){
+				zadnjiLevi.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiLevi = brisem;
+			}else if(id.Equals("desni")){
+				zadnjiDesni.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiDesni = brisem;
+			}else if(id.Equals("trava")){
+				zadnjiTrava.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiTrava = brisem;
+			}else if(id.Equals("crte")){
+				zadnjiCrte.GetComponent<nazajSkripta>().nazaj = brisem;
+				zadnjiCrte = brisem;
+			}
+			list.RemoveAt(0);
+		}
 	}
 
-	void dodajElement(GameObject spawn){
+	void dodajElement(GameObject spawn, GameObject spawnTabela){
 		Mesh mesh = spawn.GetComponent<MeshFilter>().sharedMesh;
 		Bounds bounds = mesh.bounds;
 		vec.z+= bounds.size.z*spawn.transform.localScale.z;
 		Vector3 pozicija = spawn.transform.position;
 		pozicija.z = vec.z - bounds.size.z/2f*spawn.transform.localScale.z;
-		spawn.transform.position = pozicija;
+		spawn.transform.localPosition = pozicija;
 		spawn.SetActive (true);
 
-		if(spawn == cesta){
+		if(spawnTabela == cesta){
 			prviCesta = spawn.GetComponent<nazajSkripta>().nazaj;
 		}
-		else if(spawn == zeleznica){
+		else if(spawnTabela == zeleznica){
 			prviZeleznica = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == voda){
+		}else if(spawnTabela == voda){
 			prviVoda = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == travaSiroka){
+		}else if(spawnTabela == travaSiroka){
 			prviSiroka = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == crte){
+		}else if(spawnTabela == crte){
 			prviCrte = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == trava){
+		}else if(spawnTabela == trava){
 			prviTrava = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == leviBreg){
+		}else if(spawnTabela == leviBreg){
 			prviLevi = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawn == desniBreg){
+		}else if(spawnTabela == desniBreg){
 			prviDesni = spawn.GetComponent<nazajSkripta>().nazaj;
 		}
 		//GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
