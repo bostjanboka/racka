@@ -4,6 +4,7 @@ using System.Collections;
 public class izberiSpawnSkripta : MonoBehaviour {
 
 	// Use this for initialization
+	public GameObject nazaj;
 	void Awake(){
 
 		SpawnGameObjectSkripta[] spawn1 = GetComponentsInChildren<SpawnGameObjectSkripta> ();

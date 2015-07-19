@@ -9,6 +9,7 @@ public class PostaviElementeSkripta : MonoBehaviour {
 	public GameObject drevo;
 	public GameObject smreka;
 
+	public GameObject nazaj;
 	Bounds bounds;
 	List<bool> list;
 	GameObject[] tabela;

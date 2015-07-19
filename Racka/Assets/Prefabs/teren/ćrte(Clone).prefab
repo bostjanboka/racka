@@ -970,6 +970,7 @@ GameObject:
   - 4: {fileID: 489514}
   - 33: {fileID: 3374256}
   - 114: {fileID: 11402022}
+  - 114: {fileID: 11496936}
   m_Layer: 0
   m_Name: "\u0107rte(Clone)"
   m_TagString: Untagged
@@ -4099,6 +4100,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 124686, guid: 9d3bca8079438294d911cbd6ceba40dc, type: 2}
   stevilo: 30
+--- !u!114 &11496936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeefb95c4bcd5b4a8bcc2855d16e235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
