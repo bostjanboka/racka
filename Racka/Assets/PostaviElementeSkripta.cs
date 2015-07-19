@@ -35,7 +35,7 @@ public class PostaviElementeSkripta : MonoBehaviour {
 			otrok.transform.SetParent(transform);
 			
 		}
-	
+		gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame

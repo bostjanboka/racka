@@ -92,7 +92,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(cesta) as GameObject;
-			zacasna.GetComponent<izberiSpawnSkripta>().nazaj = inst;
+			zacasna.GetComponent<nazajSkripta>().nazaj = inst;
 			inst.transform.SetParent(transform);
 			zacasna = inst;
 
@@ -105,7 +105,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(voda) as GameObject;
-			zacasna1.GetComponent<izberiSpawnSkripta>().nazaj = inst;
+			zacasna1.GetComponent<nazajSkripta>().nazaj = inst;
 			inst.transform.SetParent(transform);
 			zacasna1 = inst;
 
@@ -118,7 +118,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(zeleznica) as GameObject;
-			zacasna2.GetComponent<izberiSpawnSkripta>().nazaj = inst;
+			zacasna2.GetComponent<nazajSkripta>().nazaj = inst;
 			inst.transform.SetParent(transform);
 			zacasna2 = inst;
 
@@ -131,7 +131,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 		for (int i=0; i < 10; i++) {
 			GameObject inst = Instantiate(travaSiroka) as GameObject;
-			zacasna3.GetComponent<PostaviElementeSkripta>().nazaj = inst;
+			zacasna3.GetComponent<nazajSkripta>().nazaj = inst;
 			inst.transform.SetParent(transform);
 			zacasna3 = inst;
 
@@ -191,31 +191,42 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		zadnjiDesni = zacasna7;
 
 		list.Add (Instantiate (kmetija));
-		/*dodajElement(cesta);
-		prejsni = cesta;
-		for (int i=0; i < 4; i++) {
-			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
-			if(prejsni == spawn && spawn == cesta){
-				dodajElement(crte);
-			}else if(spawn == voda && prejsni != voda){
-				dodajElement(desniBreg);
-			}else if(spawn!= voda && prejsni == voda){
-				dodajElement(leviBreg);
-			}else if(prejsni == spawn && spawn == zeleznica){
-				dodajElement(trava);
-				
-			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
-				dodajElement(trava);
-			}
-			dodajElement(spawn);
-			prejsni = spawn;
-		}*/
+
 
 
 	}
 
 	void Start () {
+		dodajElement(prviCesta);
+		prejsni = cesta;
+		for (int i=0; i < 4; i++) {
+			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
+			if(prejsni == spawn && spawn == cesta){
+				dodajElement(prviCrte);
+			}else if(spawn == voda && prejsni != voda){
+				dodajElement(prviDesni);
+			}else if(spawn!= voda && prejsni == voda){
+				dodajElement(prviLevi);
+			}else if(prejsni == spawn && spawn == zeleznica){
+				dodajElement(prviTrava);
+				
+			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
+				dodajElement(prviTrava);
+			}
 
+			if(spawn == cesta){
+				dodajElement(prviCesta);
+			}
+			else if(spawn == zeleznica){
+				dodajElement(prviZeleznica);
+			}else if(spawn == voda){
+				dodajElement(prviVoda);
+			}else if(spawn == travaSiroka){
+				dodajElement(prviSiroka);
+			}
+
+			prejsni = spawn;
+		}
 	}
 	
 	// Update is called once per frame
@@ -241,9 +252,31 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		vec.z+= bounds.size.z*spawn.transform.localScale.z;
 		Vector3 pozicija = spawn.transform.position;
 		pozicija.z = vec.z - bounds.size.z/2f*spawn.transform.localScale.z;
-		GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
-		zac.transform.SetParent (transform);
-		list.Add(zac);
+		spawn.transform.position = pozicija;
+		spawn.SetActive (true);
+
+		if(spawn == cesta){
+			prviCesta = spawn.GetComponent<nazajSkripta>().nazaj;
+		}
+		else if(spawn == zeleznica){
+			prviZeleznica = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == voda){
+			prviVoda = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == travaSiroka){
+			prviSiroka = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == crte){
+			prviCrte = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == trava){
+			prviTrava = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == leviBreg){
+			prviLevi = spawn.GetComponent<nazajSkripta>().nazaj;
+		}else if(spawn == desniBreg){
+			prviDesni = spawn.GetComponent<nazajSkripta>().nazaj;
+		}
+		//GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
+		//zac.transform.SetParent (transform);
+		Debug.Log ("dodaj element");
+		list.Add(spawn);
 	}
 
 	public GameObject vrniRandomVozilo(){

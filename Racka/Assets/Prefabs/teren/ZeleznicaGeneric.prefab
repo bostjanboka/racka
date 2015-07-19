@@ -99,6 +99,7 @@ GameObject:
   - 114: {fileID: 11401328}
   - 33: {fileID: 3342522}
   - 114: {fileID: 11487418}
+  - 114: {fileID: 11494374}
   m_Layer: 0
   m_Name: ZeleznicaGeneric
   m_TagString: Untagged
@@ -485,6 +486,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68408eee192ee14caf717d7dec4eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
+--- !u!114 &11494374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeefb95c4bcd5b4a8bcc2855d16e235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
 --- !u!135 &13547902
 SphereCollider:
   m_ObjectHideFlags: 1

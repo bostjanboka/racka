@@ -50,7 +50,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		
 		postaviVozila ();
 		cas = zamik / speed;
-		gameObject.SetActive (false);
+		transform.parent.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame

@@ -54,7 +54,8 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 		postaviVozila ();
 		cas = zamik / speed;
-		gameObject.SetActive (false);
+		transform.parent.gameObject.SetActive (false);
+		Debug.Log ("set active");
 	}
 	
 	// Update is called once per frame
