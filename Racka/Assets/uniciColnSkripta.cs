@@ -7,7 +7,12 @@ public class uniciColnSkripta : MonoBehaviour {
 	spawnColnSkripta spawn;
 	
 	void Awake(){
-		spawn = transform.parent.GetComponent<spawnColnSkripta> ();
+		spawnColnSkripta[] zac = transform.parent.parent.GetComponentsInChildren<spawnColnSkripta> ();
+		if (zac [0].enabled) {
+			spawn = zac [0];
+		} else {
+			spawn = zac[1];
+		}
 	}
 	void Start () {
 		

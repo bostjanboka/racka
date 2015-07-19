@@ -11,32 +11,41 @@ public class spawnColnSkripta : MonoBehaviour {
 	Collider terminator;
 	float cas;
 	
-	
-	RandomCreatorSkripta mapCreator;
+
 	GameObject prvi;
 	public GameObject zadnji;
 	
 	void Awake(){
-		Transform mc = transform.parent;
-		while (mc.parent != null) {
-			mc = mc.parent;
-		}
-		
-		
+
+		//transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
 		terminator = transform.FindChild ("terminator").GetComponent<Collider> ();
 		GameObject zacasna;
 		prvi = Instantiate(objekt) as GameObject;
 		zacasna = prvi;
+		Physics.IgnoreCollision(zacasna.GetComponent<Collider>(), terminator);
+		zacasna.transform.rotation = transform.rotation;
+		zacasna.transform.position = transform.position;
+		zacasna.transform.SetParent(transform.parent);
+		zacasna.GetComponent<SkriptaPotujNaprej>().speed = speed;
+		zacasna.GetComponent<SkriptaPotujNaprej>().pozicija = zacasna.transform.localPosition;
+		zacasna.SetActive(false);
+		zacasna.SetActive(false);
 		for (int i=0; i < 6; i++) {
 			GameObject vozilo = Instantiate(objekt) as GameObject;
 			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);
+			vozilo.transform.rotation = transform.rotation;
+			vozilo.transform.position = transform.position;
 			vozilo.transform.SetParent(transform.parent);
 			vozilo.GetComponent<SkriptaPotujNaprej>().speed = speed;
+			vozilo.GetComponent<SkriptaPotujNaprej>().pozicija = vozilo.transform.localPosition;
 			zacasna.GetComponent<SkriptaPotujNaprej>().nazaj = vozilo;
 			zacasna = vozilo;
+			zadnji = zacasna;
 			zacasna.SetActive(false);
 		}
-		zadnji = zacasna;
+		
+		postaviVozila ();
+		cas = zamik / speed;
 	}
 	
 	void Start () {
@@ -50,24 +59,30 @@ public class spawnColnSkripta : MonoBehaviour {
 		cas -= Time.deltaTime;
 		if (cas <= 0) {
 			GameObject zac = prvi;
-			zac.transform.position = transform.position;
-			zac.transform.rotation = transform.rotation;
+			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
-			zac.SetActive(false);
+			
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			cas = zamik / speed;
 		}
+		
+		
 	}
 	
 	public void postaviVozila(){
 		float vsota = 0;
-		for (int i=0; i < 4; i++) {
+		for (int i=0; i < 3; i++) {
 			vsota = i * zamik;
 			GameObject zac = prvi;
-			zac.transform.position = transform.position + transform.forward*vsota;
-			zac.transform.rotation = transform.rotation;
-			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
 			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
+			zac.transform.position += transform.forward*vsota;
+			
+			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
+			
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			
 			

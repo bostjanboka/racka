@@ -31,6 +31,13 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		GameObject zacasna;
 		prvi = Instantiate(mapCreator.vrniRandomVozilo()) as GameObject;
 		zacasna = prvi;
+		Physics.IgnoreCollision(zacasna.GetComponent<Collider>(), terminator);
+		zacasna.transform.rotation = transform.rotation;
+		zacasna.transform.position = transform.position;
+		zacasna.transform.SetParent(transform.parent);
+		zacasna.GetComponent<SkriptaPotujNaprej>().speed = speed;
+		zacasna.GetComponent<SkriptaPotujNaprej>().pozicija = zacasna.transform.localPosition;
+		zacasna.SetActive(false);
 		for (int i=0; i < 6; i++) {
 			GameObject vozilo = Instantiate(mapCreator.vrniRandomVozilo()) as GameObject;
 			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);

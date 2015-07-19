@@ -7,7 +7,12 @@ public class uniciVlakSkripta : MonoBehaviour {
 	spawnVlakSkripta spawn;
 	
 	void Awake(){
-		spawn = transform.parent.GetComponent<spawnVlakSkripta> ();
+		spawnVlakSkripta[] zac = transform.parent.parent.GetComponentsInChildren<spawnVlakSkripta> ();
+		if (zac [0].enabled) {
+			spawn = zac [0];
+		} else {
+			spawn = zac[1];
+		}
 	}
 	void Start () {
 		
