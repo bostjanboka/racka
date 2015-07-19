@@ -18,6 +18,10 @@ public class spawnVlakSkripta : MonoBehaviour {
 	void Awake(){
 		
 		//transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
+
+	}
+	
+	void Start () {
 		terminator = transform.FindChild ("terminator").GetComponent<Collider> ();
 		GameObject zacasna;
 		prvi = Instantiate(objekt) as GameObject;
@@ -29,7 +33,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		zacasna.GetComponent<SkriptaPotujNaprej>().speed = speed;
 		zacasna.GetComponent<SkriptaPotujNaprej>().pozicija = zacasna.transform.localPosition;
 		zacasna.SetActive(false);
-		zacasna.SetActive(false);
+		
 		for (int i=0; i < 3; i++) {
 			GameObject vozilo = Instantiate(objekt) as GameObject;
 			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);
@@ -46,12 +50,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		
 		postaviVozila ();
 		cas = zamik / speed;
-	}
-	
-	void Start () {
-		
-		postaviVozila ();
-		cas = zamik / speed;
+
 	}
 	
 	// Update is called once per frame
@@ -59,13 +58,16 @@ public class spawnVlakSkripta : MonoBehaviour {
 		cas -= Time.deltaTime;
 		if (cas <= 0) {
 			GameObject zac = prvi;
-			zac.SetActive(true);
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+
+
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
 			
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			cas = zamik / speed;
+			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+
 		}
 		
 		
@@ -76,13 +78,13 @@ public class spawnVlakSkripta : MonoBehaviour {
 		for (int i=0; i < 1; i++) {
 			vsota = i * zamik;
 			GameObject zac = prvi;
-			zac.SetActive(true);
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			zac.transform.position += transform.forward*vsota;
 			
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
-			
+			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			
 			

@@ -62,11 +62,11 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		cas -= Time.deltaTime;
 		if (cas <= 0) {
 			GameObject zac = prvi;
-			zac.SetActive(true);
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
-
+			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			cas = zamik / speed;
 		}
@@ -79,13 +79,13 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		for (int i=0; i < 3; i++) {
 			vsota = i * zamik;
 			GameObject zac = prvi;
-			zac.SetActive(true);
-			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
+
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			zac.transform.position += transform.forward*vsota;
 
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
-
+			zac.SetActive(true);
+			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 
 
