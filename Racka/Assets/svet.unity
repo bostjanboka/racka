@@ -202,7 +202,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
+    m_LineSpacing: .899999976
   m_Text: 0
 --- !u!222 &331011565
 CanvasRenderer:
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
+    m_LineSpacing: .899999976
   m_Text: 'BEST: 0000'
 --- !u!222 &1528707683
 CanvasRenderer:
@@ -1589,6 +1589,18 @@ Prefab:
     - target: {fileID: 151076, guid: 256ebd8cf4f6e5746b23ca3c266c7dd9, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22473710, guid: 256ebd8cf4f6e5746b23ca3c266c7dd9, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 22492892, guid: 256ebd8cf4f6e5746b23ca3c266c7dd9, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411454, guid: 256ebd8cf4f6e5746b23ca3c266c7dd9, type: 2}
+      propertyPath: m_Text
+      value: DUCKVENTURE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256ebd8cf4f6e5746b23ca3c266c7dd9, type: 2}
