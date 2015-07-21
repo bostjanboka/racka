@@ -15,9 +15,9 @@ public class upraviteljSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		cas += Time.deltaTime;
-		if (cas > 4 && cas < 5) {
+		if (cas > 20 && cas < 50) {
 			mapCreator.GetComponent<RandomCreatorSkripta> ().StartPostavitev ();
-			cas =6;
+			cas =60;
 		}
 	}
 }
