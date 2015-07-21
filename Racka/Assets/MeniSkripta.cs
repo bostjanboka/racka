@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MeniSkripta : MonoBehaviour {
 
@@ -7,6 +8,9 @@ public class MeniSkripta : MonoBehaviour {
 	public GameObject meni;
 	public GameObject hud;
 
+	public Text bestScore;
+	public Text Score;
+	public Text stRack;
 	void Awake(){
 		hud.SetActive (false);
 	}
@@ -16,7 +20,7 @@ public class MeniSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		stRack.text = RackaSkripta.stRack+" / 10";
 	}
 
 

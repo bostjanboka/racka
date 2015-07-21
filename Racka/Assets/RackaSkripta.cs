@@ -6,6 +6,8 @@ public class RackaSkripta : MonoBehaviour {
 	// Use this for initialization
 	public float speed;
 	public GameObject zasledujeMe;
+
+	public static int stRack=10;
 	Vector3 smer;
 	Vector3 rotacija;
 	float premik;
@@ -56,8 +58,8 @@ public class RackaSkripta : MonoBehaviour {
 			}
 		}
 
-		if (!zasledujeMe) {
-			//Application.LoadLevel(Application.loadedLevel);
+		if (stRack < 1) {
+			Application.LoadLevel(Application.loadedLevel);
 		}
 
 	}

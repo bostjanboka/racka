@@ -6,19 +6,29 @@ public class orkanSkripta : MonoBehaviour {
 	// Use this for initialization
 	public float histrostVrtenja;
 	public float speed = 3;
+	public float priblizajSpeed;
 	public GameObject vOrkanu;
 	Vector3 premakni;
+
+	Transform raca;
+	float cas=0;
 	void Start () {
+		raca = GameObject.Find ("raca").transform;
 		premakni = transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Vector3.Distance (premakni, transform.position) < 0.1) {
+		cas += Time.deltaTime;
+		if (Vector3.Distance (premakni, transform.position) < 0.1 || cas > 2) {
 			premakni.x += Random.Range (-5, 6);
 			premakni.z += Random.Range (-5, 6);
+			cas=0;
 		} else {
 			transform.position = Vector3.MoveTowards(transform.position,premakni,speed*Time.deltaTime);
+		}
+		if (raca) {
+			transform.position = Vector3.MoveTowards (transform.position, raca.position, priblizajSpeed * Time.deltaTime);
 		}
 		transform.Rotate (0,histrostVrtenja*Time.deltaTime,0);
 

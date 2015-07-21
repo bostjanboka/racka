@@ -36,6 +36,7 @@ public class OtrokSkripta : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("kolo")) {
 			Instantiate(povozenaRaca,transform.position,transform.rotation);
+			RackaSkripta.stRack--;
 			/*if(zasledujeMe){
 				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
 				if(zasleduj.tag.Equals("raca")){

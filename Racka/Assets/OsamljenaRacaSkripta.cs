@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class OsamljenaRacaSkripta : MonoBehaviour {
 
 	// Use this for initialization
 	public GameObject NavadnaRacka;
+
 
 	void Start () {
 	
@@ -13,6 +15,8 @@ public class OsamljenaRacaSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate (0, 180 * Time.deltaTime, 0);
+
+
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -24,6 +28,7 @@ public class OsamljenaRacaSkripta : MonoBehaviour {
 					game.GetComponent<OtrokSkripta>().zasleduj = tocke[i];
 					tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe = game;
 					Debug.Log("zasleduje raca");
+					RackaSkripta.stRack++;
 					Destroy(gameObject);
 					break;
 				}

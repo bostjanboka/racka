@@ -242,7 +242,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (vDelovanju && list[3+brisi].transform.position.z < raca.transform.position.z) {
+		if (raca && vDelovanju && list[3+brisi].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(prviCrte,crte);
