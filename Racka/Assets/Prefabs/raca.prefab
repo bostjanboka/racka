@@ -253,6 +253,7 @@ GameObject:
   - 114: {fileID: 11424336}
   - 95: {fileID: 9548922}
   - 135: {fileID: 13510582}
+  - 81: {fileID: 8117518}
   m_Layer: 11
   m_Name: raca
   m_TagString: raca
@@ -967,6 +968,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!81 &8117518
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155378}
+  m_Enabled: 1
 --- !u!95 &9548922
 Animator:
   serializedVersion: 3
