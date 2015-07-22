@@ -200,7 +200,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		}
 		zadnjiDesni = zacasna7;
 
-		//list.Add (Instantiate (kmetija));
+		list.Add (Instantiate (kmetija));
 
 
 
@@ -242,7 +242,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (raca && vDelovanju && list[3+brisi].transform.position.z < raca.transform.position.z) {
+		if (raca && vDelovanju && list[list.Count-2].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(prviCrte,crte);
@@ -269,8 +269,12 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}
 			prejsni = spawn;
 			//Destroy(list[brisi++]);
-			GameObject brisem = list[0];
 
+		}
+		Debug.Log (list [0].transform.position.z);
+		if (raca && vDelovanju && list[2].transform.position.z < raca.transform.position.z) {
+			GameObject brisem = list[0];
+			Debug.Log("prisem primerek");
 			string id = brisem.GetComponent<nazajSkripta>().id;
 			brisem.SetActive(false);
 			if(id.Equals("cesta")){

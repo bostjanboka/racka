@@ -2182,6 +2182,7 @@ GameObject:
   - 33: {fileID: 3382034}
   - 65: {fileID: 6553812}
   - 23: {fileID: 2342014}
+  - 114: {fileID: 11491656}
   m_Layer: 0
   m_Name: "ZA\u010CETEK"
   m_TagString: Untagged
@@ -48424,7 +48425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  zbrisiPoCasu: 45
+  nazaj: {fileID: 0}
+  pozicija: {x: 0, y: 0, z: 0}
 --- !u!114 &11408648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48438,6 +48440,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zamik: 45
   speed: 5
+  zadnji: {fileID: 0}
+--- !u!114 &11491656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeefb95c4bcd5b4a8bcc2855d16e235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
+  id: kmetija
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -48452,6 +48468,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: id
+      value: kmetija
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
