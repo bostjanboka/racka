@@ -218,6 +218,10 @@ Prefab:
       propertyPath: m_Name
       value: avtobus trola
       objectReference: {fileID: 0}
+    - target: {fileID: 8263418, guid: aa52ea4dfb27cf4479fb296b25875d33, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b1a60459adb3d0e45ad18aee43b9f8c1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa52ea4dfb27cf4479fb296b25875d33, type: 2}
   m_IsPrefabParent: 0
@@ -841,10 +845,6 @@ Prefab:
     - target: {fileID: 437508, guid: eca9acffab8a56844949653845565f34, type: 2}
       propertyPath: m_RootOrder
       value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 8263616, guid: eca9acffab8a56844949653845565f34, type: 2}
-      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
-      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eca9acffab8a56844949653845565f34, type: 2}
