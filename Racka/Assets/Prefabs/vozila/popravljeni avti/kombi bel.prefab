@@ -147,6 +147,7 @@ GameObject:
   - 4: {fileID: 449630}
   - 114: {fileID: 11444142}
   - 65: {fileID: 6525682}
+  - 82: {fileID: 8291736}
   m_Layer: 8
   m_Name: kombi bel
   m_TagString: vozilo
@@ -636,7 +637,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132022}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 32.7000008, y: 0, z: 43.0800018}
+  m_LocalPosition: {x: 32.7000008, y: 0, z: 43.5999985}
   m_LocalScale: {x: 7, y: 1, z: 7}
   m_Children:
   - {fileID: 469330}
@@ -1695,6 +1696,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0}
   m_Center: {x: 1.12656653e-06, y: 7.49640492e-08, z: .5}
+--- !u!82 &8291736
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132022}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24349996, guid: 37622f2d04173dc46b6fc730083f291b,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8896723015de3594bab3cdd44abe330b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 40
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11444142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1707,7 +1778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  zbrisiPoCasu: 45
+  nazaj: {fileID: 0}
+  pozicija: {x: 0, y: 0, z: 0}
 --- !u!212 &21231962
 SpriteRenderer:
   m_ObjectHideFlags: 1
