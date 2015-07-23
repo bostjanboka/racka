@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 482126}
   - 33: {fileID: 3353434}
   - 23: {fileID: 2395282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: desno oko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 33: {fileID: 3365006}
   - 65: {fileID: 6501690}
   - 23: {fileID: 2399886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: kljun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,9 +48,9 @@ GameObject:
   - 23: {fileID: 2358128}
   - 54: {fileID: 5447616}
   - 114: {fileID: 11419272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: OsamljenaRaca
-  m_TagString: Untagged
+  m_TagString: osamljena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ GameObject:
   - 33: {fileID: 3336450}
   - 65: {fileID: 6549598}
   - 23: {fileID: 2389042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: peruti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - 4: {fileID: 426786}
   - 198: {fileID: 19874468}
   - 199: {fileID: 19902452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: valovi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 3348760}
   - 65: {fileID: 6577964}
   - 23: {fileID: 2382300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - 4: {fileID: 480128}
   - 33: {fileID: 3348182}
   - 23: {fileID: 2362586}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: levo oko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.0104828, y: 0, z: 44.9902573}
+  m_LocalPosition: {x: -38.0104828, y: 1.60000002, z: 44.9902573}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 434608}
@@ -411,7 +411,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 3
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112

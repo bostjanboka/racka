@@ -14,6 +14,7 @@ TagManager:
   - otrok
   - drevo
   - vozilo
+  - osamljena
   layers:
   - Default
   - TransparentFX

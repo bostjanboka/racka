@@ -494,7 +494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zasleduj: {fileID: 0}
+  zasledujeMe: {fileID: 0}
   povozenaRaca: {fileID: 125830, guid: b436b9b7ec0eda042a2e63a5d1abd73d, type: 2}
+  osamljenaRaca: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
   speed: 5
 --- !u!198 &19862404
 ParticleSystem:
@@ -1598,6 +1600,10 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: osamljenaRaca
+      value: 
+      objectReference: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165942}

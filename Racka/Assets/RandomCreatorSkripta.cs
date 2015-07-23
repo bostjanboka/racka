@@ -211,6 +211,9 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		prejsni = cesta;
 		for (int i=0; i < 4; i++) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
+			if(spawn == prejsni && spawn == travaSiroka){
+				spawn = cesta;
+			}
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(prviCrte,crte);
 			}else if(spawn == voda && prejsni != voda){
@@ -244,6 +247,9 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	void Update () {
 		if (raca && vDelovanju && list[list.Count-2].transform.position.z < raca.transform.position.z) {
 			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
+			if(spawn == prejsni && spawn == travaSiroka){
+				spawn = cesta;
+			}
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(prviCrte,crte);
 			}else if(spawn == voda && prejsni != voda){

@@ -16,7 +16,7 @@ public class izberiSpawnSkripta : MonoBehaviour {
 				spawn2 [Random.Range (0, 2)].enabled = false;
 			}else{
 				spawnVlakSkripta[] spawn3 = GetComponentsInChildren<spawnVlakSkripta> ();
-				spawn3 [Random.Range (0, 2)].enabled = false;
+				spawn3 [Random.Range (1, 2)].enabled = false;
 			}
 		}
 

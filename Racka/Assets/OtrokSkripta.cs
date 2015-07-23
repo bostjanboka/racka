@@ -7,6 +7,7 @@ public class OtrokSkripta : MonoBehaviour {
 	public GameObject zasleduj;
 	public GameObject zasledujeMe;
 	public GameObject povozenaRaca;
+	public GameObject osamljenaRaca;
 	Vector3 smer;
 	public float speed;
 	void Start () {
@@ -35,7 +36,7 @@ public class OtrokSkripta : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("kolo")) {
-			Instantiate(povozenaRaca,transform.position,transform.rotation);
+			Instantiate (povozenaRaca, transform.position, transform.rotation);
 			RackaSkripta.stRack--;
 			/*if(zasledujeMe){
 				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
@@ -45,7 +46,11 @@ public class OtrokSkripta : MonoBehaviour {
 					zasleduj.GetComponent<OtrokSkripta>().zasledujeMe = zasledujeMe;
 				}
 			}*/
-			Destroy(gameObject);
+			Destroy (gameObject);
+		} else if (other.tag.Equals ("coln")) {
+			Instantiate (osamljenaRaca, transform.position, transform.rotation);
+			RackaSkripta.stRack--;
+			Destroy (gameObject);
 		}
 	}
 }

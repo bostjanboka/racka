@@ -4,9 +4,13 @@ using System.Collections;
 public class spawnColnSkripta : MonoBehaviour {
 
 	// Use this for initialization
+	public float min=50;
+	public float med=70;
+	public float max=90;
+
 	public GameObject objekt;
 	
-	public float zamik=70;
+	//public float zamik=70;
 	public float speed=5;
 	Collider terminator;
 	float cas;
@@ -49,7 +53,7 @@ public class spawnColnSkripta : MonoBehaviour {
 		}
 		
 		postaviVozila ();
-		cas = zamik / speed;
+		cas = vrniZamik() / speed;
 		transform.parent.gameObject.SetActive (false);
 	}
 	
@@ -66,7 +70,7 @@ public class spawnColnSkripta : MonoBehaviour {
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
 			zac.SetActive(true);
 			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
-			cas = zamik / speed;
+			cas = vrniZamik() / speed;
 		}
 		
 		
@@ -75,7 +79,7 @@ public class spawnColnSkripta : MonoBehaviour {
 	public void postaviVozila(){
 		float vsota = 0;
 		for (int i=0; i < 3; i++) {
-			vsota = i * zamik;
+			vsota = i * vrniZamik();
 			GameObject zac = prvi;
 
 
@@ -89,5 +93,16 @@ public class spawnColnSkripta : MonoBehaviour {
 			
 			
 		}
+	}
+
+	public float vrniZamik(){
+		if (Random.Range (0, 100) <= 60) {
+			return med;
+		} else if (Random.Range (0, 2) == 0) {
+			return min;
+		} else {
+			return max;
+		}
+		
 	}
 }

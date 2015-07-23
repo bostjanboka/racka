@@ -4,9 +4,11 @@ using System.Collections;
 public class spawnVlakSkripta : MonoBehaviour {
 
 	// Use this for initialization
+	public float min=3;
+	public float max=12;
 	public GameObject objekt;
 	
-	public float zamik=250;
+
 	public float speed=5;
 	Collider terminator;
 	float cas;
@@ -49,7 +51,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		}
 		
 		postaviVozila ();
-		cas = zamik / speed;
+		cas = vrniCas();
 		transform.parent.gameObject.SetActive (false);
 	}
 	
@@ -64,7 +66,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 			prvi = zac.GetComponent<SkriptaPotujNaprej>().nazaj;
 			
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
-			cas = zamik / speed;
+			cas = vrniCas();
 			zac.SetActive(true);
 			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 
@@ -76,7 +78,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 	public void postaviVozila(){
 		float vsota = 0;
 		for (int i=0; i < 1; i++) {
-			vsota = i * zamik;
+			vsota = i * vrniCas();
 			GameObject zac = prvi;
 
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
@@ -89,5 +91,9 @@ public class spawnVlakSkripta : MonoBehaviour {
 			
 			
 		}
+	}
+
+	public float vrniCas(){
+		return Random.Range (min,max);
 	}
 }

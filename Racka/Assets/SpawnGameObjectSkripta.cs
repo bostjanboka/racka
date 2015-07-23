@@ -5,8 +5,11 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	// Use this for initialization
 
+	public float min=30;
+	public float med=45;
+	public float max=60;
 
-	public float zamik=45;
+	//public float zamik=45;
 	public float speed=5;
 
 	Collider terminator;
@@ -26,7 +29,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 			mc = mc.parent;
 		}
 		mapCreator = mc.gameObject.GetComponent<RandomCreatorSkripta>();
-		transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
+		//transform.position += transform.forward * Random.Range (-zamik/2, zamik/2);
 		terminator = transform.FindChild ("terminator").GetComponent<Collider> ();
 		GameObject zacasna;
 		prvi = Instantiate(mapCreator.vrniRandomVozilo()) as GameObject;
@@ -53,7 +56,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		}
 
 		postaviVozila ();
-		cas = zamik / speed;
+		cas = vrniZamik() / speed;
 		transform.parent.gameObject.SetActive (false);
 		Debug.Log ("set active");
 	}
@@ -69,7 +72,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 			zac.SetActive(true);
 			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
-			cas = zamik / speed;
+			cas = vrniZamik() / speed;
 		}
 
 
@@ -78,7 +81,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	public void postaviVozila(){
 		float vsota = 0;
 		for (int i=0; i < 3; i++) {
-			vsota = i * zamik;
+			vsota = i * vrniZamik();
 			GameObject zac = prvi;
 
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
@@ -91,5 +94,16 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 
 		}
+	}
+
+	public float vrniZamik(){
+		if (Random.Range (0, 100) <= 60) {
+			return med;
+		} else if (Random.Range (0, 2) == 0) {
+			return min;
+		} else {
+			return max;
+		}
+
 	}
 }
