@@ -40817,9 +40817,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0649a9133a774d04e9362f903b479bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: 3
+  max: 12
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
-  zamik: 250
   speed: 60
+  zadnji: {fileID: 0}
 --- !u!114 &11441706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40831,6 +40833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68408eee192ee14caf717d7dec4eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
 --- !u!114 &11453386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40853,9 +40856,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0649a9133a774d04e9362f903b479bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: 3
+  max: 12
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
-  zamik: 250
   speed: 60
+  zadnji: {fileID: 0}
 --- !u!114 &11483600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40879,7 +40884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 60
-  zbrisiPoCasu: .791258574
+  nazaj: {fileID: 0}
+  pozicija: {x: 0, y: 0, z: 0}
 --- !u!114 &11491562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40923,7 +40929,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: stevilo
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136122}

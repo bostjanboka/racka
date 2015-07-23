@@ -76,9 +76,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0649a9133a774d04e9362f903b479bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: 3
+  max: 12
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
-  zamik: 250
   speed: 60
+  zadnji: {fileID: 0}
 --- !u!114 &11496800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,6 +140,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
