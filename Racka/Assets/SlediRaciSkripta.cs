@@ -14,8 +14,9 @@ public class SlediRaciSkripta : MonoBehaviour {
 	Vector3 poX;
 	Vector3 kameraPoz;
 
-
+	Vector3 startPoz;
 	void Start () {
+		startPoz = transform.position;
 		kamera = gameObject.GetComponent<Camera> ();
 		stalni = raca.transform.position - transform.position;
 		poX = transform.position;
@@ -37,5 +38,15 @@ public class SlediRaciSkripta : MonoBehaviour {
 			transform.position=kameraPoz;
 
 		}
+	}
+
+	public void Reset(){
+		transform.position = startPoz;
+		kamera = gameObject.GetComponent<Camera> ();
+		stalni = raca.transform.position - transform.position;
+		poX = transform.position;
+		kameraPoz = transform.position;
+		maxZ = transform.position.z;
+
 	}
 }

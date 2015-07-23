@@ -57,6 +57,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 		postaviVozila ();
 		cas = vrniZamik() / speed;
+		RandomCreatorSkripta.nalozeno++;
 		transform.parent.gameObject.SetActive (false);
 		Debug.Log ("set active");
 	}

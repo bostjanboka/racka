@@ -52,6 +52,7 @@ public class spawnVlakSkripta : MonoBehaviour {
 		
 		postaviVozila ();
 		cas = vrniCas();
+		RandomCreatorSkripta.nalozeno++;
 		transform.parent.gameObject.SetActive (false);
 	}
 	

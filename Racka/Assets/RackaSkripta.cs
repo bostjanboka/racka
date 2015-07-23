@@ -4,8 +4,13 @@ using System.Collections;
 public class RackaSkripta : MonoBehaviour {
 
 	// Use this for initialization
+	public RandomCreatorSkripta teren;
+	public SlediRaciSkripta kamera;
+	public MeniSkripta meni;
+	public orkanSkripta orkan;
 	public float speed;
 	public GameObject zasledujeMe;
+	public GameObject otrok;
 
 	public static int stRack=10;
 	Vector3 smer;
@@ -13,6 +18,8 @@ public class RackaSkripta : MonoBehaviour {
 	float premik;
 	GameObject valovi;
 	public GameObject[] tocke;
+
+	Vector3 startPoz;
 
 	void Awake(){
 		tocke = new GameObject[10];
@@ -28,6 +35,8 @@ public class RackaSkripta : MonoBehaviour {
 		tocke[7] = tocket.FindChild ("t7").gameObject;
 		tocke[8] = tocket.FindChild ("t8").gameObject;
 		tocke[9] = tocket.FindChild ("t9").gameObject;
+		startPoz = transform.position;
+		postaviOtroke ();
 	}
 
 	void Start () {
@@ -59,7 +68,7 @@ public class RackaSkripta : MonoBehaviour {
 		}
 
 		if (stRack < 1) {
-			Application.LoadLevel(Application.loadedLevel);
+			postaviNazaj();
 		}
 
 	}
@@ -77,6 +86,29 @@ public class RackaSkripta : MonoBehaviour {
 	void OnTriggerExit(Collider other) {
 		if (other.tag.Equals ("voda")) {
 			valovi.SetActive (false);
+		}
+	}
+
+	public void postaviNazaj(){
+		if (InputKey.tocka) {
+			Destroy(InputKey.tocka);
+		}
+
+		teren.pobrisiVse ();
+		transform.position = startPoz;
+		kamera.Reset ();
+		meni.reset ();
+		postaviOtroke ();
+		orkan.Reset ();
+		stRack = 10;
+	}
+
+	void postaviOtroke(){
+		for (int i=0; i < tocke.Length; i++) {
+			Debug.Log("postavitev otrok");
+			GameObject game = Instantiate(otrok,tocke[i].transform.position,transform.rotation) as GameObject;
+			game.GetComponent<OtrokSkripta>().zasleduj = tocke[i];
+			tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe = game;
 		}
 	}
 

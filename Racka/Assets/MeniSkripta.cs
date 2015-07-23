@@ -29,4 +29,10 @@ public class MeniSkripta : MonoBehaviour {
 		hud.SetActive (true);
 		InputKey.enableI = true;
 	}
+
+	public void reset(){
+		InputKey.enableI = false;
+		hud.SetActive (false);
+		meni.SetActive (true);
+	}
 }

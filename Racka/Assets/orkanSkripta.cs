@@ -10,25 +10,30 @@ public class orkanSkripta : MonoBehaviour {
 	public GameObject vOrkanu;
 	Vector3 premakni;
 
+	Vector3 zacPoz;
+
 	Transform raca;
 	float cas=0;
 	void Start () {
 		raca = GameObject.Find ("raca").transform;
 		premakni = transform.position;
+		zacPoz = transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		cas += Time.deltaTime;
-		if (Vector3.Distance (premakni, transform.position) < 0.1 || cas > 2) {
-			premakni.x += Random.Range (-5, 6);
-			premakni.z += Random.Range (-5, 6);
-			cas=0;
-		} else {
-			transform.position = Vector3.MoveTowards(transform.position,premakni,speed*Time.deltaTime);
-		}
-		if (raca) {
-			transform.position = Vector3.MoveTowards (transform.position, raca.position, priblizajSpeed * Time.deltaTime);
+		if (InputKey.enableI) {
+			cas += Time.deltaTime;
+			if (Vector3.Distance (premakni, transform.position) < 0.1 || cas > 2) {
+				premakni.x += Random.Range (-5, 6);
+				premakni.z += Random.Range (-5, 6);
+				cas = 0;
+			} else {
+				transform.position = Vector3.MoveTowards (transform.position, premakni, speed * Time.deltaTime);
+			}
+			if (raca) {
+				transform.position = Vector3.MoveTowards (transform.position, raca.position, priblizajSpeed * Time.deltaTime);
+			}
 		}
 		transform.Rotate (0,histrostVrtenja*Time.deltaTime,0);
 
@@ -67,5 +72,9 @@ public class orkanSkripta : MonoBehaviour {
 			otrok.transform.localScale = obj.transform.GetChild(i).transform.localScale;
 		}
 		return game;
+	}
+
+	public void Reset(){
+		transform.position = zacPoz;
 	}
 }

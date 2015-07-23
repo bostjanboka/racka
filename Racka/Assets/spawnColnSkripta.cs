@@ -54,6 +54,7 @@ public class spawnColnSkripta : MonoBehaviour {
 		
 		postaviVozila ();
 		cas = vrniZamik() / speed;
+		RandomCreatorSkripta.nalozeno++;
 		transform.parent.gameObject.SetActive (false);
 	}
 	
