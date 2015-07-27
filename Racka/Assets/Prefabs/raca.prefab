@@ -357,7 +357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &415238
 Transform:
   m_ObjectHideFlags: 1
@@ -1003,8 +1003,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ee0d96710b1c542b4b1bf2f48a1c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teren: {fileID: 0}
+  kamera: {fileID: 0}
+  meni: {fileID: 0}
+  orkan: {fileID: 0}
   speed: 6
   zasledujeMe: {fileID: 173032}
+  otrok: {fileID: 0}
   tocke: []
 --- !u!114 &11427610
 MonoBehaviour:
@@ -2119,6 +2124,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
