@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 491078}
   - 33: {fileID: 3328184}
+  - 65: {fileID: 6538428}
   m_Layer: 12
   m_Name: drevo
   m_TagString: Untagged
@@ -156,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.7900009, y: 0, z: 33.2400017}
+  m_LocalPosition: {x: 31.2999992, y: 0, z: 148.899994}
   m_LocalScale: {x: 4.5, y: 1.5, z: 4.5}
   m_Children:
   - {fileID: 473462}
@@ -340,6 +341,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161858}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6538428
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .332183748, y: 3.2202251, z: .328380048}
+  m_Center: {x: -.000242458438, y: 2.1480794, z: -.00134954858}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
