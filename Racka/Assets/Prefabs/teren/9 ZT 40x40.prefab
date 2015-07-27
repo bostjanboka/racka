@@ -18,6 +18,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &108906
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406424}
+  m_Layer: 9
+  m_Name: SPAWN 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &109970
 GameObject:
   m_ObjectHideFlags: 1
@@ -49,6 +64,21 @@ GameObject:
   - 23: {fileID: 2304458}
   m_Layer: 0
   m_Name: tram
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &134976
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 408684}
+  m_Layer: 9
+  m_Name: SPAWN 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,6 +162,21 @@ GameObject:
   - 23: {fileID: 2372852}
   m_Layer: 12
   m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &152744
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487380}
+  m_Layer: 9
+  m_Name: SPAWN 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,6 +439,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &198998
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441532}
+  m_Layer: 9
+  m_Name: SPAWN 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &199544
 GameObject:
   m_ObjectHideFlags: 1
@@ -464,6 +524,18 @@ Transform:
   - {fileID: 486368}
   m_Father: {fileID: 484230}
   m_RootOrder: 6
+--- !u!4 &406424
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0139999865, y: 2.12500024, z: -.0649999976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484230}
+  m_RootOrder: 9
 --- !u!4 &406498
 Transform:
   m_ObjectHideFlags: 1
@@ -478,6 +550,18 @@ Transform:
   - {fileID: 448086}
   m_Father: {fileID: 484230}
   m_RootOrder: 3
+--- !u!4 &408684
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.347000003, y: 2.12500024, z: .0500000007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484230}
+  m_RootOrder: 10
 --- !u!4 &418340
 Transform:
   m_ObjectHideFlags: 1
@@ -538,6 +622,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 405858}
   m_RootOrder: 1
+--- !u!4 &441532
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .256000012, y: 2.12500024, z: .393000007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484230}
+  m_RootOrder: 8
 --- !u!4 &445106
 Transform:
   m_ObjectHideFlags: 1
@@ -659,6 +755,10 @@ Transform:
   - {fileID: 457086}
   - {fileID: 405858}
   - {fileID: 404138}
+  - {fileID: 441532}
+  - {fileID: 406424}
+  - {fileID: 408684}
+  - {fileID: 487380}
   m_Father: {fileID: 445106}
   m_RootOrder: 0
 --- !u!4 &485928
@@ -685,6 +785,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 405858}
   m_RootOrder: 2
+--- !u!4 &487380
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.428000033, y: 2.12500024, z: -.404000014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484230}
+  m_RootOrder: 11
 --- !u!4 &488264
 Transform:
   m_ObjectHideFlags: 1
