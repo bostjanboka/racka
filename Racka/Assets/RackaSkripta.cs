@@ -24,9 +24,13 @@ public class RackaSkripta : MonoBehaviour {
 	bool zgubil=false;
 	float cas=0;
 
+	public float maxScale=2;
+	public float casScale=2;
+	Transform tocket;
+
 	void Awake(){
 		tocke = new GameObject[10];
-		Transform tocket = transform.FindChild("tocke");
+		tocket = transform.FindChild("tocke");
 
 		tocke[0] = tocket.FindChild ("t0").gameObject;
 		tocke[1] = tocket.FindChild ("t1").gameObject;
@@ -60,13 +64,24 @@ public class RackaSkripta : MonoBehaviour {
 			smer = zac - transform.position;
 			float step = speed * Time.deltaTime;
 		
-			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step*3, 0.0f);
+			Vector3 newDir = Vector3.RotateTowards (transform.forward, smer, step * 3, 0.0f);
 			transform.rotation = Quaternion.LookRotation (newDir);
 			if (Vector3.Distance (transform.position, zac) > 0.6f) {
-				transform.position+= transform.forward * step;
+				transform.position += transform.forward * step;
 				//Debug.Log("cudno"+transform.position);
-			}else{
-				Destroy(InputKey.tocka);
+			} else {
+				Destroy (InputKey.tocka);
+			}
+			if (tocket.localScale.z < maxScale) {
+				Vector3 zacS = tocket.localScale;
+				zacS.z += 1 / casScale * Time.deltaTime;
+				tocket.localScale = zacS;
+			}
+		} else {
+			if (tocket.localScale.z > 1) {
+				Vector3 zacS = tocket.localScale;
+				zacS.z -= 1 * Time.deltaTime;
+				tocket.localScale = zacS;
 			}
 		}
 
