@@ -21,6 +21,9 @@ public class RackaSkripta : MonoBehaviour {
 
 	Vector3 startPoz;
 
+	bool zgubil=false;
+	float cas=0;
+
 	void Awake(){
 		tocke = new GameObject[10];
 		Transform tocket = transform.FindChild("tocke");
@@ -67,8 +70,17 @@ public class RackaSkripta : MonoBehaviour {
 			}
 		}
 
-		if (stRack < 1) {
-			postaviNazaj();
+
+		if (zgubil) {
+			if(cas <= 1f){
+				cas += Time.deltaTime;
+			}
+			else{
+				meni.lost();
+			}
+		}
+		else if (stRack < 10) {
+			zgubil = true;
 		}
 
 	}
@@ -97,10 +109,12 @@ public class RackaSkripta : MonoBehaviour {
 		teren.pobrisiVse ();
 		transform.position = startPoz;
 		kamera.Reset ();
-		meni.reset ();
+		meni.play ();
 		postaviOtroke ();
 		orkan.Reset ();
 		stRack = 10;
+		zgubil = false;
+		cas = 0;
 	}
 
 	void postaviOtroke(){

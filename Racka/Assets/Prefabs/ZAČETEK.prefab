@@ -2456,6 +2456,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497134}
+  - 114: {fileID: 11492462}
   m_Layer: 0
   m_Name: "ZA\u010CETEK"
   m_TagString: Untagged
@@ -46133,6 +46134,19 @@ MonoBehaviour:
   max: 60
   speed: 5
   zadnji: {fileID: 0}
+--- !u!114 &11492462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeefb95c4bcd5b4a8bcc2855d16e235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
+  id: kmetija
 --- !u!114 &11498156
 MonoBehaviour:
   m_ObjectHideFlags: 1

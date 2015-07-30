@@ -32,7 +32,7 @@ public class orkanSkripta : MonoBehaviour {
 				transform.position = Vector3.MoveTowards (transform.position, premakni, speed * Time.deltaTime);
 			}
 			if (raca) {
-				transform.position = Vector3.MoveTowards (transform.position, raca.position, priblizajSpeed * Time.deltaTime);
+				transform.position = Vector3.MoveTowards (transform.position, raca.position+new Vector3(40,0,0), priblizajSpeed * Time.deltaTime);
 			}
 		}
 		transform.Rotate (0,histrostVrtenja*Time.deltaTime,0);

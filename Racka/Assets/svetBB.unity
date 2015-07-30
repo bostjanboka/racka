@@ -258,7 +258,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verZeleznica
-      value: 300
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: vertrava
