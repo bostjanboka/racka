@@ -497,7 +497,7 @@ MonoBehaviour:
   zasledujeMe: {fileID: 0}
   povozenaRaca: {fileID: 125830, guid: b436b9b7ec0eda042a2e63a5d1abd73d, type: 2}
   osamljenaRaca: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
-  speed: 5
+  speed: 6
 --- !u!198 &19862404
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1607,6 +1607,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
