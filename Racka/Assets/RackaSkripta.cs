@@ -56,7 +56,7 @@ public class RackaSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (InputKey.tocka) {
+		if (InputKey.tocka.activeSelf) {
 			Vector3 zac = InputKey.tocka.transform.position;
 			zac.y = transform.position.y;
 			//InputKey.tocka.transform.position = zac;
@@ -70,7 +70,7 @@ public class RackaSkripta : MonoBehaviour {
 				transform.position += transform.forward * step;
 				//Debug.Log("cudno"+transform.position);
 			} else {
-				Destroy (InputKey.tocka);
+				InputKey.tocka.SetActive(false);
 			}
 			if (tocket.localScale.z < maxScale) {
 				Vector3 zacS = tocket.localScale;
@@ -117,8 +117,8 @@ public class RackaSkripta : MonoBehaviour {
 	}
 
 	public void postaviNazaj(){
-		if (InputKey.tocka) {
-			Destroy(InputKey.tocka);
+		if (InputKey.tocka.activeSelf) {
+			InputKey.tocka.SetActive(false);
 		}
 
 		teren.pobrisiVse ();

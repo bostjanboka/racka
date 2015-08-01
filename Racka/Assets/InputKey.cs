@@ -18,7 +18,8 @@ public class InputKey : MonoBehaviour {
 		enableI = false;
 	}
 	void Start () {
-		tocka = null;
+		tocka = Instantiate (instTocka, Vector3.zero, Quaternion.Euler (90, 0, 0)) as GameObject;
+		tocka.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -39,9 +40,8 @@ public class InputKey : MonoBehaviour {
 					hit = Physics.RaycastAll (ray);
 					for (int i=0; i < hit.Length; i++) {
 						if (hit [i].point != null && hit [i].collider.gameObject.tag.Equals ("teren") || hit [i].collider.gameObject.tag.Equals ("tla") || hit [i].collider.gameObject.tag.Equals ("voda")) {
-							//tocka = hit[i].point;
-							Destroy (tocka);
-							tocka = Instantiate (instTocka, hit [i].point, Quaternion.Euler (90, 0, 0)) as GameObject;
+							tocka.transform.position = hit [i].point;
+							tocka.SetActive(true);
 						}
 					}
 
@@ -54,8 +54,8 @@ public class InputKey : MonoBehaviour {
 				hit = Physics.RaycastAll (ray);
 				for (int i=0; i < hit.Length; i++) {
 					if (hit [i].point != null && hit [i].collider.gameObject.tag.Equals ("teren") || hit [i].collider.gameObject.tag.Equals ("tla") || hit [i].collider.gameObject.tag.Equals ("voda")) {
-						Destroy (tocka);
-						tocka = Instantiate (instTocka, hit [i].point, Quaternion.Euler (90, 0, 0)) as GameObject;
+						tocka.transform.position = hit [i].point;
+						tocka.SetActive(true);
 					}
 				}
 
