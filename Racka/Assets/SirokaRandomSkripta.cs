@@ -36,7 +36,7 @@ public class SirokaRandomSkripta : MonoBehaviour {
 			Bounds bounds = mesh.bounds;
 			poz.x = i*bounds.size.x * zac.transform.localScale.x - bounds.size.x * zac.transform.localScale.x;
 			zac.transform.localPosition = poz;
-
+			//zac.GetComponent<SpawnRackeSkripta>().postavi();
 		}
 		gameObject.SetActive (false);
 	}
@@ -44,5 +44,19 @@ public class SirokaRandomSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void reset(){
+		SpawnRackeSkripta[] comp = transform.GetComponentsInChildren<SpawnRackeSkripta> ();
+		for (int i=0; i < comp.Length; i++) {
+			comp[i].pocisti();
+		}
+	}
+
+	public void postavi(){
+		SpawnRackeSkripta[] comp = transform.GetComponentsInChildren<SpawnRackeSkripta> ();
+		for (int i=0; i < 2; i++) {
+			comp[i].postavi();
+		}
 	}
 }

@@ -406,7 +406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: vertrava
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: avto7
@@ -1055,7 +1055,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -38.0104828
+      value: -17.3999996
       objectReference: {fileID: 0}
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1063,7 +1063,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.9902573
+      value: 52.7000008
       objectReference: {fileID: 0}
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_LocalRotation.x

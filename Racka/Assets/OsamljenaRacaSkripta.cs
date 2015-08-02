@@ -27,10 +27,11 @@ public class OsamljenaRacaSkripta : MonoBehaviour {
 					GameObject zac = tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe;
 					zac.transform.position = transform.position;
 					zac.transform.rotation = transform.rotation;
+					zac.GetComponent<OtrokSkripta>().povozena = false;
 					zac.SetActive(true);
 					gameObject.SetActive(false);
 					RackaSkripta.stRack++;
-					Destroy(gameObject);
+
 				}
 			}
 

@@ -447,6 +447,7 @@ GameObject:
   - 4: {fileID: 445106}
   - 33: {fileID: 3355516}
   - 114: {fileID: 11479066}
+  - 114: {fileID: 11412214}
   m_Layer: 9
   m_Name: 9 ZT 40x40
   m_TagString: Untagged
@@ -1699,6 +1700,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11412214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914c6b255f8cda5418a4584c62aaccb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  osamljena: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
+  proc: 20
 --- !u!114 &11479066
 MonoBehaviour:
   m_ObjectHideFlags: 1

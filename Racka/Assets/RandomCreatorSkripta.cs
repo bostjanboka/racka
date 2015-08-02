@@ -311,6 +311,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}else if(id.Equals("siroka")){
 				zadnjiSiroka.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiSiroka = brisem;
+				brisem.GetComponent<SirokaRandomSkripta>().reset();
 			}else if(id.Equals("levi")){
 				zadnjiLevi.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiLevi = brisem;
@@ -346,6 +347,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		}else if(spawnTabela == voda){
 			prviVoda = spawn.GetComponent<nazajSkripta>().nazaj;
 		}else if(spawnTabela == travaSiroka){
+			spawn.GetComponent<SirokaRandomSkripta>().postavi();
 			prviSiroka = spawn.GetComponent<nazajSkripta>().nazaj;
 		}else if(spawnTabela == crte){
 			prviCrte = spawn.GetComponent<nazajSkripta>().nazaj;
@@ -381,6 +383,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}else if(id.Equals("siroka")){
 				zadnjiSiroka.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiSiroka = brisem;
+				brisem.GetComponent<SirokaRandomSkripta>().reset();
 			}else if(id.Equals("levi")){
 				zadnjiLevi.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiLevi = brisem;

@@ -11,7 +11,7 @@ public class OtrokSkripta : MonoBehaviour {
 	Vector3 smer;
 	public float speed;
 
-	bool povozena=false;
+	public bool povozena=false;
 	GameObject povozenOtrok;
 	void Awake(){
 		povozenOtrok = Instantiate (povozenaRaca) as GameObject;
