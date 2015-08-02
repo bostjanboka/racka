@@ -134,6 +134,7 @@ public class RackaSkripta : MonoBehaviour {
 
 	void postaviOtroke(){
 		for (int i=0; i < tocke.Length; i++) {
+			Destroy(tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe);
 			Debug.Log("postavitev otrok");
 			GameObject game = Instantiate(otrok,tocke[i].transform.position,transform.rotation) as GameObject;
 			game.GetComponent<OtrokSkripta>().zasleduj = tocke[i];
