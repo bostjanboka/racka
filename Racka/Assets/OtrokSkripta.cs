@@ -10,6 +10,13 @@ public class OtrokSkripta : MonoBehaviour {
 	public GameObject osamljenaRaca;
 	Vector3 smer;
 	public float speed;
+
+	bool povozena=false;
+	GameObject povozenOtrok;
+	void Awake(){
+		povozenOtrok = Instantiate (povozenaRaca) as GameObject;
+		povozenOtrok.SetActive (false);
+	}
 	void Start () {
 		smer = Vector3.zero;
 		if(zasleduj)
@@ -34,23 +41,17 @@ public class OtrokSkripta : MonoBehaviour {
 	}
 
 
+
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("kolo")) {
-			Instantiate (povozenaRaca, transform.position, transform.rotation);
-			RackaSkripta.stRack--;
-			/*if(zasledujeMe){
-				zasledujeMe.GetComponent<OtrokSkripta>().zasleduj = zasleduj;
-				if(zasleduj.tag.Equals("raca")){
-					zasleduj.GetComponent<RackaSkripta>().zasledujeMe = zasledujeMe;
-				}else{
-					zasleduj.GetComponent<OtrokSkripta>().zasledujeMe = zasledujeMe;
-				}
-			}*/
-			Destroy (gameObject);
-		} else if (other.tag.Equals ("coln")) {
-			Instantiate (osamljenaRaca, transform.position, transform.rotation);
-			RackaSkripta.stRack--;
-			Destroy (gameObject);
-		}
+			if(!povozena){
+				RackaSkripta.stRack--;
+				povozena=true;
+				povozenOtrok.transform.position = transform.position;
+				povozenOtrok.transform.rotation = transform.rotation;
+				povozenOtrok.SetActive(true);
+				gameObject.SetActive(false);
+			}
+		} 
 	}
 }

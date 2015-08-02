@@ -94,7 +94,7 @@ public class RackaSkripta : MonoBehaviour {
 				meni.lost();
 			}
 		}
-		else if (stRack < 10) {
+		else if (stRack < 1) {
 			zgubil = true;
 		}
 
