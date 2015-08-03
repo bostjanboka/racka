@@ -746,7 +746,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26a3a62f884b4934c8c795733adefc11, type: 2}
+  - {fileID: 2100000, guid: ba5cc63064db2ec43addee41be103b68, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -986,7 +986,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26a3a62f884b4934c8c795733adefc11, type: 2}
+  - {fileID: 2100000, guid: ba5cc63064db2ec43addee41be103b68, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1178,6 +1178,8 @@ MonoBehaviour:
   zasledujeMe: {fileID: 173032}
   otrok: {fileID: 165942, guid: b51acc7e5eb71a941896bea1a208f905, type: 2}
   tocke: []
+  maxScale: 2
+  casScale: 2
 --- !u!114 &11425608
 MonoBehaviour:
   m_ObjectHideFlags: 1
