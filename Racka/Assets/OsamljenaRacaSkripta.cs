@@ -31,7 +31,7 @@ public class OsamljenaRacaSkripta : MonoBehaviour {
 					zac.SetActive(true);
 					gameObject.SetActive(false);
 					RackaSkripta.stRack++;
-
+					break;
 				}
 			}
 
