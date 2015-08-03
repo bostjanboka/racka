@@ -165,7 +165,6 @@ GameObject:
   - 65: {fileID: 6539506}
   - 23: {fileID: 2358674}
   - 54: {fileID: 5438142}
-  - 114: {fileID: 11468538}
   - 95: {fileID: 9573690}
   m_Layer: 11
   m_Name: telo
@@ -738,23 +737,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11468538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8828529725abf1543bde1612514a4db8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zasleduj: {fileID: 0}
-  zasledujeMe: {fileID: 0}
-  povozenaRaca: {fileID: 125830}
-  osamljenaRaca: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
-  speed: 6
-  povozena: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
