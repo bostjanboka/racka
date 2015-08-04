@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3363092}
   - 23: {fileID: 2380034}
   - 114: {fileID: 11419524}
+  - 114: {fileID: 11489984}
   m_Layer: 0
   m_Name: vOrkanu
   m_TagString: Untagged
@@ -72,17 +73,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb271bd344f58d04c95e7d2b9b3185db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kot: 15
+  kot: 20
   speed: 3
   trajanje: 7
   enable: 1
+--- !u!114 &11489984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeefb95c4bcd5b4a8bcc2855d16e235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazaj: {fileID: 0}
+  id: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: kot
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169994}

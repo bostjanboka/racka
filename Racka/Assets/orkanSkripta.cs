@@ -12,15 +12,34 @@ public class orkanSkripta : MonoBehaviour {
 	Transform raca;
 	bool zatakni=false;
 
+	public GameObject prvi;
+	static public GameObject zadnji;
+
+	public static Transform parent;
+
+	void Awake(){
+		parent = transform;
+	}
+
 	void Start () {
 		raca = GameObject.Find ("raca").transform;
 		zacPoz = transform.position;
+
+		prvi = Instantiate (vOrkanu);
+		prvi.SetActive (false);
+		GameObject zac=prvi;
+		for (int i=0; i < 60; i++) {
+			zac.GetComponent<nazajSkripta>().nazaj = Instantiate(vOrkanu,Vector3.zero,Quaternion.Euler(0,0,0)) as GameObject;
+			zac = zac.GetComponent<nazajSkripta>().nazaj;
+			zac.SetActive(false);
+		}
+		zadnji = zac;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (InputKey.enableI) {
-			if(raca.position.z - transform.position.z < 0.2 || zatakni){
+			if(raca.gameObject.activeSelf && (raca.position.z - transform.position.z < 0.2 || zatakni)){
 				transform.position = Vector3.MoveTowards(transform.position,raca.position,speed*5*Time.deltaTime);
 				zatakni=true;
 			}else if(!zatakni){
@@ -33,36 +52,50 @@ public class orkanSkripta : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.tag.Equals ("raca") || other.tag.Equals ("otrok") || other.tag.Equals ("coln")|| other.tag.Equals ("avto") || other.tag.Equals ("drevo")) {
+		if (other.tag.Equals ("raca") || other.tag.Equals ("otrok") || other.tag.Equals ("coln")|| other.tag.Equals ("avto") || other.tag.Equals ("drevo") || other.tag.Equals("vozilo")) {
 			/*GameObject game = Instantiate(glavnaRacaVOrkanu,Vector3.zero,Quaternion.Euler(0,0,0)) as GameObject;*/
-			GameObject game = sestavi(other.gameObject,gameObject);
+			if(prvi != null){
+				GameObject game = sestavi(other.gameObject,gameObject);
+				//game.transform.position = other.transform.position - game.transform.position;
+			}
 			//game.transform.parent = transform;
-			game.transform.position = other.transform.position - game.transform.position;
-			Destroy(other.gameObject);
+
+			//other.gameObject.SetActive(false);
 
 		}
 	}
 
 	GameObject sestavi(GameObject obj, GameObject stars){
-		GameObject game = Instantiate(vOrkanu,Vector3.zero,Quaternion.Euler(0,0,0)) as GameObject;
+		GameObject game = prvi;
+		prvi = prvi.GetComponent<nazajSkripta>().nazaj;
+
+		game.GetComponent<vOrkanuSkripta> ().StartOrkan (obj.transform.position,obj.transform.rotation, stars);
+		game.SetActive (true);
+
 
 		if (obj.GetComponent<MeshFilter> ()) {
 			game.GetComponent<MeshFilter> ().mesh = obj.GetComponent<MeshFilter> ().mesh;
+
 		}
 		if (obj.GetComponent<MeshRenderer> ()) {
+			game.GetComponent<MeshRenderer> ().enabled=true;
 			game.GetComponent<MeshRenderer> ().material = obj.GetComponent<MeshRenderer> ().material;
+
+		} else {
+			game.GetComponent<MeshRenderer> ().enabled=false;
 		}
-		if (stars != null) {
-			game.transform.parent = stars.transform;
-		}
+
 		game.transform.localScale = obj.transform.localScale;
 		for (int i=0; i < obj.transform.childCount; i++) {
-			GameObject otrok = sestavi(obj.transform.GetChild(i).gameObject,game);
-			otrok.GetComponent<vOrkanuSkripta>().enable=false;
-			otrok.transform.localPosition = obj.transform.GetChild(i).transform.localPosition;
-			otrok.transform.localRotation = obj.transform.GetChild(i).transform.localRotation;
-			otrok.transform.localScale = obj.transform.GetChild(i).transform.localScale;
+			if(prvi != null){
+				GameObject otrok = sestavi(obj.transform.GetChild(i).gameObject,game);
+				otrok.GetComponent<vOrkanuSkripta>().enable=false;
+				otrok.transform.localPosition = obj.transform.GetChild(i).transform.localPosition;
+				otrok.transform.localRotation = obj.transform.GetChild(i).transform.localRotation;
+				otrok.transform.localScale = obj.transform.GetChild(i).transform.localScale;
+			}
 		}
+
 		return game;
 	}
 

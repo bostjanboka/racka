@@ -52,7 +52,7 @@ GameObject:
   - 95: {fileID: 9534988}
   m_Layer: 11
   m_Name: Otrok
-  m_TagString: Untagged
+  m_TagString: otrok
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1612,6 +1612,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: otrok
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

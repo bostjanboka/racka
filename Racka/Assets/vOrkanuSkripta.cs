@@ -11,15 +11,15 @@ public class vOrkanuSkripta : MonoBehaviour {
 
 	Vector3 smer = Vector3.up;
 	Transform orkan=null;
-	void Start () {
+	public void StartOrkan (Vector3 pos, Quaternion rot, GameObject stars) {
 		if (enable) {
 			//transform.Rotate (kot, 0, 0);
 			smer = Quaternion.Euler(kot,0,0)*smer;
 		}
-		orkan = transform.parent;
-		while (orkan.parent != null) {
-			orkan = orkan.parent;
-		}
+		transform.position = pos;
+		transform.rotation = rot;
+		transform.SetParent (stars.transform);
+
 	}
 	
 	// Update is called once per frame
@@ -29,7 +29,9 @@ public class vOrkanuSkripta : MonoBehaviour {
 			sirota();
 		}
 		if (transform.position.y > 25) {
-			Destroy (gameObject);
+			gameObject.SetActive(false);
+			orkanSkripta.zadnji.GetComponent<nazajSkripta>().nazaj = gameObject;
+			orkanSkripta.zadnji = gameObject;
 		}
 		if (enable) {
 			transform.position += smer * speed * Time.deltaTime;
@@ -38,7 +40,7 @@ public class vOrkanuSkripta : MonoBehaviour {
 
 	void sirota(){
 		Debug.Log ("sirota");
-		transform.parent = orkan;
+		transform.parent = orkanSkripta.parent;
 		enable = true;
 		speed = Random.Range (1.0f, 3.1f);
 	}
