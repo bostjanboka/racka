@@ -252,17 +252,15 @@ MonoBehaviour:
   m_RendererInfo:
   - renderer: {fileID: 2335844}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .0940258056, y: .0614567101, z: .696289062, w: .404296875}
+    lightmapOffsetScale: {x: .0940258056, y: .0614567101, z: 0, w: .897460938}
   - renderer: {fileID: 2310254}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .182617188, y: .182617188, z: 0, w: .71875}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .182617188, y: .182617188, z: 0, w: .650390625}
   - renderer: {fileID: 2354880}
-    lightmapIndex: 2
-    lightmapOffsetScale: {x: .0683593974, y: .0446970202, z: .659179688, w: .884765625}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .0683593974, y: .0446970202, z: .095703125, w: .834960938}
   m_Lightmaps:
-  - {fileID: 2800000, guid: 9d85cf3853ba4d844a95b7b81136f363, type: 3}
-  - {fileID: 2800000, guid: 760bc674c55c5544fb8020f4569a8db2, type: 3}
-  - {fileID: 2800000, guid: 91d5cde282012fe4c9f3dd0debbcf891, type: 3}
+  - {fileID: 2800000, guid: 680ba2e97cdc84d5ab983c205d7a8846, type: 3}
 --- !u!135 &13583612
 SphereCollider:
   m_ObjectHideFlags: 1

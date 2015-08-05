@@ -162,12 +162,12 @@ MonoBehaviour:
   m_RendererInfo:
   - renderer: {fileID: 2311832}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .1640625, y: .1640625, z: .254882812, w: .234375}
+    lightmapOffsetScale: {x: .1640625, y: .1640625, z: .184570312, w: .650390625}
   - renderer: {fileID: 2377966}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .184174269, y: .12037912, z: .620117188, w: .234375}
+    lightmapOffsetScale: {x: .184174269, y: .12037912, z: .350585938, w: .650390625}
   m_Lightmaps:
-  - {fileID: 2800000, guid: 760bc674c55c5544fb8020f4569a8db2, type: 3}
+  - {fileID: 2800000, guid: 680ba2e97cdc84d5ab983c205d7a8846, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
