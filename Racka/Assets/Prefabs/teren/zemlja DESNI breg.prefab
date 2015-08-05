@@ -10,12 +10,13 @@ GameObject:
   - 4: {fileID: 492614}
   - 33: {fileID: 3399984}
   - 114: {fileID: 11487222}
+  - 114: {fileID: 11472466}
   m_Layer: 9
   m_Name: zemlja DESNI breg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &143406
 GameObject:
@@ -33,7 +34,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &192266
 GameObject:
@@ -51,7 +52,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!4 &406576
 Transform:
@@ -184,6 +185,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11472466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88aadddd2111c4b359c9bb7ea703be00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RendererInfo:
+  - renderer: {fileID: 2347402}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
+  - renderer: {fileID: 2369206}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
+  m_Lightmaps:
+  - {fileID: 2800000, guid: 135300aed6cee1b42a119facf6818e62, type: 3}
+  - {fileID: 2800000, guid: e3759ede74ffa2c419696e2412df1293, type: 3}
 --- !u!114 &11487222
 MonoBehaviour:
   m_ObjectHideFlags: 1
