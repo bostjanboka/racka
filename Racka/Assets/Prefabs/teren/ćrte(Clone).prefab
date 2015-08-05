@@ -971,7 +971,7 @@ GameObject:
   - 33: {fileID: 3374256}
   - 114: {fileID: 11402022}
   - 114: {fileID: 11496936}
-  - 114: {fileID: 11434310}
+  - 114: {fileID: 11445214}
   m_Layer: 0
   m_Name: "\u0107rte(Clone)"
   m_TagString: Untagged
@@ -1724,7 +1724,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -76, y: 0, z: 32.5}
+  m_LocalPosition: {x: -76, y: 0, z: 95.3300018}
   m_LocalScale: {x: 1, y: 1, z: 3}
   m_Children:
   - {fileID: 449860}
@@ -4101,7 +4101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 124686, guid: 9d3bca8079438294d911cbd6ceba40dc, type: 2}
   stevilo: 30
---- !u!114 &11434310
+--- !u!114 &11445214
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -4115,196 +4115,197 @@ MonoBehaviour:
   m_RendererInfo:
   - renderer: {fileID: 2333714}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .637695312, w: .833984375}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .69140625, w: .716796875}
   - renderer: {fileID: 2355936}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .662109375}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .935546875, w: .704101562}
   - renderer: {fileID: 2380948}
     lightmapIndex: 2
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .837890625}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: 0}
   - renderer: {fileID: 2305872}
     lightmapIndex: 3
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .650390625, w: .936523438}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .161132812}
   - renderer: {fileID: 2343950}
     lightmapIndex: 2
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: .650390625}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .245117188, w: 0}
   - renderer: {fileID: 2355724}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .930664062}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .107421875}
   - renderer: {fileID: 2366828}
-    lightmapIndex: 4
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .833007812}
-  - renderer: {fileID: 2389726}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .715820312}
-  - renderer: {fileID: 2382182}
-    lightmapIndex: 2
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .28515625, w: .837890625}
-  - renderer: {fileID: 2300546}
-    lightmapIndex: 3
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .93359375, w: .752929688}
-  - renderer: {fileID: 2359712}
-    lightmapIndex: 4
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .609375, w: .830078125}
-  - renderer: {fileID: 2365732}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .876953125}
-  - renderer: {fileID: 2364452}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .358398438, w: .833984375}
-  - renderer: {fileID: 2379268}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .69140625, w: .556640625}
+  - renderer: {fileID: 2389726}
+    lightmapIndex: 4
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .9375, w: .447265625}
+  - renderer: {fileID: 2382182}
+    lightmapIndex: 5
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: .533203125}
+  - renderer: {fileID: 2300546}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .935546875, w: .650390625}
+  - renderer: {fileID: 2359712}
+    lightmapIndex: 5
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .74609375}
+  - renderer: {fileID: 2365732}
     lightmapIndex: 3
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .375, w: .936523438}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .0537109375}
+  - renderer: {fileID: 2364452}
+    lightmapIndex: 5
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: .373046875}
+  - renderer: {fileID: 2379268}
+    lightmapIndex: 6
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .934570312, w: .5078125}
   - renderer: {fileID: 2370258}
     lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .661132812, w: 0}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .245117188, w: .74609375}
   - renderer: {fileID: 2341136}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .08984375, w: .685546875}
+    lightmapIndex: 4
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .9375, w: .393554688}
   - renderer: {fileID: 2344176}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .524414062, w: .772460938}
+    lightmapIndex: 5
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: .16015625}
   - renderer: {fileID: 2350972}
     lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0859375, w: .62890625}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .934570312, w: .400390625}
   - renderer: {fileID: 2331460}
     lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .432617188}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: .693359375}
   - renderer: {fileID: 2377880}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0927734375, w: .9375}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: 0}
   - renderer: {fileID: 2391778}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .592773438}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .446289062, w: .556640625}
   - renderer: {fileID: 2319730}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0859375, w: .745117188}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .935546875, w: .7578125}
   - renderer: {fileID: 2319418}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .752929688}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .446289062, w: .716796875}
   - renderer: {fileID: 2323276}
     lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .596679688, w: .703125}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .934570312, w: .561523438}
   - renderer: {fileID: 2314640}
     lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .245117188, w: .432617188}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .5703125, w: 0}
   - renderer: {fileID: 2393314}
     lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0859375, w: .572265625}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .934570312, w: .454101562}
   - renderer: {fileID: 2326840}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .661132812, w: .16015625}
+    lightmapIndex: 7
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .837890625}
   - renderer: {fileID: 2332558}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .462890625}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .188476562, w: .922851562}
   - renderer: {fileID: 2328860}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .279296875, w: .772460938}
+    lightmapIndex: 7
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .28515625, w: .837890625}
   - renderer: {fileID: 2373132}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .88671875, w: .462890625}
-  - renderer: {fileID: 2397992}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .490234375, w: .810546875}
-  - renderer: {fileID: 2378312}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .596679688, w: .870117188}
-  - renderer: {fileID: 2361620}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .490234375, w: .650390625}
-  - renderer: {fileID: 2306196}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .33984375}
-  - renderer: {fileID: 2352764}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .650390625}
-  - renderer: {fileID: 2387280}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .608398438}
-  - renderer: {fileID: 2381664}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .245117188, w: .810546875}
-  - renderer: {fileID: 2350776}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .500976562}
-  - renderer: {fileID: 2304052}
     lightmapIndex: 8
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .616210938, w: .837890625}
-  - renderer: {fileID: 2364542}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .596679688, w: .756835938}
-  - renderer: {fileID: 2399732}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .735351562, w: .650390625}
-  - renderer: {fileID: 2390340}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .393554688}
-  - renderer: {fileID: 2330464}
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .318359375, w: .8359375}
+  - renderer: {fileID: 2397992}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .725585938, w: .373046875}
+  - renderer: {fileID: 2378312}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .943359375, w: .916992188}
+  - renderer: {fileID: 2361620}
+    lightmapIndex: 2
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .735351562, w: 0}
+  - renderer: {fileID: 2306196}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .296875}
+  - renderer: {fileID: 2352764}
     lightmapIndex: 9
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .73046875, w: .6796875}
-  - renderer: {fileID: 2334880}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .595703125, w: .9296875}
-  - renderer: {fileID: 2316718}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .810546875}
-  - renderer: {fileID: 2323952}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .596679688, w: .81640625}
-  - renderer: {fileID: 2384352}
-    lightmapIndex: 7
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .245117188, w: .650390625}
-  - renderer: {fileID: 2326684}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .354492188}
+  - renderer: {fileID: 2387280}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .243164062}
+  - renderer: {fileID: 2381664}
+    lightmapIndex: 10
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .556640625, w: .837890625}
+  - renderer: {fileID: 2350776}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .75}
+  - renderer: {fileID: 2304052}
+    lightmapIndex: 2
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .490234375, w: 0}
+  - renderer: {fileID: 2364542}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .803710938}
+  - renderer: {fileID: 2399732}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .447265625}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .650390625}
+  - renderer: {fileID: 2390340}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0771484375, w: .698242188}
+  - renderer: {fileID: 2330464}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .62109375, w: .735351562}
+  - renderer: {fileID: 2334880}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0771484375, w: .751953125}
+  - renderer: {fileID: 2316718}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .375976562, w: .735351562}
+  - renderer: {fileID: 2323952}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0771484375, w: .859375}
+  - renderer: {fileID: 2384352}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .62109375, w: .575195312}
+  - renderer: {fileID: 2326684}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0771484375, w: .805664062}
   - renderer: {fileID: 2364506}
     lightmapIndex: 8
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .331054688, w: .837890625}
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .375976562, w: .575195312}
   - renderer: {fileID: 2311876}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .940429688, w: .5546875}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0771484375, w: .913085938}
   - renderer: {fileID: 2381010}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .706054688}
+    lightmapIndex: 9
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .514648438}
   - renderer: {fileID: 2321172}
-    lightmapIndex: 6
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .0859375, w: .515625}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .50390625, w: .848632812}
   - renderer: {fileID: 2350034}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .735351562, w: 0}
+    lightmapIndex: 11
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .2734375, w: .833984375}
   - renderer: {fileID: 2375084}
-    lightmapIndex: 10
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .694335938, w: .87890625}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .642578125}
   - renderer: {fileID: 2341098}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .545898438}
+    lightmapIndex: 11
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .830078125}
   - renderer: {fileID: 2369704}
-    lightmapIndex: 10
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .547851562, w: .830078125}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .50390625, w: .90234375}
   - renderer: {fileID: 2340772}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .490234375, w: 0}
+    lightmapIndex: 9
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .834960938}
   - renderer: {fileID: 2326990}
-    lightmapIndex: 10
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .547851562, w: .883789062}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .942382812, w: .696289062}
   - renderer: {fileID: 2398096}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .243303895, y: .159027159, z: .279296875, w: .1796875}
+    lightmapIndex: 9
+    lightmapOffsetScale: {x: .243303895, y: .159027159, z: 0, w: .674804688}
   - renderer: {fileID: 2320820}
-    lightmapIndex: 10
-    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .547851562, w: .9375}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .0517578125, y: .0517578125, z: .514648438, w: .74609375}
   m_Lightmaps:
-  - {fileID: 2800000, guid: bd96f2831150d5843a5cd136dee20cf3, type: 3}
-  - {fileID: 2800000, guid: 0afadc55eeb39e74e94111efa06475e7, type: 3}
-  - {fileID: 2800000, guid: 6c277a64dc854d14791de0180dc15a45, type: 3}
-  - {fileID: 2800000, guid: fa0dd6f8b425d2543aef6d09b5f3951b, type: 3}
-  - {fileID: 2800000, guid: bc42b901bedb2c245b5140155e0ac656, type: 3}
-  - {fileID: 2800000, guid: e35b381568648ab4fab95ab57731c8ca, type: 3}
-  - {fileID: 2800000, guid: 3aa8e7c0d08b4564393f115fbfa8e648, type: 3}
-  - {fileID: 2800000, guid: 640b61c19bf88cb47b6b52ade2876dd3, type: 3}
   - {fileID: 2800000, guid: 00cca35e37156c8499faa756144f9176, type: 3}
-  - {fileID: 2800000, guid: 3c424eb89e2e1954ca2dcf1980cc460e, type: 3}
+  - {fileID: 2800000, guid: 3aa8e7c0d08b4564393f115fbfa8e648, type: 3}
+  - {fileID: 2800000, guid: c5e0f1ff409d0c34684b8e1626e9497a, type: 3}
+  - {fileID: 2800000, guid: 9d85cf3853ba4d844a95b7b81136f363, type: 3}
+  - {fileID: 2800000, guid: 0afadc55eeb39e74e94111efa06475e7, type: 3}
+  - {fileID: 2800000, guid: 640b61c19bf88cb47b6b52ade2876dd3, type: 3}
+  - {fileID: 2800000, guid: e35b381568648ab4fab95ab57731c8ca, type: 3}
+  - {fileID: 2800000, guid: 210a13cc06a27fc45bf9958290793464, type: 3}
   - {fileID: 2800000, guid: 680ba2e97cdc84d5ab983c205d7a8846, type: 3}
+  - {fileID: 2800000, guid: 3366a6c75f955734dbd296e229e358a7, type: 3}
+  - {fileID: 2800000, guid: 7a8cd126bf2908647b303a19aad74892, type: 3}
+  - {fileID: 2800000, guid: a75eb5fafed80ac44b6f249d4dd96e03, type: 3}
 --- !u!114 &11496936
 MonoBehaviour:
   m_ObjectHideFlags: 1

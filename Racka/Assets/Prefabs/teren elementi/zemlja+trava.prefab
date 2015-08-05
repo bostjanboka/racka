@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &111206
 GameObject:
@@ -32,7 +32,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &116366
 GameObject:
@@ -49,7 +49,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &122874
 GameObject:
@@ -66,7 +66,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &123316
 GameObject:
@@ -83,7 +83,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &129970
 GameObject:
@@ -98,7 +98,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &137822
 GameObject:
@@ -115,7 +115,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &145462
 GameObject:
@@ -132,7 +132,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &155894
 GameObject:
@@ -149,7 +149,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &156070
 GameObject:
@@ -166,7 +166,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &159434
 GameObject:
@@ -178,12 +178,13 @@ GameObject:
   - 4: {fileID: 478160}
   - 33: {fileID: 3343468}
   - 114: {fileID: 11459580}
+  - 114: {fileID: 11401286}
   m_Layer: 9
   m_Name: zemlja+trava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &164712
 GameObject:
@@ -200,7 +201,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &165226
 GameObject:
@@ -217,7 +218,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &177450
 GameObject:
@@ -234,7 +235,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &177862
 GameObject:
@@ -251,7 +252,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &177948
 GameObject:
@@ -268,7 +269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &178090
 GameObject:
@@ -285,7 +286,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &178628
 GameObject:
@@ -302,7 +303,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &179738
 GameObject:
@@ -319,7 +320,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &181482
 GameObject:
@@ -337,7 +338,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!1 &199006
 GameObject:
@@ -354,7 +355,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!4 &401952
 Transform:
@@ -1236,6 +1237,88 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.98397505, z: 1}
   m_Center: {x: 0, y: .491987437, z: 0}
+--- !u!114 &11401286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88aadddd2111c4b359c9bb7ea703be00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RendererInfo:
+  - renderer: {fileID: 2355316}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
+  - renderer: {fileID: 2354050}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2323612}
+    lightmapIndex: 2
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2371958}
+    lightmapIndex: 2
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2306010}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2398168}
+    lightmapIndex: 4
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2388454}
+    lightmapIndex: 3
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2318346}
+    lightmapIndex: 5
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .16015625}
+  - renderer: {fileID: 2393288}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2332730}
+    lightmapIndex: 6
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2358762}
+    lightmapIndex: 7
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2311994}
+    lightmapIndex: 7
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2336396}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2387970}
+    lightmapIndex: 8
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2344558}
+    lightmapIndex: 9
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2376258}
+    lightmapIndex: 10
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2398090}
+    lightmapIndex: 10
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  - renderer: {fileID: 2376264}
+    lightmapIndex: 11
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: 0}
+  - renderer: {fileID: 2314600}
+    lightmapIndex: 11
+    lightmapOffsetScale: {x: .569001555, y: .371908128, z: 0, w: .373046875}
+  m_Lightmaps:
+  - {fileID: 2800000, guid: 210a13cc06a27fc45bf9958290793464, type: 3}
+  - {fileID: 2800000, guid: a0d3276809e016a40adc20ffe22c893c, type: 3}
+  - {fileID: 2800000, guid: 9d85cf3853ba4d844a95b7b81136f363, type: 3}
+  - {fileID: 2800000, guid: 3c424eb89e2e1954ca2dcf1980cc460e, type: 3}
+  - {fileID: 2800000, guid: 00cca35e37156c8499faa756144f9176, type: 3}
+  - {fileID: 2800000, guid: c5e0f1ff409d0c34684b8e1626e9497a, type: 3}
+  - {fileID: 2800000, guid: 6c277a64dc854d14791de0180dc15a45, type: 3}
+  - {fileID: 2800000, guid: 76dd2945211013949b5bbdf7658d78d5, type: 3}
+  - {fileID: 2800000, guid: 2669c46f8ed5df7479ea001265fbc44d, type: 3}
+  - {fileID: 2800000, guid: 925f686a276832b4c8770aefafdaeae4, type: 3}
+  - {fileID: 2800000, guid: bc42b901bedb2c245b5140155e0ac656, type: 3}
+  - {fileID: 2800000, guid: 640b61c19bf88cb47b6b52ade2876dd3, type: 3}
 --- !u!114 &11459580
 MonoBehaviour:
   m_ObjectHideFlags: 1

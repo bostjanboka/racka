@@ -333,9 +333,9 @@ MonoBehaviour:
   m_RendererInfo:
   - renderer: {fileID: 2307610}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: .234375}
+    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
   m_Lightmaps:
-  - {fileID: 2800000, guid: 0afadc55eeb39e74e94111efa06475e7, type: 3}
+  - {fileID: 2800000, guid: bd96f2831150d5843a5cd136dee20cf3, type: 3}
 --- !u!114 &11479472
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -100,7 +100,7 @@ GameObject:
   - 33: {fileID: 3342522}
   - 114: {fileID: 11487418}
   - 114: {fileID: 11494374}
-  - 114: {fileID: 11445680}
+  - 114: {fileID: 11421788}
   m_Layer: 0
   m_Name: ZeleznicaGeneric
   m_TagString: Untagged
@@ -456,7 +456,7 @@ MonoBehaviour:
   objekt: {fileID: 130932, guid: 6b908fd75131b664ab6e30b6d049f70a, type: 2}
   speed: 60
   zadnji: {fileID: 0}
---- !u!114 &11445680
+--- !u!114 &11421788
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -473,13 +473,13 @@ MonoBehaviour:
     lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
   - renderer: {fileID: 2312448}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: .660119355, y: .431464106, z: .279296875, w: .33984375}
+    lightmapOffsetScale: {x: .660119355, y: .431464106, z: 0, w: .373046875}
   - renderer: {fileID: 2385968}
     lightmapIndex: 2
-    lightmapOffsetScale: {x: .660119355, y: .431464106, z: 0, w: 0}
+    lightmapOffsetScale: {x: .660119355, y: .431464106, z: 0, w: .18359375}
   m_Lightmaps:
-  - {fileID: 2800000, guid: bc42b901bedb2c245b5140155e0ac656, type: 3}
-  - {fileID: 2800000, guid: 0afadc55eeb39e74e94111efa06475e7, type: 3}
+  - {fileID: 2800000, guid: d983da1aac04f03469e4bd97f3514384, type: 3}
+  - {fileID: 2800000, guid: 6c277a64dc854d14791de0180dc15a45, type: 3}
   - {fileID: 2800000, guid: e35b381568648ab4fab95ab57731c8ca, type: 3}
 --- !u!114 &11450802
 MonoBehaviour:
