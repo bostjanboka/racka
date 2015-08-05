@@ -7602,8 +7602,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 230a6f3e6758abd46a7fcc716fdafcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objekt: {fileID: 125842, guid: fe12c70f4e6945442b55663d06ef02b5, type: 2}
-  casRespawna: 5
+  min: 30
+  med: 45
+  max: 60
+  speed: 5
+  zadnji: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

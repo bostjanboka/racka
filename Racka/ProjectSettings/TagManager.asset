@@ -15,6 +15,7 @@ TagManager:
   - drevo
   - vozilo
   - osamljena
+  - kolo z
   layers:
   - Default
   - TransparentFX
