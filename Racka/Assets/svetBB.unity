@@ -719,6 +719,10 @@ Prefab:
     - {fileID: 11429360, guid: 2698d5190569d264e819751686f49699, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2698d5190569d264e819751686f49699, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1073593000 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 181012, guid: 2adee76b434930d4689a4ed238386c7a, type: 2}
+  m_PrefabInternal: {fileID: 1840153541}
 --- !u!1 &1218445537 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 156246, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
@@ -825,6 +829,10 @@ Prefab:
     - target: {fileID: 140270, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
       propertyPath: m_Name
       value: Directional Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 140270, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
@@ -1045,6 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bfe4d34bfef0744871ff8e1a7d7335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kamera: {fileID: 1073593000}
   meni: {fileID: 763134262}
   hud: {fileID: 1454857922}
   loose: {fileID: 261395084}
