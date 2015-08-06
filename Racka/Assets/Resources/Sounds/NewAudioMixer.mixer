@@ -26,6 +26,7 @@ AudioMixerController:
     - 36b9c087f336d11419fa295c1dc1ff97
     - 7dc02f68be6bfd84082a7aa19929cab7
     - cc1fb09b65d9e7e4c89b9c675138e87d
+    - 5e427c0e25d266344a874eaacf8ca67b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500003}
@@ -47,6 +48,7 @@ AudioMixerGroupController:
   - {fileID: 24345274}
   - {fileID: 24364526}
   - {fileID: 24346006}
+  - {fileID: 24398092}
   m_Volume: 653130e6dd49efb4288241bab38851c6
   m_Pitch: 3c983a29d01d65343afc0d34c47930da
   m_Effects:
@@ -210,6 +212,23 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24412226}
   - {fileID: 24424182}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24398092
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: QUACK
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 5e427c0e25d266344a874eaacf8ca67b
+  m_Children: []
+  m_Volume: 63f3c086f5cf0c545b748b67a68d2f51
+  m_Pitch: 121b0c9117a40e442acac52ae881ac8a
+  m_Effects:
+  - {fileID: 24490178}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -443,6 +462,19 @@ AudioMixerEffectController:
     m_GUID: 81d5959bd38f9204298e9117148d47ce
   - m_ParameterName: Resonance
     m_GUID: 060bbd68e386ea54887f6f03992fb9ff
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24490178
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 865e34dfa92cac24ba267812f11d284e
+  m_EffectName: Attenuation
+  m_MixLevel: 408241a1f3678e14f88047a96adb4ad7
+  m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
