@@ -16,7 +16,7 @@ GameObject:
   m_TagString: tla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &141550
 GameObject:
@@ -34,7 +34,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &146752
 GameObject:
@@ -52,7 +52,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &151602
 GameObject:
@@ -68,7 +68,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &186364
 GameObject:
@@ -84,7 +84,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &196202
 GameObject:
@@ -97,13 +97,12 @@ GameObject:
   - 33: {fileID: 3302196}
   - 114: {fileID: 11465340}
   - 114: {fileID: 11437540}
-  - 114: {fileID: 11476658}
   m_Layer: 0
   m_Name: cesta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967291
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &413986
 Transform:
@@ -319,23 +318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nazaj: {fileID: 0}
---- !u!114 &11476658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88aadddd2111c4b359c9bb7ea703be00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RendererInfo:
-  - renderer: {fileID: 2307610}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
-  m_Lightmaps:
-  - {fileID: 2800000, guid: bd96f2831150d5843a5cd136dee20cf3, type: 3}
 --- !u!114 &11479472
 MonoBehaviour:
   m_ObjectHideFlags: 1

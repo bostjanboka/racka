@@ -44,7 +44,7 @@ LevelGameManager:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -125,7 +125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22480586, guid: 37ff641f0727b4d43b2b34e3686fcb59, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 22480586, guid: 37ff641f0727b4d43b2b34e3686fcb59, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -219,7 +219,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496942, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: avto1
@@ -363,7 +363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &261395084 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 153516, guid: e8535606fc4641b45a7ffa04bf9f79e6, type: 2}
@@ -405,7 +405,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
@@ -447,7 +447,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431224, guid: aef2ceab11916b24e8bd82b4e9841c3f, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 101602, guid: aef2ceab11916b24e8bd82b4e9841c3f, type: 2}
       propertyPath: m_IsActive
@@ -620,7 +620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!1 &763134262 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 120078, guid: 37ff641f0727b4d43b2b34e3686fcb59, type: 2}
@@ -666,7 +666,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22462720, guid: e8535606fc4641b45a7ffa04bf9f79e6, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 22462720, guid: e8535606fc4641b45a7ffa04bf9f79e6, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -762,7 +762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410546, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
       propertyPath: m_Name
@@ -816,15 +816,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400502, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 140270, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
       propertyPath: m_Name
       value: Directional Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 140270, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944f1d054a0ac3244a6ace708c4918bf, type: 2}
@@ -866,7 +862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443216, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11412978, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
       propertyPath: instTocka
@@ -1101,7 +1097,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22424780, guid: 7c1cb7ac4d491f1439510b4d47f73471, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 22424780, guid: 7c1cb7ac4d491f1439510b4d47f73471, type: 2}
       propertyPath: m_AnchoredPosition.x
