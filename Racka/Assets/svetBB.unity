@@ -457,6 +457,10 @@ Prefab:
       propertyPath: m_Radius
       value: 5.51999998
       objectReference: {fileID: 0}
+    - target: {fileID: 101602, guid: aef2ceab11916b24e8bd82b4e9841c3f, type: 2}
+      propertyPath: m_TagString
+      value: orkan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aef2ceab11916b24e8bd82b4e9841c3f, type: 2}
   m_IsPrefabParent: 0
@@ -868,6 +872,14 @@ Prefab:
       propertyPath: instTocka
       value: 
       objectReference: {fileID: 161608, guid: 265152f821ae2fd4899126486f5022c5, type: 2}
+    - target: {fileID: 11412978, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
+      propertyPath: quack
+      value: 
+      objectReference: {fileID: 8300000, guid: b896b20d0c434ed498421d3e69d26063, type: 3}
+    - target: {fileID: 11412978, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
+      propertyPath: quack2
+      value: 
+      objectReference: {fileID: 8300000, guid: 09df0f58e9823fa4780d451b568e1e71, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5191860b9830542438e46bc2ea385c49, type: 2}
   m_IsPrefabParent: 0

@@ -4,6 +4,9 @@ using System.Collections;
 public class InputKey : MonoBehaviour {
 
 	// Use this for initialization
+	public AudioClip quack;
+	public AudioClip quack2;
+
 	static public bool w;
 	static public bool a;
 	static public bool s;
@@ -14,12 +17,15 @@ public class InputKey : MonoBehaviour {
 
 	public static bool enableI;
 
+	Vector3 racaPos;
+
 	void Awake(){
 		enableI = false;
 	}
 	void Start () {
 		tocka = Instantiate (instTocka, Vector3.zero, Quaternion.Euler (90, 0, 0)) as GameObject;
 		tocka.SetActive (false);
+		racaPos = GameObject.Find ("raca").transform.position;
 	}
 	
 	// Update is called once per frame
@@ -42,6 +48,7 @@ public class InputKey : MonoBehaviour {
 						if (hit [i].point != null && hit [i].collider.gameObject.tag.Equals ("teren") || hit [i].collider.gameObject.tag.Equals ("tla") || hit [i].collider.gameObject.tag.Equals ("voda")) {
 							tocka.transform.position = hit [i].point;
 							tocka.SetActive(true);
+							Zvok();
 						}
 					}
 
@@ -56,10 +63,21 @@ public class InputKey : MonoBehaviour {
 					if (hit [i].point != null && hit [i].collider.gameObject.tag.Equals ("teren") || hit [i].collider.gameObject.tag.Equals ("tla") || hit [i].collider.gameObject.tag.Equals ("voda")) {
 						tocka.transform.position = hit [i].point;
 						tocka.SetActive(true);
+						Zvok();
 					}
 				}
 
 
+			}
+		}
+	}
+
+	public void Zvok(){
+		if (Random.Range (0, 100) < 50) {
+			if(Random.Range(0,100) < 20){
+				AudioSource.PlayClipAtPoint(quack2,racaPos);
+			}else{
+				AudioSource.PlayClipAtPoint(quack,racaPos);
 			}
 		}
 	}

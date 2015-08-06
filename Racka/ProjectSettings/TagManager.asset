@@ -16,6 +16,7 @@ TagManager:
   - vozilo
   - osamljena
   - kolo z
+  - orkan
   layers:
   - Default
   - TransparentFX

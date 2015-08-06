@@ -50,6 +50,7 @@ public class OtrokSkripta : MonoBehaviour {
 				povozenOtrok.transform.position = transform.position;
 				povozenOtrok.transform.rotation = transform.rotation;
 				povozenOtrok.SetActive(true);
+				povozenOtrok.GetComponent<AudioSource>().Play();
 				gameObject.SetActive(false);
 			}
 		} 

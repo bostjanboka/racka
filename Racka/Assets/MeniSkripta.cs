@@ -15,11 +15,12 @@ public class MeniSkripta : MonoBehaviour {
 	public Text stRack;
 
 	float tocke;
-	float zacetna;
+	float deltaTocke;
 	void Awake(){
 		hud.SetActive (false);
 		loose.SetActive (false);
-		zacetna = kamera.transform.position.z;
+		deltaTocke = kamera.transform.position.z;
+		tocke = 0;
 	}
 	void Start () {
 	
@@ -28,7 +29,10 @@ public class MeniSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		stRack.text = RackaSkripta.stRack+" / 10";
+		tocke += (RackaSkripta.stRack / 10f)*(kamera.transform.position.z-deltaTocke);
+		deltaTocke = kamera.transform.position.z;
 
+		Score.text = Mathf.RoundToInt (tocke)+"";
 	}
 
 

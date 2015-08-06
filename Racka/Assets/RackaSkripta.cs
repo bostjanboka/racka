@@ -4,6 +4,8 @@ using System.Collections;
 public class RackaSkripta : MonoBehaviour {
 
 	// Use this for initialization
+
+
 	public RandomCreatorSkripta teren;
 	public SlediRaciSkripta kamera;
 	public MeniSkripta meni;
@@ -107,6 +109,9 @@ public class RackaSkripta : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals ("voda")) {
 			valovi.SetActive (true);
+		} else if (other.tag.Equals ("orkan")) {
+			zgubil=true;
+			gameObject.SetActive(false);
 		}
 	}
 
