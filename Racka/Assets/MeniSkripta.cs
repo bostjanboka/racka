@@ -23,7 +23,7 @@ public class MeniSkripta : MonoBehaviour {
 		tocke = 0;
 	}
 	void Start () {
-	
+		bestScore.text = PlayerPrefs.GetInt ("bestScore")+"";
 	}
 	
 	// Update is called once per frame
@@ -48,11 +48,17 @@ public class MeniSkripta : MonoBehaviour {
 		hud.SetActive (false);
 		loose.SetActive (false);
 		meni.SetActive (true);
+		tocke = 0;
+		deltaTocke = kamera.transform.position.z;
 	}
 
 	public void lost(){
 		InputKey.enableI = false;
 		//hud.SetActive (false);
 		loose.SetActive (true);
+		if (!PlayerPrefs.HasKey ("bestScore") || PlayerPrefs.GetInt ("bestScore") < Mathf.RoundToInt (tocke)) {
+			PlayerPrefs.SetInt ("bestScore", Mathf.RoundToInt (tocke));
+			bestScore.text = Mathf.RoundToInt(tocke)+"";
+		}
 	}
 }

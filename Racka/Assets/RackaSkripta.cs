@@ -110,7 +110,7 @@ public class RackaSkripta : MonoBehaviour {
 		if (other.tag.Equals ("voda")) {
 			valovi.SetActive (true);
 		} else if (other.tag.Equals ("orkan")) {
-			zgubil=true;
+			meni.lost();
 			gameObject.SetActive(false);
 		}
 	}
