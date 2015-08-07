@@ -57,4 +57,8 @@ public class OtrokSkripta : MonoBehaviour {
 			}
 		} 
 	}
+
+	public void uniciOtroka(){
+		Destroy (povozenOtrok);
+	}
 }

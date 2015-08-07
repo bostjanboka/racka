@@ -13,12 +13,14 @@ public class RackaSkripta : MonoBehaviour {
 	public float speed;
 	public GameObject zasledujeMe;
 	public GameObject otrok;
+	public GameObject povozenaRaca;
 
 	public static int stRack=10;
 	Vector3 smer;
 	Vector3 rotacija;
 	float premik;
 	GameObject valovi;
+	GameObject povozena;
 	public GameObject[] tocke;
 
 	Vector3 startPoz;
@@ -46,6 +48,8 @@ public class RackaSkripta : MonoBehaviour {
 		tocke[9] = tocket.FindChild ("t9").gameObject;
 		startPoz = transform.position;
 		postaviOtroke ();
+		povozena = Instantiate (povozenaRaca) as GameObject;
+		povozena.SetActive (false);
 	}
 
 	void Start () {
@@ -110,6 +114,13 @@ public class RackaSkripta : MonoBehaviour {
 		if (other.tag.Equals ("voda")) {
 			valovi.SetActive (true);
 		} else if (other.tag.Equals ("orkan")) {
+			meni.lost ();
+			gameObject.SetActive (false);
+		} else if (other.tag.Equals ("kolo")) {
+			Debug.Log("POZOZENA RACA");
+			povozena.SetActive(true);
+			povozena.transform.position = transform.position;
+			povozena.transform.rotation = transform.rotation;
 			meni.lost();
 			gameObject.SetActive(false);
 		}
@@ -125,7 +136,8 @@ public class RackaSkripta : MonoBehaviour {
 		if (InputKey.tocka.activeSelf) {
 			InputKey.tocka.SetActive(false);
 		}
-
+		gameObject.SetActive (true);
+		povozena.SetActive (false);
 		teren.pobrisiVse ();
 		transform.position = startPoz;
 		kamera.Reset ();
@@ -139,6 +151,10 @@ public class RackaSkripta : MonoBehaviour {
 
 	void postaviOtroke(){
 		for (int i=0; i < tocke.Length; i++) {
+			if(tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe){
+				tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe.GetComponent<OtrokSkripta>().uniciOtroka();
+			}
+
 			Destroy(tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe);
 			Debug.Log("postavitev otrok");
 			GameObject game = Instantiate(otrok,tocke[i].transform.position,transform.rotation) as GameObject;
@@ -146,5 +162,7 @@ public class RackaSkripta : MonoBehaviour {
 			tocke[i].GetComponent<ZasledujeMeSkripta>().ZasledujeMe = game;
 		}
 	}
+
+
 
 }

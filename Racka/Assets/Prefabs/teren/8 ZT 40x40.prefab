@@ -288,7 +288,6 @@ GameObject:
   - 33: {fileID: 3322816}
   - 114: {fileID: 11446830}
   - 114: {fileID: 11436596}
-  - 114: {fileID: 11488558}
   m_Layer: 9
   m_Name: 8 ZT 40x40
   m_TagString: Untagged
@@ -1632,61 +1631,6 @@ MonoBehaviour:
   drevo: {fileID: 112684, guid: cf99de018e462134cb6c0f9c9b8935c9, type: 2}
   smreka: {fileID: 132016, guid: 28f81f4e03018034b9ebae3db2849a6f, type: 2}
   nazaj: {fileID: 0}
---- !u!114 &11488558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88aadddd2111c4b359c9bb7ea703be00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RendererInfo:
-  - renderer: {fileID: 2371066}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: .243164062}
-  - renderer: {fileID: 2326172}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: .992602348, y: .648780107, z: 0, w: 0}
-  - renderer: {fileID: 0}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: .0940258056, y: .0614567101, z: .463867188, w: .893554688}
-  - renderer: {fileID: 0}
-    lightmapIndex: 2
-    lightmapOffsetScale: {x: .169634193, y: .11087551, z: 0, w: .810546875}
-  - renderer: {fileID: 0}
-    lightmapIndex: 2
-    lightmapOffsetScale: {x: .248150587, y: .162195027, z: .65625, w: .833984375}
-  - renderer: {fileID: 0}
-    lightmapIndex: 3
-    lightmapOffsetScale: {x: .13861537, y: .0906011313, z: .64453125, w: .243164062}
-  - renderer: {fileID: 0}
-    lightmapIndex: 4
-    lightmapOffsetScale: {x: .284016103, y: .18563728, z: 0, w: 0}
-  - renderer: {fileID: 0}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .284016103, y: .18563728, z: .5703125, w: .720703125}
-  - renderer: {fileID: 0}
-    lightmapIndex: 4
-    lightmapOffsetScale: {x: .252997279, y: .165362895, z: .5703125, w: 0}
-  - renderer: {fileID: 0}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .284016103, y: .18563728, z: .28515625, w: .533203125}
-  - renderer: {fileID: 0}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .284016103, y: .18563728, z: .5703125, w: .16015625}
-  - renderer: {fileID: 0}
-    lightmapIndex: 5
-    lightmapOffsetScale: {x: .252997279, y: .165362895, z: .5703125, w: .34765625}
-  m_Lightmaps:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

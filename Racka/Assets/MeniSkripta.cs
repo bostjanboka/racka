@@ -16,11 +16,13 @@ public class MeniSkripta : MonoBehaviour {
 
 	float tocke;
 	float deltaTocke;
+	GameObject raca;
 	void Awake(){
 		hud.SetActive (false);
 		loose.SetActive (false);
 		deltaTocke = kamera.transform.position.z;
 		tocke = 0;
+		raca = GameObject.Find ("raca");
 	}
 	void Start () {
 		bestScore.text = PlayerPrefs.GetInt ("bestScore")+"";
@@ -37,6 +39,8 @@ public class MeniSkripta : MonoBehaviour {
 
 
 	public void play(){
+		tocke = 0;
+		deltaTocke = kamera.transform.position.z;
 		meni.SetActive (false);
 		hud.SetActive (true);
 		loose.SetActive (false);
@@ -44,12 +48,11 @@ public class MeniSkripta : MonoBehaviour {
 	}
 
 	public void reset(){
+		raca.SetActive (true);
 		InputKey.enableI = false;
 		hud.SetActive (false);
 		loose.SetActive (false);
 		meni.SetActive (true);
-		tocke = 0;
-		deltaTocke = kamera.transform.position.z;
 	}
 
 	public void lost(){
