@@ -1134,6 +1134,26 @@ Prefab:
       propertyPath: povozenaRaca
       value: 
       objectReference: {fileID: 106232, guid: 479c45273b2d14e45bf4df2c486f0e49, type: 2}
+    - target: {fileID: 2327250, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aca6b89908db6841b00159ee7a010ec, type: 2}
+    - target: {fileID: 2367108, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aca6b89908db6841b00159ee7a010ec, type: 2}
+    - target: {fileID: 2334290, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aca6b89908db6841b00159ee7a010ec, type: 2}
+    - target: {fileID: 2367108, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367108, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
+      propertyPath: m_ReflectionProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8177808, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2905300dda777ba48905fab61ecd644f, type: 2}
