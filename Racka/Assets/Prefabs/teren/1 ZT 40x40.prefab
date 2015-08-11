@@ -207,7 +207,7 @@ GameObject:
   - 4: {fileID: 486252}
   - 33: {fileID: 3395104}
   - 23: {fileID: 2321076}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: "senca kro\u0161nja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,8 +307,8 @@ GameObject:
   - 4: {fileID: 435934}
   - 33: {fileID: 3373078}
   - 23: {fileID: 2313736}
-  m_Layer: 12
-  m_Name: Plane (3)
+  m_Layer: 13
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401046}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - 4: {fileID: 416546}
   - 33: {fileID: 3313110}
   - 23: {fileID: 2315166}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: senca steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,8 +458,8 @@ GameObject:
   - 4: {fileID: 478444}
   - 33: {fileID: 3392470}
   - 23: {fileID: 2362162}
-  m_Layer: 12
-  m_Name: Plane (2)
+  m_Layer: 13
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,7 +590,7 @@ GameObject:
   - 4: {fileID: 402326}
   - 33: {fileID: 3336780}
   - 23: {fileID: 2304410}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: "senca kro\u0161nja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +778,7 @@ GameObject:
   - 4: {fileID: 495926}
   - 33: {fileID: 3317394}
   - 23: {fileID: 2392098}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: senca steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   - 4: {fileID: 449788}
   - 33: {fileID: 3351202}
   - 23: {fileID: 2340434}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: "senca kro\u0161nja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -897,8 +897,8 @@ GameObject:
   - 4: {fileID: 456416}
   - 33: {fileID: 3371612}
   - 23: {fileID: 2332206}
-  m_Layer: 12
-  m_Name: Plane (1)
+  m_Layer: 13
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +914,7 @@ GameObject:
   - 4: {fileID: 461822}
   - 33: {fileID: 3365444}
   - 23: {fileID: 2361160}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: senca steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +931,7 @@ GameObject:
   - 4: {fileID: 421880}
   - 33: {fileID: 3359412}
   - 23: {fileID: 2317878}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: senca steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,8 +966,8 @@ GameObject:
   - 4: {fileID: 401780}
   - 33: {fileID: 3399110}
   - 23: {fileID: 2362128}
-  m_Layer: 12
-  m_Name: Plane
+  m_Layer: 13
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - 4: {fileID: 472278}
   - 33: {fileID: 3302362}
   - 23: {fileID: 2382786}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: "senca kro\u0161nja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,9 +1275,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 401780}
-  - {fileID: 456416}
-  - {fileID: 478444}
   - {fileID: 435934}
+  - {fileID: 478444}
+  - {fileID: 456416}
   m_Father: {fileID: 402530}
   m_RootOrder: 1
 --- !u!4 &416546
@@ -1450,7 +1450,7 @@ Transform:
   m_LocalScale: {x: .0203585699, y: 1, z: .099999994}
   m_Children: []
   m_Father: {fileID: 412552}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!4 &438284
 Transform:
   m_ObjectHideFlags: 1
@@ -1631,7 +1631,7 @@ Transform:
   m_LocalScale: {x: .0203585699, y: 1, z: .100000001}
   m_Children: []
   m_Father: {fileID: 412552}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!4 &461822
 Transform:
   m_ObjectHideFlags: 1

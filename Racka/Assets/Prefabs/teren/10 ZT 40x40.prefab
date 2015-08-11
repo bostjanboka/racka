@@ -256,7 +256,7 @@ GameObject:
   - 4: {fileID: 472510}
   - 33: {fileID: 3329632}
   - 23: {fileID: 2381626}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: senca steblo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,7 +1170,7 @@ GameObject:
   - 4: {fileID: 469084}
   - 33: {fileID: 3321728}
   - 23: {fileID: 2355372}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: "senca kro\u0161nja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
