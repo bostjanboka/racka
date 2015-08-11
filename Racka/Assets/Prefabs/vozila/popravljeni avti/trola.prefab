@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3355166}
   - 23: {fileID: 2360932}
   - 65: {fileID: 6527764}
+  - 54: {fileID: 5461596}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -29,6 +30,7 @@ GameObject:
   - 33: {fileID: 3304588}
   - 23: {fileID: 2368660}
   - 65: {fileID: 6504044}
+  - 54: {fileID: 5486168}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -99,6 +101,7 @@ GameObject:
   - 33: {fileID: 3346458}
   - 23: {fileID: 2309998}
   - 65: {fileID: 6563160}
+  - 54: {fileID: 5422070}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -610,6 +613,7 @@ GameObject:
   - 33: {fileID: 3333518}
   - 23: {fileID: 2352814}
   - 65: {fileID: 6504818}
+  - 54: {fileID: 5459578}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -2137,6 +2141,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5422070
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106112}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!54 &5459578
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195874}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!54 &5461596
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!54 &5486168
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100768}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!64 &6428360
 MeshCollider:
   m_ObjectHideFlags: 1
