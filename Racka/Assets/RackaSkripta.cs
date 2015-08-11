@@ -116,14 +116,15 @@ public class RackaSkripta : MonoBehaviour {
 		} else if (other.tag.Equals ("orkan")) {
 			meni.lost ();
 			gameObject.SetActive (false);
-		} else if (other.tag.Equals ("kolo")) {
-			Debug.Log("POZOZENA RACA");
-			povozena.SetActive(true);
-			povozena.transform.position = transform.position;
-			povozena.transform.rotation = transform.rotation;
-			meni.lost();
-			gameObject.SetActive(false);
-		}
+		} 
+	}
+
+	public void povoziRaco(){
+		povozena.SetActive(true);
+		povozena.transform.position = transform.position;
+		povozena.transform.rotation = transform.rotation;
+		meni.lost();
+		gameObject.SetActive(false);
 	}
 
 	void OnTriggerExit(Collider other) {
