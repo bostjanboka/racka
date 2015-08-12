@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 428996}
   - 114: {fileID: 11450928}
-  - 65: {fileID: 6545220}
   - 82: {fileID: 8240840}
   - 82: {fileID: 8282104}
+  - 65: {fileID: 6580822}
   m_Layer: 8
   m_Name: "\u0161portni avto rde\u010D"
   m_TagString: vozilo
@@ -602,7 +602,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100418}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 18, y: 0, z: 65.4000015}
+  m_LocalPosition: {x: 27.5799999, y: 0, z: 65.4000015}
   m_LocalScale: {x: 7, y: 1, z: 7}
   m_Children:
   - {fileID: 449236}
@@ -1854,18 +1854,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0}
   m_Center: {x: 0, y: 0, z: .5}
---- !u!65 &6545220
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100418}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .889999986, y: 3.33999991, z: -1.49000001}
-  m_Center: {x: 0, y: 3.55999994, z: .340000004}
 --- !u!65 &6555512
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1902,6 +1890,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0500000007, y: 2, z: 2}
   m_Center: {x: .524999976, y: 5.96046448e-08, z: -9.53674316e-07}
+--- !u!65 &6580822
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .889999986, y: 3.34000015, z: 1.40294671}
+  m_Center: {x: 2.48462406e-08, y: 2.75, z: .208425328}
 --- !u!65 &6591202
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2068,6 +2068,8 @@ MonoBehaviour:
   speed: 4
   nazaj: {fileID: 0}
   pozicija: {x: 0, y: 0, z: 0}
+  size: 0
+  zamik: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

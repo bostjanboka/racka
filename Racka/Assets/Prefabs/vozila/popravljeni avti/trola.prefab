@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3355166}
   - 23: {fileID: 2360932}
   - 65: {fileID: 6527764}
-  - 54: {fileID: 5461596}
+  - 54: {fileID: 5433240}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -30,7 +30,7 @@ GameObject:
   - 33: {fileID: 3304588}
   - 23: {fileID: 2368660}
   - 65: {fileID: 6504044}
-  - 54: {fileID: 5486168}
+  - 54: {fileID: 5467138}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 3346458}
   - 23: {fileID: 2309998}
   - 65: {fileID: 6563160}
-  - 54: {fileID: 5422070}
+  - 54: {fileID: 5410064}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -343,8 +343,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 465874}
   - 114: {fileID: 11495222}
-  - 65: {fileID: 6566528}
   - 82: {fileID: 8263418}
+  - 65: {fileID: 6572722}
   m_Layer: 8
   m_Name: trola
   m_TagString: vozilo
@@ -613,7 +613,7 @@ GameObject:
   - 33: {fileID: 3333518}
   - 23: {fileID: 2352814}
   - 65: {fileID: 6504818}
-  - 54: {fileID: 5459578}
+  - 54: {fileID: 5421078}
   m_Layer: 8
   m_Name: feltna
   m_TagString: Untagged
@@ -2141,7 +2141,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5422070
+--- !u!54 &5410064
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2156,7 +2156,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!54 &5459578
+--- !u!54 &5421078
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2171,7 +2171,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!54 &5461596
+--- !u!54 &5433240
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2186,7 +2186,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!54 &5486168
+--- !u!54 &5467138
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2285,7 +2285,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0500000007, y: 2, z: 2}
   m_Center: {x: -.524999976, y: 0, z: 0}
---- !u!65 &6566528
+--- !u!65 &6572722
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2295,8 +2295,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 7.3499999, z: -2.52999997}
-  m_Center: {x: 0, y: 5.11000013, z: .579999983}
+  m_Size: {x: 1, y: 7.34999943, z: 2.89421701}
+  m_Center: {x: 7.8184641e-08, y: 5.11000013, z: .48699677}
 --- !u!65 &6579604
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2417,6 +2417,8 @@ MonoBehaviour:
   speed: 4
   nazaj: {fileID: 0}
   pozicija: {x: 0, y: 0, z: 0}
+  size: 0
+  zamik: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

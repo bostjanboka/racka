@@ -225,8 +225,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 409062}
   - 114: {fileID: 11446238}
-  - 65: {fileID: 6569264}
   - 82: {fileID: 8219806}
+  - 65: {fileID: 6598936}
   m_Layer: 8
   m_Name: avto siva
   m_TagString: vozilo
@@ -645,7 +645,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137052}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: .800000012, y: 0, z: 54.7400017}
+  m_LocalPosition: {x: 0, y: 0, z: 54.7400017}
   m_LocalScale: {x: 7, y: 1, z: 7}
   m_Children:
   - {fileID: 401718}
@@ -2095,18 +2095,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0500000007, y: 2, z: 2}
   m_Center: {x: -.524999976, y: 5.96046448e-08, z: -9.53674316e-07}
---- !u!65 &6569264
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137052}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .889999986, y: 3.33999991, z: -1.34000003}
-  m_Center: {x: 0, y: 2.75, z: .239999995}
 --- !u!65 &6570874
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2119,6 +2107,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0}
   m_Center: {x: 0, y: 0, z: .5}
+--- !u!65 &6598936
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .889999986, y: 3.34000015, z: 1.40294671}
+  m_Center: {x: 2.48462406e-08, y: 2.75, z: .208425328}
 --- !u!82 &8219806
 AudioSource:
   m_ObjectHideFlags: 1
@@ -2203,6 +2203,8 @@ MonoBehaviour:
   speed: 4
   nazaj: {fileID: 0}
   pozicija: {x: 0, y: 0, z: 0}
+  size: 0
+  zamik: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
