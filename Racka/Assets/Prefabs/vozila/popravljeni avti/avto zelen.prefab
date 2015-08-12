@@ -2057,8 +2057,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .889999986, y: 3.33999991, z: -1.34000003}
-  m_Center: {x: 0, y: 2.75, z: .239999995}
+  m_Size: {x: .889999986, y: 3.33999991, z: 1.44000006}
+  m_Center: {x: 0, y: 2.75, z: .200000003}
 --- !u!65 &6544910
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2203,6 +2203,8 @@ MonoBehaviour:
   speed: 4
   nazaj: {fileID: 0}
   pozicija: {x: 0, y: 0, z: 0}
+  size: 0
+  zamik: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

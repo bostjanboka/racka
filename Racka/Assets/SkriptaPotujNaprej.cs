@@ -8,9 +8,14 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 	public GameObject nazaj;
 	public Vector3 pozicija;
 
+	public float size;
+	public float zamik;
+
 	float casNastanka;
 	void Start () {
-
+		BoxCollider colider = gameObject.GetComponent<BoxCollider> ();
+		size = Mathf.Abs(colider.bounds.size.z * transform.localScale.z);
+		zamik = colider.center.z;
 	}
 	
 	// Update is called once per frame
@@ -18,5 +23,12 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 		transform.position+= (transform.forward * speed * Time.deltaTime);
 
 
+	}
+
+	public float vrniZamikPrvi(){
+		return size/2 - zamik;
+	}
+	public float vrniZamikZadnji(){
+		return size / 2 + zamik;
 	}
 }

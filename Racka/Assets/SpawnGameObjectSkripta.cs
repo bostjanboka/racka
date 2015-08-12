@@ -5,9 +5,9 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	// Use this for initialization
 
-	public float min=30;
-	public float med=45;
-	public float max=60;
+	public float min=0;
+	public float med=0;
+	public float max=0;
 
 	//public float zamik=45;
 	public float speed=5;
@@ -18,8 +18,10 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	GameObject prvi;
 	public GameObject zadnji;
 
-	void Awake(){
+	float prejsni;
 
+	void Awake(){
+		prejsni = 0;
 	}
 
 
@@ -41,7 +43,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		zacasna.GetComponent<SkriptaPotujNaprej>().speed = speed;
 		zacasna.GetComponent<SkriptaPotujNaprej>().pozicija = zacasna.transform.localPosition;
 		zacasna.SetActive(false);
-		for (int i=0; i < 6; i++) {
+		for (int i=0; i < 8; i++) {
 			GameObject vozilo = Instantiate(mapCreator.vrniRandomVozilo()) as GameObject;
 			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);
 			vozilo.transform.rotation = transform.rotation;
@@ -56,7 +58,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		}
 
 		postaviVozila ();
-		cas = vrniZamik() / speed;
+		cas = vrniZamik(prvi) / speed;
 		RandomCreatorSkripta.nalozeno++;
 		transform.parent.gameObject.SetActive (false);
 		Debug.Log ("set active");
@@ -73,7 +75,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 			zac.SetActive(true);
 			Physics.IgnoreCollision(zac.GetComponent<Collider>(), terminator);
 			zac.GetComponent<SkriptaPotujNaprej>().nazaj=null;
-			cas = vrniZamik() / speed;
+			cas = vrniZamik(prvi) / speed;
 		}
 
 
@@ -82,8 +84,9 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	public void postaviVozila(){
 		float vsota = 0;
 		for (int i=0; i < 3; i++) {
-			vsota = i * vrniZamik();
 			GameObject zac = prvi;
+			vsota = i * vrniZamik(zac);
+
 
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
 			zac.transform.position += transform.forward*vsota;
@@ -97,13 +100,20 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		}
 	}
 
-	public float vrniZamik(){
+	public float minimalniZamik(GameObject vozilo){
+		float minzamik = prejsni + vozilo.GetComponent<SkriptaPotujNaprej> ().vrniZamikPrvi();
+		prejsni = vozilo.GetComponent<SkriptaPotujNaprej>().vrniZamikZadnji();
+		return minzamik;
+
+	}
+
+	public float vrniZamik(GameObject zac){
 		if (Random.Range (0, 100) <= 60) {
-			return med;
+			return med+minimalniZamik(zac);
 		} else if (Random.Range (0, 2) == 0) {
-			return min;
+			return min+minimalniZamik(zac);
 		} else {
-			return max;
+			return max+minimalniZamik(zac);
 		}
 
 	}
