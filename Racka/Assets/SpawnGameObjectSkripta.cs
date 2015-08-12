@@ -5,9 +5,9 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	// Use this for initialization
 
-	public float min=0;
-	public float med=0;
-	public float max=0;
+	float min=0;
+	float med=0;
+	float max=0;
 
 	//public float zamik=45;
 	public float speed=5;
@@ -58,7 +58,8 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		}
 
 		postaviVozila ();
-		cas = vrniZamik(prvi) / speed;
+		//cas = vrniZamik(prvi) / speed;
+		//cas = 4;
 		RandomCreatorSkripta.nalozeno++;
 		transform.parent.gameObject.SetActive (false);
 		Debug.Log ("set active");
@@ -67,7 +68,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		cas -= Time.deltaTime;
-		if (cas <= 0) {
+		if (cas <= 0 && prvi.GetComponent<SkriptaPotujNaprej>().nazaj) {
 			GameObject zac = prvi;
 
 			zac.transform.localPosition = zac.GetComponent<SkriptaPotujNaprej>().pozicija;
@@ -103,7 +104,8 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 	public float minimalniZamik(GameObject vozilo){
 		float minzamik = prejsni + vozilo.GetComponent<SkriptaPotujNaprej> ().vrniZamikPrvi();
 		prejsni = vozilo.GetComponent<SkriptaPotujNaprej>().vrniZamikZadnji();
-		return minzamik;
+		Debug.Log ("prvi" + vozilo.GetComponent<SkriptaPotujNaprej> ().vrniZamikPrvi()+ " --- " +minzamik * 175 + " zamik "+minzamik);
+		return minzamik * 175*vozilo.transform.localScale.z;
 
 	}
 
