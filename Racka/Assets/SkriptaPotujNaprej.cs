@@ -29,9 +29,9 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 			size = Mathf.Abs(colider.size.z);
 			zamik = colider.center.z;
 		}
-		return size/2f;
+		return size/2f + zamik;
 	}
 	public float vrniZamikZadnji(){
-		return size / 2f;// + zamik;
+		return size / 2f - zamik;
 	}
 }

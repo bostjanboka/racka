@@ -5,9 +5,9 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 
 	// Use this for initialization
 
-	float min=0;
-	float med=0;
-	float max=0;
+	float min=15;
+	float med=35;
+	float max=45;
 
 	//public float zamik=45;
 	public float speed=5;
@@ -43,7 +43,7 @@ public class SpawnGameObjectSkripta : MonoBehaviour {
 		zacasna.GetComponent<SkriptaPotujNaprej>().speed = speed;
 		zacasna.GetComponent<SkriptaPotujNaprej>().pozicija = zacasna.transform.localPosition;
 		zacasna.SetActive(false);
-		for (int i=0; i < 8; i++) {
+		for (int i=0; i < 12; i++) {
 			GameObject vozilo = Instantiate(mapCreator.vrniRandomVozilo()) as GameObject;
 			Physics.IgnoreCollision(vozilo.GetComponent<Collider>(), terminator);
 			vozilo.transform.rotation = transform.rotation;
