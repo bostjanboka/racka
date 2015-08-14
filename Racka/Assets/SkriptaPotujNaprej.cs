@@ -13,7 +13,14 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 
 	float casNastanka;
 	void Start () {
-
+		Transform sence = transform.FindChild ("SENCE");
+		if (sence) {
+			if(transform.localEulerAngles.y > 200){
+				sence.FindChild("DOL").gameObject.SetActive(false);
+			}else{
+				sence.FindChild("GOR").gameObject.SetActive(false);
+			}
+		}
 	}
 	
 	// Update is called once per frame
