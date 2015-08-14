@@ -173,7 +173,7 @@ Prefab:
       objectReference: {fileID: 194146, guid: 0d4d2ca6cbd57c84789e7493eacf2b1b, type: 2}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verCesta
-      value: 5000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verVoda
@@ -185,7 +185,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: vertrava
-      value: 10
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: avto7
@@ -396,7 +396,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 1, y: .5}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: -91.5999985, y: 431}
+  m_AnchoredPosition: {x: -91.6015625, y: 431}
   m_SizeDelta: {x: 154, y: 154}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &47308138
@@ -1677,7 +1677,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 1, y: .5}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: -91.5999985, y: 269}
+  m_AnchoredPosition: {x: -91.6015625, y: 269}
   m_SizeDelta: {x: 154, y: 154}
   m_Pivot: {x: .5, y: .5}
 --- !u!95 &1281045331

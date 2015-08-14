@@ -42,6 +42,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483418}
+  - 114: {fileID: 11434208}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -427,6 +428,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418326}
+  - 114: {fileID: 11495190}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -472,6 +474,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436154}
+  - 114: {fileID: 11410192}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -586,6 +589,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484822}
+  - 114: {fileID: 11479670}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -635,6 +639,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407076}
+  - 114: {fileID: 11478534}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -799,6 +804,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417390}
+  - 114: {fileID: 11432392}
   m_Layer: 13
   m_Name: SENCE
   m_TagString: Untagged
@@ -2951,6 +2957,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11410192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635769cb3641b294d93fdd266b4bd507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11412214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2964,6 +2981,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   osamljena: {fileID: 120764, guid: 6e545ce81ab1e9847afc80de86cc77c1, type: 2}
   proc: 20
+--- !u!114 &11432392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635769cb3641b294d93fdd266b4bd507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11434208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f7f6f94ad1f3f42be2454ffcb8e3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11478534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f7f6f94ad1f3f42be2454ffcb8e3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2979,6 +3029,28 @@ MonoBehaviour:
   drevo: {fileID: 112684, guid: cf99de018e462134cb6c0f9c9b8935c9, type: 2}
   smreka: {fileID: 132016, guid: 28f81f4e03018034b9ebae3db2849a6f, type: 2}
   nazaj: {fileID: 0}
+--- !u!114 &11479670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635769cb3641b294d93fdd266b4bd507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11495190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635769cb3641b294d93fdd266b4bd507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
