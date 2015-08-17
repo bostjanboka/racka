@@ -55,6 +55,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	Vector3 vec;
 	List<GameObject> list;
 	int brisi=0;
+	int stetjeTrave =0;
 
 	bool vDelovanju=false;
 
@@ -249,6 +250,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}
 
 			prejsni = spawn;
+			stetjeTrave++;
 		}
 		vDelovanju = true;
 	}
@@ -262,35 +264,41 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		}
 
 		if (raca && vDelovanju && list[list.Count-2].transform.position.z < raca.transform.position.z) {
-			GameObject spawn = tabela[Random.Range(0,tabela.Length)];
-			if(spawn == prejsni && spawn == travaSiroka){
-				spawn = cesta;
-			}
-			if(prejsni == spawn && spawn == cesta){
-				dodajElement(prviCrte,crte);
-			}else if(spawn == voda && prejsni != voda){
-				dodajElement(prviDesni,desniBreg);
-			}else if(spawn!= voda && prejsni == voda){
-				dodajElement(prviLevi,leviBreg);
-			}else if(prejsni == spawn && spawn == zeleznica){
-				dodajElement(prviTrava,trava);
-				
-			}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
-				dodajElement(prviTrava,trava);
-			}
+			if(stetjeTrave >= 3){
+				stetjeTrave=0;
+				dodajElement(prviSiroka,travaSiroka);
+			}else{
+				GameObject spawn = tabela[Random.Range(0,tabela.Length)];
+				stetjeTrave++;
+				if(spawn == prejsni && spawn == travaSiroka){
+					spawn = cesta;
+				}
+				if(prejsni == spawn && spawn == cesta){
+					dodajElement(prviCrte,crte);
+				}else if(spawn == voda && prejsni != voda){
+					dodajElement(prviDesni,desniBreg);
+				}else if(spawn!= voda && prejsni == voda){
+					dodajElement(prviLevi,leviBreg);
+				}else if(prejsni == spawn && spawn == zeleznica){
+					dodajElement(prviTrava,trava);
+					
+				}else if(prejsni != travaSiroka && prejsni != spawn && spawn != travaSiroka){
+					dodajElement(prviTrava,trava);
+				}
 
-			if(spawn == cesta){
-				dodajElement(prviCesta,spawn);
-			}
-			else if(spawn == zeleznica){
-				dodajElement(prviZeleznica,spawn);
-			}else if(spawn == voda){
-				dodajElement(prviVoda,spawn);
-			}else{ //if(spawn == travaSiroka){
-				dodajElement(prviSiroka,spawn);
-			}
-			prejsni = spawn;
+				if(spawn == cesta){
+					dodajElement(prviCesta,spawn);
+				}
+				else if(spawn == zeleznica){
+					dodajElement(prviZeleznica,spawn);
+				}else if(spawn == voda){
+					dodajElement(prviVoda,spawn);
+				}else{ //if(spawn == travaSiroka){
+					dodajElement(prviSiroka,spawn);
+				}
+				prejsni = spawn;
 			//Destroy(list[brisi++]);
+			}
 
 		}
 		Debug.Log (list [0].transform.position.z);

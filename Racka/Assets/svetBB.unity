@@ -173,11 +173,11 @@ Prefab:
       objectReference: {fileID: 194146, guid: 0d4d2ca6cbd57c84789e7493eacf2b1b, type: 2}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verCesta
-      value: 5
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verVoda
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: verZeleznica
@@ -185,7 +185,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435764, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: vertrava
-      value: 2000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11458658, guid: 0566d75e7af62984e892a23f73509f35, type: 2}
       propertyPath: avto7
