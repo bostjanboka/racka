@@ -607,7 +607,7 @@ GameObject:
   - 114: {fileID: 11481354}
   m_Layer: 9
   m_Name: 7 ZT 40x40
-  m_TagString: Untagged
+  m_TagString: siroka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1063,7 +1063,7 @@ GameObject:
   - 23: {fileID: 2319654}
   m_Layer: 9
   m_Name: trava
-  m_TagString: Untagged
+  m_TagString: siroka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -42,6 +42,7 @@ public class InputKey : MonoBehaviour {
 			foreach (Touch touch in Input.touches) {
 				if (touch.phase.Equals (TouchPhase.Began)) {
 					Ray ray = SlediRaciSkripta.kamera.ScreenPointToRay (Input.mousePosition);
+
 					RaycastHit[] hit;
 					hit = Physics.RaycastAll (ray);
 					for (int i=0; i < hit.Length; i++) {

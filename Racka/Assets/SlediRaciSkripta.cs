@@ -36,7 +36,18 @@ public class SlediRaciSkripta : MonoBehaviour {
 				maxZ = pozicija.z;
 			}
 			transform.position=kameraPoz;
-
+			Ray ray = new Ray(transform.position,transform.forward);
+			Debug.DrawRay(transform.position, transform.forward, Color.green);
+			
+			RaycastHit[] hit;
+			hit = Physics.RaycastAll (ray);
+			MeniSkripta.stejTocke=true;
+			for (int i=0; i < hit.Length; i++) {
+				if (hit [i].point != null && hit [i].collider.gameObject.tag.Equals ("siroka")) {
+					MeniSkripta.stejTocke=false;
+					break;
+				}
+			}
 		}
 	}
 

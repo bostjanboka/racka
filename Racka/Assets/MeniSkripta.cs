@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MeniSkripta : MonoBehaviour {
 
 	// Use this for initialization
+	public static bool stejTocke=false;
 	public GameObject kamera;
 	public GameObject meni;
 	public GameObject hud;
@@ -31,7 +32,9 @@ public class MeniSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		stRack.text = RackaSkripta.stRack+" / 10";
-		tocke += (RackaSkripta.stRack / 10f)*(kamera.transform.position.z-deltaTocke);
+		if(stejTocke){
+			tocke += (RackaSkripta.stRack / 10f)*(kamera.transform.position.z-deltaTocke);
+		}
 		deltaTocke = kamera.transform.position.z;
 
 		Score.text = Mathf.RoundToInt (tocke)+"";

@@ -6613,7 +6613,7 @@ GameObject:
   - 23: {fileID: 2382372}
   m_Layer: 9
   m_Name: zemlja
-  m_TagString: Untagged
+  m_TagString: siroka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45707,6 +45707,8 @@ MonoBehaviour:
   speed: 4
   nazaj: {fileID: 0}
   pozicija: {x: 0, y: 0, z: 0}
+  size: 0
+  zamik: 0
 --- !u!114 &11492462
 MonoBehaviour:
   m_ObjectHideFlags: 1
