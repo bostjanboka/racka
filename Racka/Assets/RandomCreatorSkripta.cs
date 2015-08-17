@@ -47,6 +47,8 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	List<GameObject> list;
 	int brisi=0;
 	int stetjeTrave =0;
+	int stTrav=0;
+
 
 	bool vDelovanju=false;
 
@@ -202,6 +204,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		if (raca && vDelovanju && list[list.Count-3].transform.position.z < raca.transform.position.z) {
 			if(stetjeTrave >= 3){
 				stetjeTrave=0;
+				stTrav++;
 				dodajElement(prviSiroka,travaSiroka);
 				prejsni = travaSiroka;
 			}else{
@@ -274,6 +277,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 
 		if(spawnTabela == cesta){
+			spawn.GetComponent<izberiSpawnSkripta>().nastaviSpawnInHitrost(stTrav*2);
 			prviCesta = spawn.GetComponent<nazajSkripta>().nazaj;
 		}
 		else if(spawnTabela == zeleznica){
