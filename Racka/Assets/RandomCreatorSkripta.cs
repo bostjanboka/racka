@@ -12,11 +12,10 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	public GameObject crte;
 	public int verCesta=0;
 	public GameObject cesta;
-	public int verVoda=0;
-	public GameObject voda;
+
 	public int verZeleznica=0;
 	public GameObject zeleznica;
-	public int vertrava=0;
+
 	public GameObject travaSiroka;
 
 	public GameObject trava;
@@ -25,9 +24,6 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 	public GameObject prviCesta;
 	public GameObject zadnjiCesta;
-
-	public GameObject prviVoda;
-	public GameObject zadnjiVoda;
 
 	public GameObject prviZeleznica;
 	public GameObject zadnjiZeleznica;
@@ -40,12 +36,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 
 	public GameObject prviTrava;
 	public GameObject zadnjiTrava;
-
-	public GameObject prviLevi;
-	public GameObject zadnjiLevi;
-
-	public GameObject prviDesni;
-	public GameObject zadnjiDesni;
+	
 
 
 	public static int nalozeno=0;
@@ -62,7 +53,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	RandomVoziloSkripta randomVozilo;
 
 	void Awake(){
-		int skupaj = verCesta + verVoda + vertrava + verZeleznica;
+		int skupaj = verCesta + verZeleznica;
 		int sestevek = 0;
 		randomVozilo = transform.FindChild ("randomVozilo").GetComponent<RandomVoziloSkripta>();
 		
@@ -75,21 +66,12 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			
 		}
 		sestevek += verCesta;
-		for (int i=sestevek; i < sestevek+verVoda; i++) {
-			tabela[i] = voda;
-			
-		}
-		sestevek += verVoda;
+
 		for (int i=sestevek; i < sestevek+verZeleznica; i++) {
 			tabela[i] = zeleznica;
 			
 		}
 		sestevek += verZeleznica;
-		for (int i=sestevek; i < sestevek+vertrava; i++) {
-			tabela[i] = travaSiroka;
-			
-		}
-		sestevek += vertrava;
 
 		prviCesta = Instantiate (cesta) as GameObject;
 		prviCesta.transform.SetParent (transform);
@@ -106,20 +88,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		zacasna.GetComponent<nazajSkripta>().id = "cesta";
 		zadnjiCesta = zacasna;
 
-		prviVoda = Instantiate (voda) as GameObject;
-		prviVoda.transform.SetParent (transform);
-		GameObject zacasna1 = prviVoda;
 
-		for (int i=0; i < 10; i++) {
-			GameObject inst = Instantiate(voda) as GameObject;
-			zacasna1.GetComponent<nazajSkripta>().nazaj = inst;
-			zacasna1.GetComponent<nazajSkripta>().id = "voda";
-			inst.transform.SetParent(transform);
-			zacasna1 = inst;
-
-		}
-		zacasna1.GetComponent<nazajSkripta>().id = "voda";
-		zadnjiVoda = zacasna1;
 
 		prviZeleznica = Instantiate (zeleznica) as GameObject;
 		prviZeleznica.transform.SetParent (transform);
@@ -181,35 +150,6 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		zacasna5.GetComponent<nazajSkripta>().id = "trava";
 		zadnjiTrava = zacasna5;
 
-		prviLevi = Instantiate (leviBreg) as GameObject;
-		prviLevi.transform.SetParent (transform);
-		GameObject zacasna6 = prviLevi;
-		zacasna6.SetActive (false);
-		for (int i=0; i < 10; i++) {
-			GameObject inst = Instantiate(leviBreg) as GameObject;
-			zacasna6.GetComponent<nazajSkripta>().nazaj = inst;
-			zacasna6.GetComponent<nazajSkripta>().id = "levi";
-			inst.transform.SetParent(transform);
-			zacasna6 = inst;
-			zacasna6.SetActive (false);
-		}
-		zacasna6.GetComponent<nazajSkripta>().id = "levi";
-		zadnjiLevi = zacasna6;
-
-		prviDesni = Instantiate (desniBreg) as GameObject;
-		prviDesni.transform.SetParent (transform);
-		GameObject zacasna7 = prviDesni;
-		zacasna7.SetActive (false);
-		for (int i=0; i < 10; i++) {
-			GameObject inst = Instantiate(desniBreg) as GameObject;
-			zacasna7.GetComponent<nazajSkripta>().nazaj = inst;
-			zacasna7.GetComponent<nazajSkripta>().id = "desni";
-			inst.transform.SetParent(transform);
-			zacasna7 = inst;
-			zacasna7.SetActive (false);
-		}
-		zacasna7.GetComponent<nazajSkripta>().id = "desni";
-		zadnjiDesni = zacasna7;
 		Kmetija = Instantiate (kmetija);
 		list.Add (Kmetija);
 		nalozeno++;
@@ -227,10 +167,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}
 			if(prejsni == spawn && spawn == cesta){
 				dodajElement(prviCrte,crte);
-			}else if(spawn == voda && prejsni != voda){
-				dodajElement(prviDesni,desniBreg);
-			}else if(spawn!= voda && prejsni == voda){
-				dodajElement(prviLevi,leviBreg);
+			
 			}else if(prejsni == spawn && spawn == zeleznica){
 				dodajElement(prviTrava,trava);
 				
@@ -243,8 +180,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			}
 			else if(spawn == zeleznica){
 				dodajElement(prviZeleznica,spawn);
-			}else if(spawn == voda){
-				dodajElement(prviVoda,spawn);
+			
 			}else{ //if(spawn == travaSiroka){
 				dodajElement(prviSiroka,spawn);
 			}
@@ -258,15 +194,16 @@ public class RandomCreatorSkripta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Debug.Log (nalozeno + " nalozilo");
-		if (nalozeno == 34) {
+		if (nalozeno == 23) {
 			StartPostavitev();
 			nalozeno++;
 		}
 
-		if (raca && vDelovanju && list[list.Count-2].transform.position.z < raca.transform.position.z) {
+		if (raca && vDelovanju && list[list.Count-3].transform.position.z < raca.transform.position.z) {
 			if(stetjeTrave >= 3){
 				stetjeTrave=0;
 				dodajElement(prviSiroka,travaSiroka);
+				prejsni = travaSiroka;
 			}else{
 				GameObject spawn = tabela[Random.Range(0,tabela.Length)];
 				stetjeTrave++;
@@ -275,10 +212,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				}
 				if(prejsni == spawn && spawn == cesta){
 					dodajElement(prviCrte,crte);
-				}else if(spawn == voda && prejsni != voda){
-					dodajElement(prviDesni,desniBreg);
-				}else if(spawn!= voda && prejsni == voda){
-					dodajElement(prviLevi,leviBreg);
+				
 				}else if(prejsni == spawn && spawn == zeleznica){
 					dodajElement(prviTrava,trava);
 					
@@ -291,8 +225,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				}
 				else if(spawn == zeleznica){
 					dodajElement(prviZeleznica,spawn);
-				}else if(spawn == voda){
-					dodajElement(prviVoda,spawn);
+				
 				}else{ //if(spawn == travaSiroka){
 					dodajElement(prviSiroka,spawn);
 				}
@@ -310,9 +243,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			if(id.Equals("cesta")){
 				zadnjiCesta.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiCesta = brisem;
-			}else if(id.Equals("voda")){
-				zadnjiVoda.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiVoda = brisem;
+			
 			}else if(id.Equals("zeleznica")){
 				zadnjiZeleznica.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiZeleznica = brisem;
@@ -320,12 +251,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				zadnjiSiroka.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiSiroka = brisem;
 				brisem.GetComponent<SirokaRandomSkripta>().reset();
-			}else if(id.Equals("levi")){
-				zadnjiLevi.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiLevi = brisem;
-			}else if(id.Equals("desni")){
-				zadnjiDesni.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiDesni = brisem;
+			
 			}else if(id.Equals("trava")){
 				zadnjiTrava.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiTrava = brisem;
@@ -352,8 +278,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 		}
 		else if(spawnTabela == zeleznica){
 			prviZeleznica = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawnTabela == voda){
-			prviVoda = spawn.GetComponent<nazajSkripta>().nazaj;
+		
 		}else if(spawnTabela == travaSiroka){
 			spawn.GetComponent<SirokaRandomSkripta>().postavi();
 			prviSiroka = spawn.GetComponent<nazajSkripta>().nazaj;
@@ -361,10 +286,6 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			prviCrte = spawn.GetComponent<nazajSkripta>().nazaj;
 		}else if(spawnTabela == trava){
 			prviTrava = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawnTabela == leviBreg){
-			prviLevi = spawn.GetComponent<nazajSkripta>().nazaj;
-		}else if(spawnTabela == desniBreg){
-			prviDesni = spawn.GetComponent<nazajSkripta>().nazaj;
 		}
 		//GameObject zac = Instantiate (spawn, pozicija, Quaternion.Euler (0, 0, 0)) as GameObject;
 		//zac.transform.SetParent (transform);
@@ -382,9 +303,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 			if(id.Equals("cesta")){
 				zadnjiCesta.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiCesta = brisem;
-			}else if(id.Equals("voda")){
-				zadnjiVoda.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiVoda = brisem;
+			
 			}else if(id.Equals("zeleznica")){
 				zadnjiZeleznica.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiZeleznica = brisem;
@@ -392,12 +311,7 @@ public class RandomCreatorSkripta : MonoBehaviour {
 				zadnjiSiroka.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiSiroka = brisem;
 				brisem.GetComponent<SirokaRandomSkripta>().reset();
-			}else if(id.Equals("levi")){
-				zadnjiLevi.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiLevi = brisem;
-			}else if(id.Equals("desni")){
-				zadnjiDesni.GetComponent<nazajSkripta>().nazaj = brisem;
-				zadnjiDesni = brisem;
+			
 			}else if(id.Equals("trava")){
 				zadnjiTrava.GetComponent<nazajSkripta>().nazaj = brisem;
 				zadnjiTrava = brisem;
