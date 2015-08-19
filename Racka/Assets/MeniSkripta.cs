@@ -60,7 +60,7 @@ public class MeniSkripta : MonoBehaviour {
 
 	public void lost(){
 		InputKey.enableI = false;
-		//hud.SetActive (false);
+		hud.SetActive (false);
 		loose.SetActive (true);
 		if (!PlayerPrefs.HasKey ("bestScore") || PlayerPrefs.GetInt ("bestScore") < Mathf.RoundToInt (tocke)) {
 			PlayerPrefs.SetInt ("bestScore", Mathf.RoundToInt (tocke));
