@@ -11,7 +11,6 @@ GameObject:
   - 20: {fileID: 2085838}
   - 92: {fileID: 9210178}
   - 124: {fileID: 12481726}
-  - 81: {fileID: 8102664}
   - 114: {fileID: 11446156}
   m_Layer: 0
   m_Name: Main Camera
@@ -26,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181012}
-  m_LocalRotation: {x: .17454204, y: .627754927, z: -.147238597, w: .744163692}
-  m_LocalPosition: {x: -6.80000019, y: 25.3199997, z: -2}
+  m_LocalRotation: {x: .333340287, y: .602596402, z: -.305450141, w: .657618463}
+  m_LocalPosition: {x: -46.3199997, y: 37, z: 20.8999996}
   m_LocalScale: {x: 1, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,8 +48,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 177.899994
-  field of view: 43
+  far clip plane: 132.899994
+  field of view: 63
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -65,13 +64,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
---- !u!81 &8102664
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181012}
-  m_Enabled: 1
 --- !u!92 &9210178
 Behaviour:
   m_ObjectHideFlags: 1
