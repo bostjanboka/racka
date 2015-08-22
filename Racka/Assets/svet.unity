@@ -503,7 +503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 120078, guid: 37ff641f0727b4d43b2b34e3686fcb59, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37ff641f0727b4d43b2b34e3686fcb59, type: 2}
@@ -545,7 +545,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22415864, guid: eb2fb675c715536468536812a314468a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22415864, guid: eb2fb675c715536468536812a314468a, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -585,6 +585,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22415864, guid: eb2fb675c715536468536812a314468a, type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189278, guid: eb2fb675c715536468536812a314468a, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

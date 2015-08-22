@@ -15,7 +15,7 @@ public class SkriptaPotujNaprej : MonoBehaviour {
 	void Start () {
 		Transform sence = transform.FindChild ("SENCE");
 		if (sence) {
-			if(transform.localEulerAngles.y > 200){
+			if(transform.localEulerAngles.y < 200){
 				sence.FindChild("DOL").gameObject.SetActive(false);
 			}else{
 				sence.FindChild("GOR").gameObject.SetActive(false);

@@ -568,7 +568,7 @@ MonoBehaviour:
     m_LineSpacing: .699999988
   m_Text: 'YOU
 
-    LOST :('
+    LOST'
 --- !u!114 &11450488
 MonoBehaviour:
   m_ObjectHideFlags: 1
