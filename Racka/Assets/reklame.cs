@@ -7,10 +7,11 @@ public class reklame : MonoBehaviour {
 	// Use this for initialization
 
 	void Start () {
+
 		//UnityPluginForWindowsPhone.Class1.konstruktor ("ca-app-pub-6223160944701050/5027679925",true);
 		//UnityPluginForWindowsPhone.Class1.loadCelozaslonsko ();
 
-		UnityPluginForWindowsPhone.Class1 x = new UnityPluginForWindowsPhone.Class1 ();
+		UnityPluginForWindowsPhone.Class1.klas ();
 		//x.klas ();
 
 	}
